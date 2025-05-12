@@ -173,7 +173,7 @@ ul {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-/* ----------------------- aside ---------------------- */
+/* ====================== aside ===================== */
 .aside {
     width: 270px;
     background: var(--bg-black-100);
@@ -317,7 +317,7 @@ ul {
     margin-right: 15px;
 }
 
-/* ---------------- home ----------------------- */
+/* ====================== home ==================== */
 .home {
     min-height: 100vh;
     display: flex;
@@ -342,12 +342,72 @@ h3.hello span {
 }
 
 h3.my-profession {
+    display: flex;
+    align-items: center;
     font-size: 30px;
     margin: 15px 0;
 }
 
-.typing {
+.typing{
     color: var(--skin-color);
+    font-size: 25px;
+    height: 34px;
+    padding-left: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    text-transform: capitalize;
+}
+
+.typing .words {
+    overflow: hidden;
+}
+
+.typing .word {
+    display: block;
+    height: 100%;
+    animation: type-spin 4s infinite;
+}
+
+@keyframes type-spin {
+    10% {
+        -webkit-transform: translateY(-102%);
+        transform: translateY(-102%);
+    }
+
+    25% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    35% {
+        -webkit-transform: translateY(-202%);
+        transform: translateY(-202%);
+    }
+
+    50% {
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
+
+    60% {
+        -webkit-transform: translateY(-302%);
+        transform: translateY(-302%);
+    }
+
+    75% {
+        -webkit-transform: translateY(-300%);
+        transform: translateY(-300%);
+    }
+
+    85% {
+        -webkit-transform: translateY(-402%);
+        transform: translateY(-402%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-400%);
+        transform: translateY(-400%);
+    }
 }
 
 .home-info p {
@@ -391,9 +451,11 @@ h3.my-profession {
     width: 300px;
     border-radius: .5rem;
     border: 3px solid var(--skin-color);
-}
+} 
 
-/* -------------------- About ----------------------- */
+/* ======= Social Media ======== */  
+/* ======================= About ======================= */
+
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -589,7 +651,7 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
-/* --------------------- service --------------------- */
+/* ==================== service ================== */
 .service .container {
     padding-bottom: 40px;
 }
@@ -653,7 +715,7 @@ h3.my-profession {
     line-height: 25px;
 }
 
-/* ------------------ portfolio ---------------------- */
+/* =================== portfolio ================= */
 .portfolio .container {
     padding-bottom: 40px;
 }
@@ -681,20 +743,43 @@ h3.my-profession {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1rem; 
 }
 
-.portfolio .portfolio-item-inner .portfolio-img img {
+/* .portfolio .portfolio-item-inner:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+} */
+
+.portfolio .portfolio-item-inner .project-img::after {
+    content: "";
+    position: absolute;
+    height: 100%;
     width: 100%;
-    display: block;
+    background-color: var(--bg-black-50);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s ease;
+}
+.portfolio .portfolio-item-inner:hover .project-img::after {
+    opacity: 1;
+}
+.portfolio .portfolio-item-inner:hover .project-img {
+    filter: brightness(70%);
 }
 
 .project-img {
     margin: .5rem;
-    width: 90%;
-    height: 90%;
+    width: 97%;
+    height: 100%;
     filter: brightness(100%);
     display: block;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+}
+
+.project-img:hover{
+    transform: scale(1.02);
 }
 
 .project-title {
@@ -707,7 +792,7 @@ h3.my-profession {
     margin-left: 5px;
 }
 
-/* --------------Contact------------------------  */
+/* ====================== Contact ======================= */
 .contact-title {
     color: var(--skin-color);
     text-align: center;
@@ -809,7 +894,18 @@ h3.my-profession {
     color: var(--secondary-2-color);
   }
 
-/* ====== CopyRight ===== */
+/*===================== SCROLL BAR =====================*/
+::-webkit-scrollbar{
+    width: .6rem;
+    background: #555;
+  }
+  
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: .5rem;
+  }
+
+/* ======== CopyRight ======== */
 .copyright {
     text-align: center;
     padding: 20px;
@@ -820,8 +916,7 @@ h3.my-profession {
     margin-top: .5rem;
   }
 
-/* ------------ Media --------------- */
-
+/* ================== Media ================ */
 @media (max-width: 1199px) {
     .section .container {
         padding-top: 70px;
@@ -882,7 +977,7 @@ h3.my-profession {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .contact .conatct-form .col-6,
     .contact .contact-info-item,
@@ -894,5 +989,33 @@ h3.my-profession {
     .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .portfolio-item .project-title {
+        font-size: 1.5rem; 
+        text-align: center; 
+    }
+
+    .portfolio-item .btn-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+    }
+
+    .portfolio-item .btn {
+        width: 40%; 
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item .project-title {
+        font-size: 1.1rem; 
+    }
+
+    .portfolio-item .btn {
+        width: 100%;
+        letter-spacing: .1cm;
     }
 }
