@@ -84,10 +84,6 @@ ul {
     display: none !important;
 }
 
-/* .main-content {
-    padding-left: 270px;
-} */
-
 .padd-15 {
     padding-left: 15px;
     padding-right: 15px;
@@ -348,7 +344,7 @@ h3.my-profession {
     margin: 15px 0;
 }
 
-.typing{
+.typing {
     color: var(--skin-color);
     font-size: 25px;
     height: 34px;
@@ -356,6 +352,7 @@ h3.my-profession {
     display: -webkit-box;
     display: -ms-flexbox;
     text-transform: capitalize;
+    letter-spacing: 2px;
 }
 
 .typing .words {
@@ -373,17 +370,17 @@ h3.my-profession {
         -webkit-transform: translateY(-102%);
         transform: translateY(-102%);
     }
-
+    
     25% {
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%);
     }
-
+    
     35% {
         -webkit-transform: translateY(-202%);
         transform: translateY(-202%);
     }
-
+    
     50% {
         -webkit-transform: translateY(-200%);
         transform: translateY(-200%);
@@ -393,7 +390,7 @@ h3.my-profession {
         -webkit-transform: translateY(-302%);
         transform: translateY(-302%);
     }
-
+    
     75% {
         -webkit-transform: translateY(-300%);
         transform: translateY(-300%);
@@ -403,7 +400,7 @@ h3.my-profession {
         -webkit-transform: translateY(-402%);
         transform: translateY(-402%);
     }
-
+    
     100% {
         -webkit-transform: translateY(-400%);
         transform: translateY(-400%);
@@ -442,7 +439,7 @@ h3.my-profession {
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     left: 20px;
-    top: -40px;
+    top: -45px;
 }
 
 .home .home-img img {
@@ -451,9 +448,9 @@ h3.my-profession {
     width: 300px;
     border-radius: .5rem;
     border: 3px solid var(--skin-color);
-} 
+}
 
-/* ======= Social Media ======== */  
+/* ======= Social Media ======== */
 /* ======================= About ======================= */
 
 .about .about-content {
@@ -743,12 +740,8 @@ h3.my-profession {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    padding: 1rem; 
+    padding: 1rem;
 }
-
-/* .portfolio .portfolio-item-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-} */
 
 .portfolio .portfolio-item-inner .project-img::after {
     content: "";
@@ -761,9 +754,11 @@ h3.my-profession {
     opacity: 0;
     transition: all .3s ease;
 }
+
 .portfolio .portfolio-item-inner:hover .project-img::after {
     opacity: 1;
 }
+
 .portfolio .portfolio-item-inner:hover .project-img {
     filter: brightness(70%);
 }
@@ -778,13 +773,20 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.project-img:hover{
+.project-img:hover {
     transform: scale(1.02);
 }
 
 .project-title {
     margin: .5rem;
     color: var(--primary-color);
+}
+
+.btn-container .btn {
+    width: 55%;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0 auto;
 }
 
 .p-icon {
@@ -892,18 +894,18 @@ h3.my-profession {
     font-size: 1.25rem;
     transition: .3s;
     color: var(--secondary-2-color);
-  }
+}
 
 /*===================== SCROLL BAR =====================*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: .6rem;
     background: #555;
-  }
-  
-::-webkit-scrollbar-thumb{
+}
+
+::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: .5rem;
-  }
+}
 
 /* ======== CopyRight ======== */
 .copyright {
@@ -914,10 +916,11 @@ h3.my-profession {
     background: transparent;
     font-weight: 500;
     margin-top: .5rem;
-  }
+}
 
 /* ================== Media ================ */
 @media (max-width: 1199px) {
+
     .section .container {
         padding-top: 70px;
     }
@@ -977,6 +980,7 @@ h3.my-profession {
     }
 }
 
+
 @media (max-width: 768px) {
 
     .contact .conatct-form .col-6,
@@ -992,26 +996,26 @@ h3.my-profession {
     }
 
     .portfolio-item .project-title {
-        font-size: 1.5rem; 
-        text-align: center; 
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     .portfolio-item .btn-container {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        gap: 10px; 
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .portfolio-item .btn {
-        width: 40%; 
+        width: 40%;
         font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .portfolio-item .project-title {
-        font-size: 1.1rem; 
+        font-size: 1.1rem;
     }
 
     .portfolio-item .btn {
