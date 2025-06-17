@@ -1,10 +1,11 @@
+
 /*----------------- Typing Animation --------------------*/
-// var typed = new Typed(".typing", {
-//     Strings: ["Web Designer", "Web Developer", "Graphic Designer", "YouTuber"],
-//     typeSpeed: 100,
-//     BackSpeed: 60,
-//     loop: true
-// });
+var typed = new Typed(".typing", {
+    strings: ["Web Designer", "Web Developer", "Graphic Designer", "YouTuber"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
 
 /*----------------- Aside --------------------*/
 const nav = document.querySelector(".nav"),
@@ -20,7 +21,6 @@ for (let i = 0; i < totalNavList; i++) {
         for (let j = 0; j < totalNavList; j++) {
             if (navList[j].querySelector("a").classList.contains("active")) {
                 addBackSection(j);
-                // allSection[j].classList.add("back-section");
             }
             navList[j].querySelector("a").classList.remove('active');
         }
@@ -29,7 +29,7 @@ for (let i = 0; i < totalNavList; i++) {
         if (window.innerWidth <= 1200) {
             asideSectionTogglerBtn();
         }
-    })
+    });
 }
 
 function removeBackSection() {
@@ -47,7 +47,7 @@ function showSection(element) {
         allSection[i].classList.remove("active");
     }
     const target = element.getAttribute("href").split("#")[1];
-    document.querySelector("#" + target).classList.add("active")
+    document.querySelector("#" + target).classList.add("active");
 }
 
 function updateNav(element) {
@@ -62,7 +62,6 @@ function updateNav(element) {
 
 document.querySelector(".hire-me").addEventListener("click", function () {
     const sectionIndex = this.getAttribute("data-setion-index");
-    // console.log(sectionIndex);
     showSection(this);
     updateNav(this);
     removeBackSection();
@@ -73,7 +72,7 @@ const navTogglerBtn = document.querySelector(".nav-toggler"),
     aside = document.querySelector(".aside");
 navTogglerBtn.addEventListener("click", () => {
     asideSectionTogglerBtn();
-})
+});
 
 function asideSectionTogglerBtn() {
     aside.classList.toggle("open");
@@ -83,26 +82,27 @@ function asideSectionTogglerBtn() {
     }
 }
 
-// contact 
+// ===========  contact  ==============  
 
-const contactForm = document.querySelector("contact-form");
+const contactForm = document.querySelector(".contact-form");
 
-function sendEmail(){
+function sendEmail() {
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "spywithcode@gmail.com",
-        Password : "B48DF540963BDEEE20E128137960E7EB24B5",
-        To : 'spywithcode@gmail.com',
-        From : "spywithcode@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        Host: "smtp.elasticemail.com",
+        Username: "spywithcode@gmail.com",
+        Password: "B48DF540963BDEEE20E128137960E7EB24B5",
+        To: 'spywithcode@gmail.com',
+        From: "spywithcode@gmail.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
     }).then(
-      message => alert(message)
+        message => alert(message)
     );
 }
 
-contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    sendEmail();
-})
+if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        sendEmail();
+    });
+}
