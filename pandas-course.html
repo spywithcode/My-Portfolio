@@ -1814,6 +1814,431 @@ df.loc[("Class2", "A")]
                                 </p>
 
                                 <hr>
+                                <hr>
+                                <h2>9. Sorting & Filtering Data (Pandas)</h2>
+                                <hr>
+
+                                <p>
+                                    Real-world data analysis me data ko
+                                    <strong>sort</strong> aur <strong>filter</strong> karna
+                                    bahut common aur important task hota hai.
+                                </p>
+
+                                <p>
+                                    Sorting ka matlab:
+                                    <strong>order me arrange karna</strong>
+                                    Filtering ka matlab:
+                                    <strong>condition ke basis par data nikalna</strong>
+                                </p>
+
+                                <hr>
+
+                                <h3>9.1 sort_values()</h3>
+
+                                <p>
+                                    <code>sort_values()</code> ka use
+                                    <strong>column ke values</strong> ke basis par
+                                    data ko sort karne ke liye hota hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.sort_values(by="column_name")
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+df.sort_values(by="Marks")
+</pre>
+
+                                <h4>Descending Order</h4>
+                                <pre>
+df.sort_values(by="Marks", ascending=False)
+</pre>
+
+                                <h4>Multiple Columns Sorting</h4>
+                                <pre>
+df.sort_values(by=["Age", "Marks"], ascending=[True, False])
+</pre>
+
+                                <h4>Inplace Sorting</h4>
+                                <pre>
+df.sort_values(by="Marks", inplace=True)
+</pre>
+
+                                <p><strong>Exam Line:</strong> sort_values() sorts data by column values.</p>
+
+                                <hr>
+
+                                <h3>9.2 sort_index()</h3>
+
+                                <p>
+                                    <code>sort_index()</code> ka use
+                                    <strong>index ke basis par</strong> data ko
+                                    sort karne ke liye hota hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.sort_index()
+</pre>
+
+                                <h4>Descending Index Order</h4>
+                                <pre>
+df.sort_index(ascending=False)
+</pre>
+
+                                <p><strong>Use case:</strong> Jab index meaningful ho (dates, IDs)</p>
+
+                                <p><strong>Exam Line:</strong> sort_index() sorts data by index.</p>
+
+                                <hr>
+
+                                <h3>9.3 Filtering using Conditions</h3>
+
+                                <p>
+                                    Condition laga kar data select karna
+                                    <strong>filtering</strong> kehlata hai.
+                                </p>
+
+                                <h4>Single Condition</h4>
+                                <pre>
+df[df["Marks"] > 80]
+</pre>
+
+                                <h4>Multiple Conditions (AND)</h4>
+                                <pre>
+df[(df["Marks"] > 80) & (df["Age"] > 20)]
+</pre>
+
+                                <h4>OR Condition</h4>
+                                <pre>
+df[(df["Marks"] > 80) | (df["Age"] > 20)]
+</pre>
+
+                                <h4>NOT Condition</h4>
+                                <pre>
+df[~(df["Marks"] > 80)]
+</pre>
+
+                                <p><strong>Rule:</strong> &amp; | ~ use karo, and / or nahi</p>
+
+                                <hr>
+
+                                <h3>9.4 query() Method ⭐</h3>
+
+                                <p>
+                                    <code>query()</code> ek
+                                    <strong>clean aur readable</strong>
+                                    filtering method hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.query("Marks > 80")
+</pre>
+
+                                <h4>Multiple Conditions</h4>
+                                <pre>
+df.query("Marks > 80 and Age > 20")
+</pre>
+
+                                <h4>Using Variables</h4>
+                                <pre>
+min_marks = 75
+df.query("Marks > @min_marks")
+</pre>
+
+                                <h4>Why query()?</h4>
+                                <ul>
+                                    <li>Readable syntax</li>
+                                    <li>No bracket confusion</li>
+                                    <li>SQL-like feel</li>
+                                </ul>
+
+                                <p><strong>Note:</strong> Column names me space ho to backticks (` `) use karo</p>
+
+                                <hr>
+
+                                <h3>9.5 isin()</h3>
+
+                                <p>
+                                    <code>isin()</code> ka use
+                                    <strong>multiple values match</strong>
+                                    karne ke liye hota hai.
+                                </p>
+
+                                <h4>Example</h4>
+                                <pre>
+df[df["Grade"].isin(["A", "B"])]
+</pre>
+
+                                <p><strong>Use case:</strong> Category-based filtering</p>
+
+                                <hr>
+
+                                <h3>Common Mistakes (Avoid Karo)</h3>
+                                <ul>
+                                    <li>sort_values() me column name bhoolna</li>
+                                    <li>and / or use karna instead of &amp; |</li>
+                                    <li>query() me variable ke saath @ na lagana</li>
+                                    <li>sort_index aur sort_values confuse karna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Quick Comparison</h3>
+                                <ul>
+                                    <li>sort_values → column based sorting</li>
+                                    <li>sort_index → index based sorting</li>
+                                    <li>filtering → condition based selection</li>
+                                    <li>query → clean filtering syntax</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+                                <ul>
+                                    <li>sort_values → column order</li>
+                                    <li>sort_index → index order</li>
+                                    <li>filter → condition based</li>
+                                    <li>query → readable filter</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “In Pandas, sorting is done using sort_values and
+                                    sort_index, while filtering can be achieved using
+                                    boolean conditions or the query method for clean
+                                    and readable data selection.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>10. Handling Missing Data (Pandas)</h2>
+                                <hr>
+
+                                <p>
+                                    Real-world data me <strong>missing values</strong> bahut common hoti hain.
+                                    Isliye data analysis se pehle unko handle karna
+                                    <strong>mandatory</strong> hota hai.
+                                </p>
+
+                                <p>
+                                    Missing data ka matlab:
+                                </p>
+                                <ul>
+                                    <li>Value available nahi hai</li>
+                                    <li>Data incomplete hai</li>
+                                    <li>NaN / None / NA present hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.1 Missing Values Types</h3>
+
+                                <ul>
+                                    <li><strong>NaN</strong> → Not a Number (most common)</li>
+                                    <li><strong>None</strong> → Python null value</li>
+                                    <li><strong>NaT</strong> → Not a Time (datetime)</li>
+                                </ul>
+
+                                <p><strong>Important:</strong> Pandas internally sabko NaN ki tarah treat karta hai.</p>
+
+                                <hr>
+
+                                <h3>10.2 Checking Missing Values</h3>
+
+                                <h4>isna() / isnull()</h4>
+                                <p>
+                                    Check karta hai ki value missing hai ya nahi.
+                                </p>
+
+                                <pre>
+df.isna()
+df.isnull()
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+df.isna().sum()
+</pre>
+
+                                <p>
+                                    => Har column me kitni missing values hain
+                                </p>
+
+                                <p><strong>Exam Line:</strong> isna() detects missing values.</p>
+
+                                <hr>
+
+                                <h3>10.3 notna() / notnull()</h3>
+
+                                <p>
+                                    Non-missing values check karta hai.
+                                </p>
+
+                                <pre>
+df.notna()
+df.notnull()
+</pre>
+
+                                <hr>
+
+                                <h3>10.4 Dropping Missing Data</h3>
+
+                                <h4>dropna()</h4>
+
+                                <p>
+                                    Missing values wale rows/columns remove karta hai.
+                                </p>
+
+                                <h4>Drop rows (default)</h4>
+                                <pre>
+df.dropna()
+</pre>
+
+                                <h4>Drop columns</h4>
+                                <pre>
+df.dropna(axis=1)
+</pre>
+
+                                <h4>Drop if all values are NaN</h4>
+                                <pre>
+df.dropna(how="all")
+</pre>
+
+                                <h4>Drop if any value is NaN</h4>
+                                <pre>
+df.dropna(how="any")
+</pre>
+
+                                <h4>Inplace drop</h4>
+                                <pre>
+df.dropna(inplace=True)
+</pre>
+
+                                <p><strong>Warning:</strong> Data loss ho sakta hai</p>
+
+                                <hr>
+
+                                <h3>10.5 Filling Missing Data</h3>
+
+                                <h4>fillna()</h4>
+
+                                <p>
+                                    Missing values ko kisi value se replace karta hai.
+                                </p>
+
+                                <h4>Fill with constant value</h4>
+                                <pre>
+df.fillna(0)
+</pre>
+
+                                <h4>Column-wise filling</h4>
+                                <pre>
+df["Marks"].fillna(df["Marks"].mean())
+</pre>
+
+                                <h4>Multiple columns fill</h4>
+                                <pre>
+df.fillna({
+  "Marks": df["Marks"].mean(),
+  "Age": df["Age"].median()
+})
+</pre>
+
+                                <h4>Forward Fill (ffill)</h4>
+                                <pre>
+df.fillna(method="ffill")
+</pre>
+
+                                <h4>Backward Fill (bfill)</h4>
+                                <pre>
+df.fillna(method="bfill")
+</pre>
+
+                                <p><strong>Exam Line:</strong> fillna() replaces missing values.</p>
+
+                                <hr>
+
+                                <h3>10.6 Interpolation</h3>
+
+                                <p>
+                                    Numeric data ke liye smooth filling karta hai.
+                                </p>
+
+                                <pre>
+df.interpolate()
+</pre>
+
+                                <p><strong>Use case:</strong> time-series data</p>
+
+                                <hr>
+
+                                <h3>10.7 Replace vs Fillna</h3>
+
+                                <h4>replace()</h4>
+                                <p>
+                                    Specific values ko replace karta hai.
+                                </p>
+
+                                <pre>
+df.replace(-1, np.nan)
+</pre>
+
+                                <p>
+                                    replace → specific value
+                                    fillna → only NaN
+                                </p>
+
+                                <hr>
+
+                                <h3>Best Practices (Interview Favorite)</h3>
+                                <ul>
+                                    <li>Pehele missing values count karo</li>
+                                    <li>Drop tabhi karo jab data useless ho</li>
+                                    <li>Numerical → mean / median</li>
+                                    <li>Categorical → mode</li>
+                                    <li>Time-series → ffill / interpolate</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Quick Comparison</h3>
+                                <ul>
+                                    <li>isna → missing detect</li>
+                                    <li>dropna → remove missing</li>
+                                    <li>fillna → replace missing</li>
+                                    <li>interpolate → smooth fill</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+                                <ul>
+                                    <li>NaN → missing value</li>
+                                    <li>isna → detect</li>
+                                    <li>dropna → remove</li>
+                                    <li>fillna → replace</li>
+                                    <li>interpolate → numeric fill</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Handling missing data in Pandas involves detecting
+                                    NaN values using isna, removing them with dropna,
+                                    or intelligently filling them using fillna or
+                                    interpolation to avoid data loss.”
+                                </p>
+
+                                <hr>
 
 
                             </div>
