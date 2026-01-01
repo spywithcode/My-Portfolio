@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <title> My-Portfolio </title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="skins/color-1.css"> <!-- change skin color here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ------ RemixIcon ------- -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- style switcher  -->
+    <link rel="stylesheet" href="skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="CSS/style-switcher.css">
+</head>
+
+<body>
+    <!-- main container start  -->
+    <div class="main-container">
+        <!-- Aside start  -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#home"><span>C</span>oder</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>ABOUT</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>SERCIVES</a></li>
+                <li><a href="#classes"><i class="fa fa-graduation-cap"></i>CLASSES</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>PORTFOLIO</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- Aside End  -->
+
+        <!-- main contact start  -->
+        <div class="main-contact">
+            <!-- home section start  -->
+            <section class="home section active" id="home">
+                <div class="container">
+                    <div class="row" id="home-content"></div>
+                </div>
+            </section>
+            <!-- home section end  -->
+            <!-- About section Start  -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div id="about-text"></div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <h3 class="title">Personal Info</h3>
+                                    <div class="row" id="personal-info-container"></div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <h3 class="title">Skills</h3>
+                                    <div class="row" id="skills-container"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row" id="education-container"></div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row" id="experience-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section End  -->
+
+            <!-- service section start  -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row" id="services-container">
+
+                    </div>
+                </div>
+            </section>
+            <!-- service section end  -->
+
+            <!-- classes section start  -->
+            <section class="classes section" id="classes">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Classes</h2>
+                        </div>
+                    </div>
+                    <div class="row" id="classes-container">
+
+                    </div>
+                </div>
+            </section>
+            <!-- classes section end  -->
+
+            <!-- Portfolio section Start  -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+
+                    <!-- ============= Large Project ================== -->
+
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Project:</h2>
+                        </div>
+                    </div>
+                    <div class="row" id="large-project-container">
+
+                    </div>
+
+                    <!-- ============= Small Project ================== -->
+
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Small Project:</h2>
+                        </div>
+                    </div>
+                    <div class="row" id="small-project-container">
+
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio section End  -->
+
+            <!-- Contact Section Start  -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact me..!</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Question ?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!-- contact info item start  -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <h4>Call us now:</h4>
+                            <p><a href="https://wa.me/917007282116" target="_blank">+91 7007282116</a></p>
+                        </div>
+                        <!-- contact info item End  -->
+                        <!-- contact info item start  -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Office</h4>
+                            <p><a href="https://www.google.com/maps/place/The+Gandhi+mansion+campus+01/@22.6708696,75.8757746,106m/data=!3m1!1e3!4m6!3m5!1s0x3962fd005ac6105b:0x1da02bf2acd8d5a4!8m2!3d22.6709191!4d75.8757357!16s%2Fg%2F11vs8phb5c?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank">Indore</a></p>
+                        </div>
+                        <!-- contact info item End  -->
+                        <!-- contact info item start  -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <h4>E-mail</h4>
+                            <p><a href="mailto:spywithcode@gmail.com">spywithcode@gmail.com</a></p>
+                        </div>
+                        <!-- contact info item End  -->
+                        <!-- contact info item start  -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-globe-europe"></i>
+                            </div>
+                            <h4>Website</h4>
+                            <p><a href=" https://spywithcode.github.io/My-Portfolio/">Site open..</a></p>
+                        </div>
+                        <!-- contact info item End  -->
+                    </div>
+                    <!-- <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">I'M VERY REPONSIVE TO MESSAGES</h4>
+
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="E-mail">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+            </section>
+            <!-- Contact section End  -->
+        </div>
+        <!-- Main contact End  -->
+    </div>
+    <!-- Main container End  -->
+
+    <!-- Style Switcher Start  -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End  -->
+
+    <!-- Modal for Classes -->
+    <div id="classes-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Course details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JS file  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+
+    <!-- main java script section  -->
+    <script src="JS/main.js"></script>
+    <script src="JS/home.js"></script>
+    <script src="JS/about.js"></script>
+    <script src="JS/services.js"></script>
+    <script src="JS/classes.js"></script>
+    <script src="JS/portfolio.js"></script>
+    <script src="JS/style-switcher.js"></script>
+
+</body>
+
+</html>

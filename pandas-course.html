@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <title>Pandas Course - My Portfolio</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="skins/color-1.css"> <!-- change skin color here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ------ RemixIcon ------- -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- style switcher  -->
+    <link rel="stylesheet" href="skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="CSS/style-switcher.css">
+</head>
+
+<body>
+    <!-- main container start  -->
+    <div class="main-container">
+        <!-- Aside start  -->
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html"><span>C</span>oder</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html#home"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="index.html#about"><i class="fa fa-user"></i>ABOUT</a></li>
+                <li><a href="index.html#services"><i class="fa fa-list"></i>SERVICES</a></li>
+                <li><a href="index.html#classes"><i class="fa fa-graduation-cap"></i>CLASSES</a></li>
+                <li><a href="index.html#portfolio"><i class="fa fa-briefcase"></i>PORTFOLIO</a></li>
+                <li><a href="index.html#contact"><i class="fa fa-comments"></i>CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- Aside End  -->
+
+        <!-- main contact start  -->
+        <div class="main-contact">
+            <!-- Pandas Course Section -->
+            <section class="course section active" id="pandas-course">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Pandas Course</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="course-content padd-15">
+                            <div class="about-text padd-15">
+                                <hr>
+                                <h2>1. Introduction to Pandas</h2>
+                                <hr>
+
+                                <h3>1.1 Pandas kya hai</h3>
+
+                                <p>
+                                    <b>Pandas</b> Python ki ek powerful library hai
+                                    jo <b>data analysis</b> aur <b>data manipulation</b>
+                                    ke liye use hoti hai.
+                                </p>
+
+                                <p>
+                                    Pandas ka naam aaya hai:
+                                    <b>Panel Data</b> se (multi-dimensional data).
+                                </p>
+
+                                <p><b>Pandas specially tab use hota hai jab:</b></p>
+                                <ul>
+                                    <li>Data table form me ho</li>
+                                    <li>Rows aur columns ke saath kaam ho</li>
+                                    <li>CSV, Excel, JSON jaise files handle karni ho</li>
+                                </ul>
+
+                                <p><b>Simple words me:</b></p>
+                                <p>
+                                    Pandas = data ko samajhne, clean karne
+                                    aur analyze karne ka tool.
+                                </p>
+
+                                <hr>
+
+                                <h3>1.2 Pandas kyun use hota hai</h3>
+
+                                <p><b>Real-world data hamesha:</b></p>
+                                <ul>
+                                    <li>Messy hota hai</li>
+                                    <li>Missing values hoti hain</li>
+                                    <li>Large size ka hota hai</li>
+                                </ul>
+
+                                <p><b>Pandas use hota hai kyunki:</b></p>
+                                <ul>
+                                    <li>Large data easily handle karta hai</li>
+                                    <li>Fast data filtering aur sorting karta hai</li>
+                                    <li>Missing data handle karta hai</li>
+                                    <li>Excel / CSV files se direct kaam hota hai</li>
+                                    <li>Time-series data ke liye best hai</li>
+                                </ul>
+
+                                <p><b>Example use-cases:</b></p>
+                                <ul>
+                                    <li>Student marks analysis</li>
+                                    <li>Sales report analysis</li>
+                                    <li>Bank transaction analysis</li>
+                                    <li>Stock market data analysis</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>1.3 Data Analysis me Pandas ka Role</h3>
+
+                                <p><b>Data Analysis ke major steps:</b></p>
+
+                                <ol>
+                                    <li>
+                                        <b>Data Load karna</b><br>
+                                        CSV, Excel, Database se
+                                    </li>
+                                    <li>
+                                        <b>Data Cleaning</b>
+                                        <ul>
+                                            <li>Missing values</li>
+                                            <li>Duplicate rows</li>
+                                            <li>Wrong data</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>Data Transformation</b>
+                                        <ul>
+                                            <li>Columns add/remove</li>
+                                            <li>Data type change</li>
+                                            <li>Grouping</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>Data Analysis</b>
+                                        <ul>
+                                            <li>Mean</li>
+                                            <li>Sum</li>
+                                            <li>Count</li>
+                                            <li>Trends & patterns</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <b>Data Export</b><br>
+                                        CSV / Excel file
+                                    </li>
+                                </ol>
+
+                                <p>
+                                    Ye sab kaam Pandas <b>single library</b>
+                                    ke andar possible hai.
+                                </p>
+
+                                <p><b>Exam Line:</b></p>
+                                <p>
+                                    Pandas is used for data cleaning, manipulation, and analysis.
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h3>1.4 Pandas vs NumPy vs Excel</h3>
+                                <hr>
+
+                                <h4>Pandas</h4>
+                                <ul>
+                                    <li>Tabular data (rows & columns)</li>
+                                    <li>Missing data handle karta hai</li>
+                                    <li>Label-based indexing</li>
+                                    <li>CSV, Excel file support</li>
+                                    <li>Data analysis ke liye best</li>
+                                </ul>
+
+                                <hr>
+
+                                <h4>NumPy</h4>
+                                <ul>
+                                    <li>Numerical computation ke liye use hota hai</li>
+                                    <li>Fast mathematical operations</li>
+                                    <li>Fixed-type arrays</li>
+                                    <li>Scientific computing ke liye best</li>
+                                </ul>
+
+                                <hr>
+
+                                <h4>Excel</h4>
+                                <ul>
+                                    <li>Small data ke liye easy</li>
+                                    <li>GUI based tool</li>
+                                    <li>Large data me slow hota hai</li>
+                                    <li>Automation difficult hoti hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h4>One-line Comparison</h4>
+                                <ul>
+                                    <li><b>NumPy</b> → numbers</li>
+                                    <li><b>Pandas</b> → tables</li>
+                                    <li><b>Excel</b> → manual analysis</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>1.5 Pandas Installation</h3>
+
+                                <p><b>Terminal / CMD me command:</b></p>
+
+                                <pre>
+pip install pandas
+</pre>
+
+                                <p>
+                                    Agar aap <b>Anaconda</b> use kar rahe ho to:
+                                    Pandas pehle se hi installed hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>1.6 Pandas Import</h3>
+
+                                <p><b>Standard way (industry standard):</b></p>
+
+                                <pre>
+import pandas as pd
+</pre>
+
+                                <p><b>Reason:</b></p>
+                                <ul>
+                                    <li>Short name</li>
+                                    <li>Clean aur readable code</li>
+                                    <li>Industry practice</li>
+                                </ul>
+
+                                <p><b>Example:</b></p>
+                                <pre>
+pd.Series()
+pd.DataFrame()
+</pre>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+                                <ul>
+                                    <li>Pandas → data analysis library</li>
+                                    <li>Used for → tabular data</li>
+                                    <li>Handles → CSV, Excel, missing data</li>
+                                    <li>Better than Excel for large data</li>
+                                    <li>NumPy → numerical</li>
+                                    <li>Pandas → analytical</li>
+                                    <li>Import → import pandas as pd</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Pandas is a powerful Python library used for data
+                                    manipulation and analysis, especially for structured
+                                    and tabular datasets like CSV and Excel files.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>2. Core Data Structures (Pandas)</h2>
+                                <hr>
+
+                                <h3>2.1 Series kya hoti hai</h3>
+
+                                <p>
+                                    <strong>Series</strong> Pandas ka ek <strong>1-dimensional</strong>
+                                    data structure hota hai.
+                                </p>
+
+                                <p>
+                                    Ye bilkul ek column jaisa hota hai jisme:
+                                </p>
+
+                                <ul>
+                                    <li>Values hoti hain</li>
+                                    <li>Har value ke saath ek <strong>index</strong> hota hai</li>
+                                </ul>
+
+                                <p>
+                                    Series ek <strong>labeled array</strong> hota hai.
+                                </p>
+
+                                <p><strong>Example:</strong></p>
+
+                                <pre>
+import pandas as pd
+
+s = pd.Series([10, 20, 30, 40])
+</pre>
+
+                                <p><strong>Conceptual Output:</strong></p>
+
+                                <pre>
+Index → 0   1   2   3
+Value → 10  20  30  40
+</pre>
+
+                                <p>
+                                    Default index <strong>0 se start</strong> hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>2.2 DataFrame kya hota hai</h3>
+
+                                <p>
+                                    <strong>DataFrame</strong> Pandas ka ek <strong>2-dimensional</strong>
+                                    data structure hota hai.
+                                </p>
+
+                                <p>
+                                    Ye bilkul <strong>Excel sheet / table</strong> jaisa hota hai:
+                                </p>
+
+                                <ul>
+                                    <li>Rows</li>
+                                    <li>Columns</li>
+                                    <li>Different data types</li>
+                                </ul>
+
+                                <p>
+                                    Important baat:
+                                    <strong>Har column ek Series hoti hai.</strong>
+                                </p>
+
+                                <p><strong>Example:</strong></p>
+
+                                <pre>
+import pandas as pd
+
+df = pd.DataFrame({
+    "Name": ["Amit", "Neha", "Rahul"],
+    "Age": [20, 21, 22],
+    "Marks": [85, 90, 88]
+})
+</pre>
+
+                                <p><strong>Structure:</strong></p>
+
+                                <ul>
+                                    <li>Rows → Students</li>
+                                    <li>Columns → Name, Age, Marks</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>Series → 1D labeled data</li>
+                                    <li>DataFrame → 2D tabular data</li>
+                                    <li>Series = single column</li>
+                                    <li>DataFrame = multiple Series</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Series is a one-dimensional labeled array,
+                                    while DataFrame is a two-dimensional tabular
+                                    data structure made up of multiple Series.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>2.3 Series vs DataFrame</h2>
+                                <hr>
+
+                                <h3>Series</h3>
+                                <ul>
+                                    <li>1-D data structure</li>
+                                    <li>Single column</li>
+                                    <li>Values + Index</li>
+                                    <li>List jaisa lagta hai</li>
+                                </ul>
+
+                                <h3>DataFrame</h3>
+                                <ul>
+                                    <li>2-D data structure</li>
+                                    <li>Multiple columns</li>
+                                    <li>Rows + Columns</li>
+                                    <li>Excel table jaisa hota hai</li>
+                                </ul>
+
+                                <h3>One-Line Difference</h3>
+                                <ul>
+                                    <li>Series → single column</li>
+                                    <li>DataFrame → multiple columns</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>2.4 Index ka Concept</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Index</strong> Pandas ka ek bahut hi important concept hai.
+                                </p>
+
+                                <p>
+                                    Index ka main kaam hota hai:
+                                </p>
+
+                                <ul>
+                                    <li>Data ko identify karna</li>
+                                    <li>Data ko fast access karna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Default Index</h3>
+
+                                <p>
+                                    Agar aap index manually provide nahi karte,
+                                    to Pandas automatically index assign karta hai:
+                                </p>
+
+                                <pre>
+0, 1, 2, 3, ...
+</pre>
+
+                                <hr>
+
+                                <h3>Custom Index</h3>
+
+                                <pre>
+s = pd.Series([100, 200, 300], index=["a", "b", "c"])
+</pre>
+
+                                <hr>
+
+                                <h3>Index Features</h3>
+
+                                <ul>
+                                    <li>Index immutable hota hai (directly change nahi hota)</li>
+                                    <li>Label-based access allow karta hai</li>
+                                    <li>Data alignment me help karta hai (merge, join)</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Index Access Example</h3>
+
+                                <pre>
+s["b"]   # Output: 200
+</pre>
+
+                                <hr>
+
+                                <h3>Why Index is Important</h3>
+
+                                <ul>
+                                    <li>Fast data access</li>
+                                    <li>Data alignment (merge, join operations)</li>
+                                    <li>Meaningful labels ke through clarity</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>Series → 1D, single column</li>
+                                    <li>DataFrame → 2D, table</li>
+                                    <li>Index → data ka label</li>
+                                    <li>Default index → 0,1,2</li>
+                                    <li>Custom index → meaningful names</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “A Series is a one-dimensional labeled array,
+                                    while a DataFrame is a two-dimensional tabular
+                                    data structure made up of multiple Series,
+                                    with index providing efficient data access.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>3. Creating Data (Pandas)</h2>
+                                <hr>
+
+                                <h3>3.1 List se DataFrame</h3>
+
+                                <p>
+                                    Jab data simple <strong>list</strong> ke form me hota hai,
+                                    tab Pandas se DataFrame banaya ja sakta hai.
+                                </p>
+
+                                <h4>Single List → One Column DataFrame</h4>
+
+                                <pre>
+import pandas as pd
+
+data = [10, 20, 30, 40]
+
+df = pd.DataFrame(data, columns=["Marks"])
+print(df)
+</pre>
+
+                                <p><strong>Output:</strong></p>
+                                <pre>
+Marks
+10
+20
+30
+40
+</pre>
+
+                                <hr>
+
+                                <h4>List of Lists → Multiple Columns</h4>
+
+                                <pre>
+data = [
+    ["Amit", 20, 85],
+    ["Neha", 21, 90],
+    ["Rahul", 22, 88]
+]
+
+df = pd.DataFrame(data, columns=["Name", "Age", "Marks"])
+print(df)
+</pre>
+
+                                <ul>
+                                    <li>List ke andar list → rows represent karti hain</li>
+                                    <li><code>columns</code> parameter se column names dete hain</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>3.2 Dictionary se DataFrame</h3>
+
+                                <p>
+                                    Dictionary Pandas ke liye <strong>best structure</strong> hota hai
+                                    kyunki dictionary ka:
+                                </p>
+
+                                <ul>
+                                    <li>Key → column name</li>
+                                    <li>Value → column data</li>
+                                </ul>
+
+                                <h4>Example</h4>
+
+                                <pre>
+data = {
+    "Name": ["Amit", "Neha", "Rahul"],
+    "Age": [20, 21, 22],
+    "Marks": [85, 90, 88]
+}
+
+df = pd.DataFrame(data)
+print(df)
+</pre>
+
+                                <hr>
+
+                                <h3>Important Point</h3>
+
+                                <ul>
+                                    <li>Dictionary keys = column names</li>
+                                    <li>Dictionary values = column data</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>3.3 NumPy Array se DataFrame</h3>
+
+                                <p>
+                                    NumPy array se DataFrame banana tab useful hota hai
+                                    jab data <strong>pure numerical</strong> ho.
+                                </p>
+
+                                <h4>Example</h4>
+
+                                <pre>
+import numpy as np
+import pandas as pd
+
+arr = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+])
+
+df = pd.DataFrame(arr, columns=["Math", "Science", "English"])
+print(df)
+</pre>
+
+                                <h4>Why NumPy + Pandas?</h4>
+
+                                <ul>
+                                    <li>NumPy → fast numerical calculations</li>
+                                    <li>Pandas → tabular (row–column) structure</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>3.4 CSV, Excel, JSON File Read Karna</h3>
+
+                                <p>
+                                    Real-world data mostly files ke form me hota hai:
+                                </p>
+
+                                <ul>
+                                    <li>CSV</li>
+                                    <li>Excel</li>
+                                    <li>JSON</li>
+                                </ul>
+
+                                <p>
+                                    Pandas in sab files ko easily DataFrame me read kar sakta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>read_csv()</h3>
+
+                                <p>CSV file read karne ke liye use hota hai.</p>
+
+                                <pre>
+pd.read_csv("file_name.csv")
+</pre>
+
+                                <h4>Example</h4>
+
+                                <pre>
+df = pd.read_csv("students.csv")
+print(df)
+</pre>
+
+                                <h4>Common Parameters</h4>
+
+                                <pre>
+pd.read_csv("data.csv", header=None)
+pd.read_csv("data.csv", skiprows=1)
+pd.read_csv("data.csv", delimiter=",")
+</pre>
+
+                                <p><strong>Exam Line:</strong> read_csv() CSV file ko DataFrame me convert karta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>read_excel()</h3>
+
+                                <p>Excel file (.xlsx) read karne ke liye use hota hai.</p>
+
+                                <pre>
+pd.read_excel("file_name.xlsx")
+</pre>
+
+                                <h4>Example</h4>
+
+                                <pre>
+df = pd.read_excel("students.xlsx")
+print(df)
+</pre>
+
+                                <h4>Sheet Selection</h4>
+
+                                <pre>
+pd.read_excel("students.xlsx", sheet_name="Sheet1")
+</pre>
+
+                                <h4>Note</h4>
+
+                                <p>
+                                    Excel file read karne ke liye <strong>openpyxl</strong> library required hoti hai.
+                                </p>
+
+                                <pre>
+pip install openpyxl
+</pre>
+
+                                <hr>
+
+                                <h3>read_json()</h3>
+
+                                <p>JSON file read karne ke liye use hota hai.</p>
+
+                                <pre>
+df = pd.read_json("data.json")
+</pre>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>List → DataFrame using pd.DataFrame()</li>
+                                    <li>Dictionary → Best structure for DataFrame</li>
+                                    <li>NumPy → numerical data</li>
+                                    <li>CSV → read_csv()</li>
+                                    <li>Excel → read_excel()</li>
+                                    <li>JSON → read_json()</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Pandas allows creating DataFrames from lists,
+                                    dictionaries, and NumPy arrays, and provides
+                                    powerful functions like read_csv and read_excel
+                                    to load real-world data files for analysis.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>4. Exploring Data (Pandas)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Data explore karna</strong> ka matlab hota hai:
+                                </p>
+
+                                <ul>
+                                    <li>Data ko samajhna</li>
+                                    <li>Structure dekhna</li>
+                                    <li>Errors / missing values identify karna</li>
+                                    <li>Analysis se pehle clarity lana</li>
+                                </ul>
+
+                                <p>
+                                    Real-world data analysis ka <strong>first practical step</strong> hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>4.1 head()</h3>
+
+                                <p>
+                                    <code>head()</code> function DataFrame ke
+                                    <strong>starting ke rows</strong> dikhata hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.head()
+</pre>
+
+                                <p><strong>Default:</strong> First 5 rows show karta hai</p>
+
+                                <h4>Example</h4>
+                                <pre>
+df.head()
+df.head(3)   # first 3 rows
+</pre>
+
+                                <h4>Use</h4>
+                                <ul>
+                                    <li>Data ka quick preview</li>
+                                    <li>Columns samajhne ke liye</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>4.2 tail()</h3>
+
+                                <p>
+                                    <code>tail()</code> function DataFrame ke
+                                    <strong>last ke rows</strong> dikhata hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.tail()
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+df.tail()
+df.tail(2)   # last 2 rows
+</pre>
+
+                                <h4>Use</h4>
+                                <ul>
+                                    <li>Data ka end dekhna</li>
+                                    <li>Logs / time-series data me useful</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>4.3 shape</h3>
+
+                                <p>
+                                    <code>shape</code> attribute DataFrame ka
+                                    <strong>(rows, columns)</strong> batata hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.shape
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+(100, 5)
+</pre>
+
+                                <p>
+                                    <strong>Meaning:</strong><br>
+                                    100 rows<br>
+                                    5 columns
+                                </p>
+
+                                <p><strong>Exam Line:</strong> shape gives number of rows and columns.</p>
+
+                                <hr>
+
+                                <h3>4.4 size</h3>
+
+                                <p>
+                                    <code>size</code> DataFrame ke
+                                    <strong>total elements</strong> batata hai.
+                                </p>
+
+                                <h4>Formula</h4>
+                                <pre>
+size = rows × columns
+</pre>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.size
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+Rows = 10
+Columns = 4
+Size = 40
+</pre>
+
+                                <hr>
+
+                                <h3>4.5 ndim</h3>
+
+                                <p>
+                                    <code>ndim</code> DataFrame ka
+                                    <strong>dimension</strong> batata hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.ndim
+</pre>
+
+                                <h4>Result</h4>
+                                <ul>
+                                    <li>DataFrame ka ndim hamesha <strong>2</strong> hota hai</li>
+                                    <li>Series ka ndim = 1</li>
+                                </ul>
+
+                                <p><strong>Exam Line:</strong> DataFrame is a 2-dimensional structure.</p>
+
+                                <hr>
+
+                                <h3>4.6 columns</h3>
+
+                                <p>
+                                    <code>columns</code> attribute DataFrame ke
+                                    <strong>column names</strong> batata hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.columns
+</pre>
+
+                                <h4>Output</h4>
+                                <pre>
+Index(['Name', 'Age', 'Marks'], dtype='object')
+</pre>
+
+                                <h4>Use</h4>
+                                <ul>
+                                    <li>Column names check karna</li>
+                                    <li>Rename se pehle verify karna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>4.7 index</h3>
+
+                                <p>
+                                    <code>index</code> attribute DataFrame ke
+                                    <strong>row labels</strong> batata hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.index
+</pre>
+
+                                <h4>Output</h4>
+                                <pre>
+RangeIndex(start=0, stop=10, step=1)
+</pre>
+
+                                <h4>Use</h4>
+                                <ul>
+                                    <li>Row identification</li>
+                                    <li>Custom index lagane se pehle</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>4.8 info()</h3>
+
+                                <p>
+                                    <code>info()</code> function DataFrame ka
+                                    <strong>complete technical summary</strong> deta hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.info()
+</pre>
+
+                                <h4>Information milti hai</h4>
+                                <ul>
+                                    <li>Rows & columns count</li>
+                                    <li>Column names</li>
+                                    <li>Data types</li>
+                                    <li>Non-null values</li>
+                                    <li>Memory usage</li>
+                                </ul>
+
+                                <h4>Use</h4>
+                                <ul>
+                                    <li>Missing values check</li>
+                                    <li>Data types verify</li>
+                                    <li>Data cleaning se pehle</li>
+                                </ul>
+
+                                <p><strong>Exam Line:</strong> info() gives concise summary of DataFrame.</p>
+
+                                <hr>
+
+                                <h3>4.9 describe()</h3>
+
+                                <p>
+                                    <code>describe()</code> function
+                                    <strong>numerical columns ka statistical summary</strong> deta hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.describe()
+</pre>
+
+                                <h4>Output me milta hai</h4>
+                                <ul>
+                                    <li>count</li>
+                                    <li>mean</li>
+                                    <li>std</li>
+                                    <li>min</li>
+                                    <li>25%, 50%, 75%</li>
+                                    <li>max</li>
+                                </ul>
+
+                                <h4>Use</h4>
+                                <ul>
+                                    <li>Data distribution samajhne ke liye</li>
+                                    <li>Outliers identify karne ke liye</li>
+                                </ul>
+
+                                <h4>Note</h4>
+                                <ul>
+                                    <li>Default sirf numerical data ke liye</li>
+                                    <li>All columns ke liye:</li>
+                                </ul>
+
+                                <pre>
+df.describe(include="all")
+</pre>
+
+                                <hr>
+
+                                <h3>Quick Comparison (Important)</h3>
+
+                                <ul>
+                                    <li>head() → starting rows</li>
+                                    <li>tail() → ending rows</li>
+                                    <li>shape → rows, columns</li>
+                                    <li>size → total elements</li>
+                                    <li>ndim → dimensions</li>
+                                    <li>columns → column names</li>
+                                    <li>index → row labels</li>
+                                    <li>info() → structure summary</li>
+                                    <li>describe() → statistics</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>head / tail → preview</li>
+                                    <li>shape → rows & columns</li>
+                                    <li>size → total values</li>
+                                    <li>ndim → dimension</li>
+                                    <li>columns → names</li>
+                                    <li>index → labels</li>
+                                    <li>info → structure</li>
+                                    <li>describe → statistics</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Exploring data in Pandas involves using functions
+                                    like head, shape, info, and describe to quickly
+                                    understand the structure, size, data types, and
+                                    statistical properties of a DataFrame before
+                                    performing analysis.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>5. Data Types (Pandas)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Data types</strong> samajhna zaroori hai kyunki:
+                                </p>
+
+                                <ul>
+                                    <li>Analysis sahi hota hai</li>
+                                    <li>Memory efficient hota hai</li>
+                                    <li>Errors kam hote hain</li>
+                                    <li>Operations fast hote hain</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>5.1 dtypes</h3>
+
+                                <p>
+                                    <code>dtypes</code> attribute har column ka
+                                    <strong>data type</strong> batata hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.dtypes
+</pre>
+
+                                <h4>Example Output</h4>
+                                <pre>
+Name      object
+Age        int64
+Marks    float64
+Passed      bool
+dtype: object
+</pre>
+
+                                <h4>Common Pandas Data Types</h4>
+                                <ul>
+                                    <li><strong>int64</strong> → integer</li>
+                                    <li><strong>float64</strong> → decimal</li>
+                                    <li><strong>object</strong> → string / mixed data</li>
+                                    <li><strong>bool</strong> → True / False</li>
+                                    <li><strong>datetime64</strong> → date & time</li>
+                                    <li><strong>category</strong> → categorical data</li>
+                                </ul>
+
+                                <p><strong>Exam Line:</strong> dtypes shows data type of each column.</p>
+
+                                <hr>
+
+                                <h3>5.2 Type Conversion (Why Needed)</h3>
+
+                                <p>
+                                    Kabhi-kabhi data galat type me hota hai:
+                                </p>
+
+                                <ul>
+                                    <li>Number string ban jata hai ("100")</li>
+                                    <li>Date string ke form me hoti hai</li>
+                                    <li>Category text ke roop me hoti hai</li>
+                                </ul>
+
+                                <p>
+                                    Isliye <strong>type conversion</strong> karte hain.
+                                </p>
+
+                                <hr>
+
+                                <h3>5.3 astype()</h3>
+
+                                <p>
+                                    <code>astype()</code> function column ka
+                                    <strong>data type change</strong> karta hai.
+                                </p>
+
+                                <h4>Single Column Conversion</h4>
+                                <pre>
+df["Age"] = df["Age"].astype(int)
+</pre>
+
+                                <h4>Multiple Columns Conversion</h4>
+                                <pre>
+df = df.astype({
+    "Age": int,
+    "Marks": float
+})
+</pre>
+
+                                <h4>String Conversion</h4>
+                                <pre>
+df["Name"] = df["Name"].astype(str)
+</pre>
+
+                                <h4>Important Notes</h4>
+                                <ul>
+                                    <li>astype() naya converted data deta hai</li>
+                                    <li>Invalid conversion par error aata hai</li>
+                                    <li>Missing values ho to pehle handle karo</li>
+                                </ul>
+
+                                <p><strong>Exam Line:</strong> astype() is used for explicit type conversion.</p>
+
+                                <hr>
+
+                                <h3>5.4 Categorical Data</h3>
+
+                                <p>
+                                    <strong>Categorical data</strong> wo hota hai jisme
+                                    <strong>limited unique values</strong> hoti hain.
+                                </p>
+
+                                <h4>Examples</h4>
+                                <ul>
+                                    <li>Gender → Male / Female</li>
+                                    <li>Grade → A, B, C</li>
+                                    <li>Status → Pass / Fail</li>
+                                </ul>
+
+                                <h4>Why Use Categorical Data?</h4>
+                                <ul>
+                                    <li>Memory kam use hoti hai</li>
+                                    <li>Performance better hoti hai</li>
+                                    <li>Grouping fast hoti hai</li>
+                                </ul>
+
+                                <h4>Convert to Category</h4>
+                                <pre>
+df["Grade"] = df["Grade"].astype("category")
+</pre>
+
+                                <h4>Check Categories</h4>
+                                <pre>
+df["Grade"].cat.categories
+</pre>
+
+                                <h4>Add / Remove Categories</h4>
+                                <pre>
+df["Grade"] = df["Grade"].cat.add_categories(["D"])
+df["Grade"] = df["Grade"].cat.remove_categories(["C"])
+</pre>
+
+                                <hr>
+
+                                <h3>Quick Comparison</h3>
+
+                                <ul>
+                                    <li>object → normal string</li>
+                                    <li>category → fixed choices string</li>
+                                    <li>int / float → numerical</li>
+                                    <li>bool → True / False</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>dtypes → column data types</li>
+                                    <li>astype → type conversion</li>
+                                    <li>object → string</li>
+                                    <li>category → limited values</li>
+                                    <li>categorical → memory efficient</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “In Pandas, dtypes help identify column data types,
+                                    astype is used for explicit type conversion, and
+                                    categorical data improves memory usage and performance
+                                    when working with repeated values.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>6. Column & Row Selection (Pandas)</h2>
+                                <hr>
+
+                                <p>
+                                    Data analysis me sabse zyada kaam aata hai
+                                    <strong>specific rows aur columns ko select karna</strong>.
+                                </p>
+
+                                <hr>
+
+                                <h3>6.1 Single Column Selection</h3>
+
+                                <p>
+                                    Ek column ko select karne par
+                                    <strong>Series</strong> milti hai.
+                                </p>
+
+                                <h4>Method 1: Bracket notation</h4>
+                                <pre>
+df["Marks"]
+</pre>
+
+                                <h4>Method 2: Dot notation</h4>
+                                <pre>
+df.Marks
+</pre>
+
+                                <h4>Note</h4>
+                                <ul>
+                                    <li>Dot notation tab use karo jab:</li>
+                                    <li>Column name me space na ho</li>
+                                    <li>Column name Python keyword na ho</li>
+                                </ul>
+
+                                <p><strong>Exam Line:</strong> Single column selection returns a Series.</p>
+
+                                <hr>
+
+                                <h3>6.2 Multiple Columns Selection</h3>
+
+                                <p>
+                                    Multiple columns select karne par
+                                    <strong>DataFrame</strong> milta hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df[["Name", "Marks"]]
+</pre>
+
+                                <h4>Important</h4>
+                                <ul>
+                                    <li>Double square brackets zaroori hain</li>
+                                </ul>
+
+                                <p><strong>Exam Line:</strong> Multiple column selection returns a DataFrame.</p>
+
+                                <hr>
+
+                                <h3>6.3 Row Selection (Slicing)</h3>
+
+                                <p>
+                                    Row slicing Python list slicing jaisa hota hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df[start : end]
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+df[0:5]     # first 5 rows
+df[2:6]     # rows from index 2 to 5
+</pre>
+
+                                <h4>Important Rule</h4>
+                                <ul>
+                                    <li>End index include nahi hota</li>
+                                </ul>
+
+                                <h4>Use</h4>
+                                <ul>
+                                    <li>Quick row filtering</li>
+                                    <li>Small data preview</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>6.4 Boolean Indexing</h3>
+
+                                <p>
+                                    Condition laga kar rows filter karna
+                                    <strong>Boolean Indexing</strong> kehlata hai.
+                                </p>
+
+                                <h4>Single Condition</h4>
+                                <pre>
+df[df["Marks"] > 80]
+</pre>
+
+                                <h4>Multiple Conditions (AND)</h4>
+                                <pre>
+df[(df["Marks"] > 80) & (df["Age"] > 20)]
+</pre>
+
+                                <h4>OR Condition</h4>
+                                <pre>
+df[(df["Marks"] > 80) | (df["Age"] > 20)]
+</pre>
+
+                                <h4>NOT Condition</h4>
+                                <pre>
+df[~(df["Marks"] > 80)]
+</pre>
+
+                                <h4>Important Rules</h4>
+                                <ul>
+                                    <li>&amp; (AND), | (OR), ~ (NOT) use karo</li>
+                                    <li><strong>and / or</strong> use nahi karna</li>
+                                    <li>Har condition ke around brackets () lagao</li>
+                                </ul>
+
+                                <p><strong>Exam Line:</strong> Boolean indexing is used to filter data based on
+                                    conditions.</p>
+
+                                <hr>
+
+                                <h3>Quick Summary (Very Important)</h3>
+
+                                <ul>
+                                    <li><code>df["col"]</code> → single column (Series)</li>
+                                    <li><code>df[["c1","c2"]]</code> → multiple columns (DataFrame)</li>
+                                    <li><code>df[1:5]</code> → row slicing</li>
+                                    <li><code>df[condition]</code> → boolean filtering</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Common Mistakes (Avoid Karo)</h3>
+
+                                <ul>
+                                    <li>❌ <code>df["Name","Marks"]</code></li>
+                                    <li>❌ <code>df["Marks"] &gt; 80</code> without <code>df[...]</code></li>
+                                    <li>❌ <code>and / or</code> instead of <code>&amp; / |</code></li>
+                                    <li>❌ Missing brackets in conditions</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>Single column → Series</li>
+                                    <li>Multiple columns → DataFrame</li>
+                                    <li>Row slicing → start:end</li>
+                                    <li>Boolean indexing → condition based filter</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “In Pandas, columns can be selected using single or
+                                    double brackets, rows can be sliced like lists, and
+                                    boolean indexing allows filtering data efficiently
+                                    based on one or multiple conditions.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>7. loc &amp; iloc (Pandas)</h2>
+                                <hr>
+
+                                <p>
+                                    Pandas me <strong>data selection ka sabse powerful aur safe tarika</strong>
+                                    <code>loc</code> aur <code>iloc</code> hote hain.
+                                </p>
+
+                                <p>
+                                    Ye dono confusion clear kar dete hain:
+                                </p>
+
+                                <ul>
+                                    <li>row vs column</li>
+                                    <li>label vs position</li>
+                                    <li>slicing mistakes</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.1 loc (Label-based Access)</h3>
+
+                                <p>
+                                    <strong>loc</strong> ka use hota hai
+                                    <strong>labels (names)</strong> ke basis par data access karne ke liye.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.loc[row_label, column_label]
+</pre>
+
+                                <h4>Examples</h4>
+
+                                <p><strong>Single row</strong></p>
+                                <pre>
+df.loc[0]
+</pre>
+
+                                <p><strong>Single column</strong></p>
+                                <pre>
+df.loc[:, "Marks"]
+</pre>
+
+                                <p><strong>Specific row &amp; column</strong></p>
+                                <pre>
+df.loc[2, "Marks"]
+</pre>
+
+                                <p><strong>Multiple rows &amp; columns</strong></p>
+                                <pre>
+df.loc[0:3, ["Name", "Marks"]]
+</pre>
+
+                                <h4>Important Rule</h4>
+                                <ul>
+                                    <li>loc me <strong>end label include hota hai</strong></li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.2 iloc (Index-based Access)</h3>
+
+                                <p>
+                                    <strong>iloc</strong> ka use hota hai
+                                    <strong>integer position (index number)</strong> ke basis par.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.iloc[row_index, column_index]
+</pre>
+
+                                <h4>Examples</h4>
+
+                                <p><strong>Single row</strong></p>
+                                <pre>
+df.iloc[0]
+</pre>
+
+                                <p><strong>Single column</strong></p>
+                                <pre>
+df.iloc[:, 2]
+</pre>
+
+                                <p><strong>Specific row &amp; column</strong></p>
+                                <pre>
+df.iloc[2, 1]
+</pre>
+
+                                <p><strong>Multiple rows &amp; columns</strong></p>
+                                <pre>
+df.iloc[0:3, [0, 2]]
+</pre>
+
+                                <h4>Important Rule</h4>
+                                <ul>
+                                    <li>iloc me <strong>end index exclude hota hai</strong></li>
+                                    <li>Ye pure Python slicing jaisa behave karta hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.3 loc vs iloc (Direct Comparison)</h3>
+
+                                <h4>loc</h4>
+                                <ul>
+                                    <li>Label-based</li>
+                                    <li>Row/column names use karta hai</li>
+                                    <li>End index include hota hai</li>
+                                    <li>Real-world data me zyada readable</li>
+                                </ul>
+
+                                <h4>iloc</h4>
+                                <ul>
+                                    <li>Position-based</li>
+                                    <li>Integer index use karta hai</li>
+                                    <li>End index exclude hota hai</li>
+                                    <li>Fast &amp; precise access</li>
+                                </ul>
+
+                                <p><strong>One-line:</strong></p>
+                                <ul>
+                                    <li>loc = labels</li>
+                                    <li>iloc = positions</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.4 Boolean Indexing with loc</h3>
+
+                                <p>
+                                    loc ke saath condition lagana
+                                    <strong>best practice</strong> mani jaati hai.
+                                </p>
+
+                                <h4>Example</h4>
+                                <pre>
+df.loc[df["Marks"] &gt; 80, ["Name", "Marks"]]
+</pre>
+
+                                <h4>Reason</h4>
+                                <ul>
+                                    <li>Clean code</li>
+                                    <li>Warnings kam aati hain</li>
+                                    <li>Safe assignment hota hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.5 Common Mistakes &amp; Fixes (Very Important)</h3>
+
+                                <h4>Mistake 1: iloc me label use karna</h4>
+                                <pre>
+❌ df.iloc["Marks"]
+</pre>
+
+                                <p><strong>Fix:</strong></p>
+                                <pre>
+df.iloc[:, 2]
+</pre>
+
+                                <hr>
+
+                                <h4>Mistake 2: loc me integer ko position samajhna</h4>
+                                <pre>
+❌ df.loc[1]   (jab index labels different ho)
+</pre>
+
+                                <p><strong>Fix:</strong></p>
+                                <ul>
+                                    <li>df.index check karo</li>
+                                    <li>Ya iloc use karo</li>
+                                </ul>
+
+                                <hr>
+
+                                <h4>Mistake 3: End index confusion</h4>
+                                <pre>
+❌ df.iloc[0:3] ko include samajhna
+</pre>
+
+                                <p><strong>Yaad rakho:</strong></p>
+                                <ul>
+                                    <li>iloc → end exclude</li>
+                                    <li>loc → end include</li>
+                                </ul>
+
+                                <hr>
+
+                                <h4>Mistake 4: Chained indexing</h4>
+                                <pre>
+❌ df[df["Marks"] &gt; 80]["Grade"] = "A"
+</pre>
+
+                                <p><strong>Fix (use loc):</strong></p>
+                                <pre>
+df.loc[df["Marks"] &gt; 80, "Grade"] = "A"
+</pre>
+
+                                <hr>
+
+                                <h3>Best Practices</h3>
+
+                                <ul>
+                                    <li>Labels ke liye loc use karo</li>
+                                    <li>Positions ke liye iloc use karo</li>
+                                    <li>Condition ke saath hamesha loc</li>
+                                    <li>Chained indexing avoid karo</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>loc → label based</li>
+                                    <li>iloc → index based</li>
+                                    <li>loc → end include</li>
+                                    <li>iloc → end exclude</li>
+                                    <li>Boolean + loc → best practice</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “loc is used for label-based data selection while iloc
+                                    is used for integer position-based selection. Using loc
+                                    with boolean conditions is the safest and most readable
+                                    way to filter and update data in Pandas.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>8. Index Handling (Pandas)</h2>
+                                <hr>
+
+                                <p>
+                                    Pandas me <strong>Index</strong> sirf numbering nahi hota,
+                                    balki data ko identify aur manage karne ka
+                                    <strong>powerful tool</strong> hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>8.1 set_index()</h3>
+
+                                <p>
+                                    Kisi column ko <strong>index banana</strong> ho,
+                                    tab <code>set_index()</code> use hota hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.set_index("column_name")
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+df = df.set_index("Name")
+print(df)
+</pre>
+
+                                <h4>Important Notes</h4>
+                                <ul>
+                                    <li>Original index replace ho jata hai</li>
+                                    <li>By default original column remove ho jata hai</li>
+                                </ul>
+
+                                <h4>Keep column also</h4>
+                                <pre>
+df.set_index("Name", drop=False)
+</pre>
+
+                                <h4>Inplace change</h4>
+                                <pre>
+df.set_index("Name", inplace=True)
+</pre>
+
+                                <p><strong>Exam Line:</strong> set_index() sets an existing column as index.</p>
+
+                                <hr>
+
+                                <h3>8.2 reset_index()</h3>
+
+                                <p>
+                                    Index ko wapas <strong>normal column</strong>
+                                    banana ho tab <code>reset_index()</code> use hota hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+df.reset_index()
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+df = df.reset_index()
+</pre>
+
+                                <h4>Remove index column</h4>
+                                <pre>
+df.reset_index(drop=True)
+</pre>
+
+                                <h4>Inplace change</h4>
+                                <pre>
+df.reset_index(inplace=True)
+</pre>
+
+                                <p><strong>Exam Line:</strong> reset_index() resets index to default integer index.</p>
+
+                                <hr>
+
+                                <h3>8.3 Rename Index</h3>
+
+                                <p>
+                                    Index ka naam ya values change karne ke liye
+                                    rename-related methods use hote hain.
+                                </p>
+
+                                <h4>Rename Index Values</h4>
+                                <pre>
+df.rename(index={0: "a", 1: "b"})
+</pre>
+
+                                <h4>Rename Index Name (Label)</h4>
+                                <pre>
+df.index.name = "Student_ID"
+</pre>
+
+                                <h4>Rename Column Index (Axis)</h4>
+                                <pre>
+df.rename_axis("Roll_No", axis="index")
+</pre>
+
+                                <hr>
+
+                                <h3>8.4 MultiIndex Basics</h3>
+
+                                <p>
+                                    <strong>MultiIndex</strong> ka matlab hota hai
+                                    <strong>ek se zyada level ka index</strong>.
+                                </p>
+
+                                <p>
+                                    Isse <strong>hierarchical data</strong>
+                                    represent hota hai.
+                                </p>
+
+                                <h4>Example</h4>
+                                <pre>
+arrays = [
+    ["Class1", "Class1", "Class2", "Class2"],
+    ["A", "B", "A", "B"]
+]
+
+multi_index = pd.MultiIndex.from_arrays(
+    arrays, names=("Class", "Section")
+)
+
+df = pd.DataFrame(
+    {"Marks": [80, 85, 90, 95]},
+    index=multi_index
+)
+</pre>
+
+                                <h4>Access MultiIndex Data</h4>
+                                <pre>
+df.loc["Class1"]
+df.loc[("Class2", "A")]
+</pre>
+
+                                <h4>Why MultiIndex?</h4>
+                                <ul>
+                                    <li>Complex hierarchical data handle karne ke liye</li>
+                                    <li>Group-wise analysis ke liye</li>
+                                    <li>Advanced data analytics ke liye</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Common Mistakes (Avoid Karo)</h3>
+                                <ul>
+                                    <li>Index ko ignore karna</li>
+                                    <li>set_index() ke baad reset_index() bhool jana</li>
+                                    <li>Label-based data me iloc use karna</li>
+                                    <li>MultiIndex ko complex samajhkar avoid karna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+                                <ul>
+                                    <li>set_index → column to index</li>
+                                    <li>reset_index → index to column</li>
+                                    <li>rename → index rename</li>
+                                    <li>MultiIndex → multi-level index</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Index handling in Pandas involves setting, resetting,
+                                    and renaming indexes, and using MultiIndex to represent
+                                    hierarchical data efficiently for advanced analysis.”
+                                </p>
+
+                                <hr>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End  -->
+
+    <!-- JS file  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <!-- main java script section  -->
+    <script src="JS/main.js"></script>
+    <script src="JS/style-switcher.js"></script>
+
+</body>
+
+</html>

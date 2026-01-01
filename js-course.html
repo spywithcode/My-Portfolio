@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <title>JavaScript Course - My Portfolio</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="skins/color-1.css"> <!-- change skin color here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ------ RemixIcon ------- -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="rel="stylesheet">
+
+    <!-- style switcher  -->
+    <link rel="stylesheet" href="skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="CSS/style-switcher.css">
+</head>
+
+<body>
+    <!-- main container start  -->
+    <div class="main-container">
+        <!-- Aside start  -->
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html"><span>C</span>oder</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html#home"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="index.html#about"><i class="fa fa-user"></i>ABOUT</a></li>
+                <li><a href="index.html#services"><i class="fa fa-list"></i>SERVICES</a></li>
+                <li><a href="index.html#classes"><i class="fa fa-graduation-cap"></i>CLASSES</a></li>
+                <li><a href="index.html#portfolio"><i class="fa fa-briefcase"></i>PORTFOLIO</a></li>
+                <li><a href="index.html#contact"><i class="fa fa-comments"></i>CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- Aside End  -->
+
+        <!-- main contact start  -->
+        <div class="main-contact">
+            <!-- JavaScript Course Section -->
+            <section class="course section active" id="js-course">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>JavaScript Course</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="course-content padd-15">
+                            <div class="about-text padd-15">
+                                <h3>Mastering JavaScript for Web Development</h3>
+                                <p>
+                                    JavaScript is the backbone of modern web development, enabling interactive and dynamic websites. Developed by Brendan Eich in 1995, it has evolved into a powerful language used for both client-side and server-side programming. JavaScript allows manipulation of HTML and CSS, handling user events, and creating responsive interfaces. Key concepts include variables, functions, objects, arrays, and asynchronous programming with promises and async/await. Frameworks like React, Angular, and Vue.js build on JavaScript to create complex single-page applications. Node.js extends JavaScript to server-side development, enabling full-stack capabilities. Learning JavaScript involves understanding the DOM, event handling, AJAX for data fetching, and modern ES6+ features like arrow functions and modules. With its ubiquity in browsers and versatility across platforms, JavaScript empowers developers to build engaging user experiences and scalable applications.
+                                </p>
+                                <p>(Word count: 98)</p>
+                            </div>
+                            <div class="row">
+                                <div class="buttons padd-15">
+                                    <a href="index.html#contact" class="btn hire-me">Enroll Now</a>
+                                    <a href="index.html#classes" class="btn">Back to Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course Section End  -->
+        </div>
+        <!-- Main contact End  -->
+    </div>
+    <!-- Main container End  -->
+
+    <!-- Style Switcher Start  -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End  -->
+
+    <!-- JS file  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <!-- main java script section  -->
+    <script src="JS/main.js"></script>
+    <script src="JS/style-switcher.js"></script>
+
+</body>
+
+</html>

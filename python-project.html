@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <title>Python Projects - My Portfolio</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="skins/color-1.css"> <!-- change skin color here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ------ RemixIcon ------- -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- style switcher  -->
+    <link rel="stylesheet" href="skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="CSS/style-switcher.css">
+</head>
+
+<body>
+    <!-- main container start  -->
+    <div class="main-container">
+        <!-- Aside start  -->
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html"><span>C</span>oder</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html#home"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="index.html#about"><i class="fa fa-user"></i>ABOUT</a></li>
+                <li><a href="index.html#services"><i class="fa fa-list"></i>SERVICES</a></li>
+                <li><a href="index.html#classes"><i class="fa fa-graduation-cap"></i>CLASSES</a></li>
+                <li><a href="index.html#portfolio"><i class="fa fa-briefcase"></i>PORTFOLIO</a></li>
+                <li><a href="index.html#contact"><i class="fa fa-comments"></i>CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- Aside End  -->
+
+        <!-- main contact start  -->
+        <div class="main-contact">
+            <!-- Python Project Section -->
+            <section class="project section active" id="python-project">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Python Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="project-content padd-15">
+                            <div class="project-text padd-15">
+                                <h3>Building Real-World Python Applications</h3>
+                                <p>
+                                    Python projects offer hands-on experience in applying programming concepts to solve
+                                    practical problems. From web scrapers that extract data from websites to automation
+                                    scripts that streamline tasks, Python's versatility shines in diverse applications.
+                                    Data analyzers using libraries like Pandas and Matplotlib visualize trends and
+                                    insights from datasets. Machine learning projects with scikit-learn predict outcomes
+                                    or classify data. Web applications built with Flask or Django handle user
+                                    interactions and databases. Automation scripts automate repetitive tasks, saving
+                                    time and reducing errors. Each project enhances skills in debugging, optimization,
+                                    and best practices, preparing developers for professional challenges.
+                                </p>
+                            </div>
+                            <div class="row" id="python-projects-container">
+                                <!-- Projects will be loaded dynamically here -->
+                            </div>
+                            <div class="row">
+                                <div class="buttons padd-15">
+                                    <a href="https://github.com/spywithcode" target="_blank" class="btn hire-me">View
+                                        Code on GitHub</a>
+                                    <a href="index.html#classes" class="btn">Back to Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Section End  -->
+        </div>
+        <!-- Main contact End  -->
+    </div>
+    <!-- Main container End  -->
+
+    <!-- Style Switcher Start  -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End  -->
+
+    <!-- JS file  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <!-- main java script section  -->
+    <script src="JS/main.js"></script>
+    <script src="JS/style-switcher.js"></script>
+    <script src="JS/python-projects.js"></script>
+
+</body>
+
+</html>
