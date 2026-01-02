@@ -1040,7 +1040,7 @@ body.dark .project-gallery img {
     text-align: justify;
 }
 
-/* pre {
+pre {
     background-color: var(--bg-black-50);
     border-radius: 10px;
     padding: 25px;
@@ -1057,8 +1057,8 @@ pre:hover {
     transform: translateY(-2px);
 }
 
-pre::before {
-    content: 'Code Snippet';
+/* pre::before {
+    content: "";
     position: absolute;
     top: 10px;
     right: 15px;
