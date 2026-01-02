@@ -5,11 +5,11 @@ const aboutData = {
             <h3>I'm KissU, A <span>Coder</span></h3>
             <p>
                 I am a driven and passionate individual with a strong interest in web design,
-                frontend development, and the broader digital ecosystem. My journey began with a
-                curiosity for the digital world and a desire to build meaningful and impactful
+                frontend development, and the broader digital ecosystem. My journey began with 
+                a curiosity for the digital world and a desire to build meaningful and impactful
                 user experiences online. Over the years, I have honed my skills across various
-                domains, continuously expanding my knowledge and embracing new technologies. I
-                am now eager to contribute to innovative projects that allow me to design,
+                domains, continuously expanding my knowledge and embracing new technologies. 
+                I am now eager to contribute to innovative projects that allow me to design,
                 build, and bring creative ideas to life.<br><br>
                 <strong>Expertise:</strong><br>
                 Throughout my professional journey, I have collaborated on a diverse range of
@@ -26,13 +26,15 @@ const aboutData = {
         { label: "Degree", value: "Integrated MCA" },
         { label: "Birthday", value: "10 nov 2003" },
         { label: "City", value: "Indore" },
-        { label: "Freelancer", value: "Available" }
+        { label: "Freelancer", value: "Available" },
+        { label: "Working Now", value: "Disha Coaching center" }
     ],
     skills: [
         { name: "HTML", percent: 90 },
         { name: "CSS", percent: 85 },
         { name: "JavaScript", percent: 80 },
         { name: "My-SQL", percent: 75 },
+        { name: "Power-BI", percent: 75 },
         { name: "React", percent: 70 },
         { name: "Node.js", percent: 60 },
         { name: "Python", percent: 50 }

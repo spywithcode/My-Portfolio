@@ -502,8 +502,8 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
@@ -536,14 +536,15 @@ h3.my-profession {
 }
 
 .about .about-content .skills {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
 .about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 15px;
 }
 
 .about .about-content .skills .skill-item h5 {
@@ -1006,12 +1007,12 @@ h3.my-profession {
 }
 
 .project-gallery img {
-    width: 200px;
-    height: 150px;
+    width: 500px;
+    height: 400px;
     object-fit: cover;
     border-radius: 8px;
     transition: all 0.3s ease;
-    border: 2px solid var(--bg-black-50);
+    /* border: 2px solid var(--bg-black-50); */
 }
 
 body.dark .project-gallery img {
@@ -1039,35 +1040,95 @@ body.dark .project-gallery img {
     text-align: justify;
 }
 
-pre {
+/* pre {
     background-color: var(--bg-black-50);
-    border-radius: 8px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 25px;
     overflow-x: auto;
     margin-bottom: 20px;
-    border-left: 4px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
     position: relative;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+pre:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 pre::before {
     content: 'Code Snippet';
     position: absolute;
-    top: -10px;
-    left: 20px;
+    top: 10px;
+    right: 15px;
     background: var(--skin-color);
     color: white;
-    padding: 5px 15px;
+    padding: 6px 14px;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
-}
+    letter-spacing: 0.5px;
+} */
 
 code {
     color: var(--text-black-900);
-    font-family: 'Courier New', monospace;
+    font-family: 'Fira Code', 'Courier New', monospace;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Syntax highlighting colors (optional) */
+code .keyword {
+    color: #ff79c6;
+}
+
+code .function {
+    color: #8be9fd;
+}
+
+code .string {
+    color: #f1fa8c;
+}
+
+.code-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    padding: 8px 14px;
+    background: var(--skin-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 10;
+}
+
+.copy-btn:hover {
+    background: var(--skin-color);
+    opacity: 0.85;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.copy-btn:active {
+    transform: translateY(0);
+}
+
+.copy-btn i {
+    font-size: 13px;
 }
 
 body.dark pre {
@@ -1693,7 +1754,8 @@ body.dark code {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px var(--shadow-color);
-    min-width: 600px; /* Ensure table doesn't shrink too much */
+    min-width: 600px;
+    /* Ensure table doesn't shrink too much */
 }
 
 .course .about-text th,
