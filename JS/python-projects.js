@@ -295,6 +295,313 @@ wn.mainloop()
         `,
         images: ["assets/project/python.5.png"]
     },
+    {
+        id: 6,
+        name: "Flower Design",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+from turtle import *
+import colorsys
+
+speed(0)
+bgcolor("black")
+h=0
+
+for i in range(16):
+   for j in range(18):
+      c = colorsys.hsv_to_rgb(h,1,1)
+      color(c)
+      h += 0.005
+      rt(90)
+      circle(150 - j * 6, 90)
+      lt(90)
+      circle(150 - j * 6, 90)
+      rt(180)
+   circle(40,24) 
+done()   
+
+        `,
+        images: ["assets/project/python.6.png"]
+    },
+    {
+        id: 7,
+        name: "Creative Design-3",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+import turtle as t
+
+t.speed(0)
+t.bgcolor('black')
+t.pencolor('red')
+
+for i in range (160):
+    t.right(i)
+    t.circle(125,i)
+    t.forward(i)
+    t.right(90)
+
+t.done()  
+
+        `,
+        images: ["assets/project/python.7.png"]
+    },
+    {
+        id: 8,
+        name: "Creative Design-4",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+import turtle
+turtle.bgcolor("black")
+
+squary = turtle.Turtle()
+squary.speed(20)
+squary.pencolor("red")
+for i in range(800):
+    squary.forward(i)
+    squary.left(91)
+
+        `,
+        images: ["assets/project/python.8.png"]
+    },
+    {
+        id: 9,
+        name: "Creative Design-5",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+from turtle import*
+import colorsys
+
+speed(0)
+hideturtle()
+bgcolor('black')
+tracer(5)
+width(2)
+h = 0.001
+for i in range(90):
+    color(colorsys.hsv_to_rgb(h,1,1))
+    forward(100)
+    left(60)
+    forward(100)
+    right(120)
+    circle(50)
+    left(240)
+    forward(100)
+    left(60)
+    forward(100)
+    h += 0.02 
+    color(colorsys.hsv_to_rgb(h,1,1))
+    forward(100)
+    right(60)
+    forward(100)
+    left(120)
+    circle(-50)
+    right(240)
+    forward(100)
+    right(60)
+    forward(100)
+    left(2)
+    h += 0.02
+done()
+
+        `,
+        images: ["assets/project/python.9.1.png","assets/project/python.9.2.png"]
+    },
+    {
+        id: 10,
+        name: "Creative Design-6",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+import turtle
+t  = turtle.Turtle()
+screen = turtle.Screen()
+t.pensize(4)
+radius = 85
+diamond_size = 100
+diamonds_in_layer = 10
+layers_in_graphics = 2
+def diamond(x, color):
+    t.fillcolor(color)
+    t.begin_fill()
+    for i in range(2):
+        t.forward(x)
+        t.left(60)
+        t.forward(x)
+        t.left(120)
+    t.end_fill()    
+t.penup()  
+for color in ["green","light green"]:
+    for i in range (diamonds_in_layer):
+        t.forward(radius)
+        t.right(30)
+        t.pendown()
+        diamond(diamond_size,color)
+        t.penup()
+        t.home()
+        t.left((1 + i) * 360 / diamonds_in_layer)
+    diamond_size = 0.7 * diamond_size
+    radius = 0.55 * radius
+t.hideturtle()
+screen.exitonclick()
+
+        `,
+        images: ["assets/project/python.10.1.png","assets/project/python.10.2.png"]
+    },
+    {
+        id: 11,
+        name: "Creative Design-7",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+from turtle import*
+import colorsys
+bgcolor('black')
+width(3)
+speed(0)
+goto(-100,100)
+n = 5
+h = 1 
+for i in range (100):
+    c = colorsys.hsv_to_rgb(h,1,0.9)
+    h += 1/n
+    color(c)
+    left(150)
+    for i in range (5):
+        fd(100)
+        left(55)
+done()
+
+        `,
+        images: ["assets/project/python.11.png"]
+    },
+    {
+        id: 12,
+        name: "Creative Design-8",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+import turtle
+t = turtle.Turtle()
+turtle.bgcolor('black')
+screen = turtle.Screen()
+t.pensize(4)
+t.pencolor('white')
+graphic_size = 55
+number_of_pattern = 10
+t.penup()
+t.forward(graphic_size)
+t.left( 360 / number_of_pattern)
+t.pendown()
+for i in range (number_of_pattern):
+    t.forward(graphic_size)
+    t.left(45 - (360 / (2 * number_of_pattern)))
+    t.forward(graphic_size)
+    t.right(90)
+    t.forward(graphic_size)
+    t.pencolor('red')
+    t.circle(graphic_size,90)
+    t.left(90)
+    t.circle(graphic_size,90)
+    t.pencolor('white')
+    t.forward(graphic_size)
+    t.right(90)
+    t.forward(graphic_size)
+    t.left(45 - (360 / (2 * number_of_pattern)))
+    t.forward(graphic_size)
+    t.right(180 - (720 / number_of_pattern))
+t.hideturtle()
+screen.exitonclick()
+
+        `,
+        images: ["assets/project/python.12.1.png","assets/project/python.12.2.png"]
+    },
+    {
+        id: 13,
+        name: "Creative Design-9",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+import turtle
+
+def draw_flower():
+    screen = turtle.Screen()
+    screen.bgcolor("black")
+    t = turtle.Turtle()
+    t.speed(0)
+    colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+
+    for i in range(360):
+        t.pencolor(colors[i % len(colors)])
+        t.width(i // 100 + 1)
+        t.forward(i)
+        t.left(59)
+
+    t.hideturtle()
+    screen.mainloop()
+
+if __name__ == "__main__":
+    draw_flower()
+
+        `,
+        images: ["assets/project/python.13.png"]
+    },
+    {
+        id: 14,
+        name: "Ram Circle Design",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+from turtle import *
+
+title('Jai Shri Ram')
+
+pensize(5)
+pencolor("orange")
+bgcolor("black")
+
+Sandeep      = ["जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम", "जय श्री राम", "जय श्री राम",
+                "जय श्री राम", "जय श्री राम",]
+
+angle = 360/49
+
+penup()
+sety(-1)
+for i in range(50):
+    right(angle)
+    forward(260)
+    write(Sandeep[i], align="right",
+          font=('Arial', 12, "bold"))
+    backward(260)
+penup()
+goto(-40, -20)
+pendown()
+write(" || राम ||", 
+      font=("Arial", 60, "normal"),
+      align="center")
+hideturtle()
+done()
+
+        `,
+        images: ["assets/project/python.14.png"]
+    },
 ];
 
 // Function to create project elements
