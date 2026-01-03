@@ -602,6 +602,95 @@ done()
         `,
         images: ["assets/project/python.14.png"]
     },
+    {
+        id: 15,
+        name: "Map Graph",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+import plotly.express as px
+
+country = input("Enter the country name: ")
+data = {
+    'Country' : [country],
+    'Value' : [100]
+}
+
+fig = px.choropleth(data, locations='Country', locationmode='country names',
+color='Value', color_continuous_scale='Inferno',
+title=f'Choropleth Map for {country}')
+fig.show()
+
+        `,
+        images: ["assets/project/python.15.png"]
+    },
+    {
+        id: 16,
+        name: "Calender",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+import calendar
+from rich.console import Console
+from rich.table import Table
+
+def colorful_calendar(year):
+    console = Console()
+    months = [calendar.monthcalendar(year, m) for m in range(1, 13)]
+    
+    for month in range(12):
+        month_name = calendar.month_name[month + 1]
+        
+        table = Table(title=f"[bold cyan]{month_name} \ {year}[/bold cyan]", show_lines=True)
+        table.add_column("Mon", justify="center", style="green")
+        table.add_column("Tue", justify="center", style="green")
+        table.add_column("Wed", justify="center", style="green")
+        table.add_column("Thu", justify="center", style="green")
+        table.add_column("Fri", justify="center", style="green")
+        table.add_column("Sat", justify="center", style="red")
+        table.add_column("Sun", justify="center", style="red")
+        
+        for week in months[month]:
+            table.add_row(*[str(day) if day != 0 else "" for day in week])
+        console.print(table)
+        console.print("\n")
+
+colorful_calendar(2025)    
+
+        `,
+        images: ["assets/project/python.16.1.png","assets/project/python.16.2.png"]
+    },
+    {
+        id: 17,
+        name: "Voice and Text Wishing",
+        description: "An automation script using Python's os and shutil modules to organize files. This project automates repetitive file management tasks, improving productivity.",
+        codeSnippet: `
+
+
+import pyfiglet, pyttsx3, random, time
+from rich.console import Console
+from rich.text import Text
+
+console = Console()
+diwali_fronts = ["slant", "big", "ghost", "doom", "larry3d", "3-d", "standard"]  
+
+front = random.choice(diwali_fronts)
+art = pyfiglet.figlet_format("  Coder!!  ", font=front)
+console.print(art, style="bold orange_red1")
+
+pumpkin = """
+        ===================================
+"""
+
+console.print(Text(pumpkin, style="bold orange1"))
+engine = pyttsx3.init()
+engine.setProperty('rate', 150)
+engine.say("Happy Diwali! Wishing you a spooky and fun-filled day!")
+engine.runAndWait()
+
+        `,
+        images: ["assets/project/python.17.png"]
+    },
 ];
 
 // Function to create project elements

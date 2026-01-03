@@ -1007,7 +1007,7 @@ h3.my-profession {
 }
 
 .project-gallery img {
-    width: 500px;
+    width: auto;
     height: 400px;
     object-fit: cover;
     border-radius: 8px;
