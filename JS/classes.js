@@ -2,6 +2,15 @@ const classesContainer = document.getElementById('classes-container');
 
 const classesData = [
     {
+        name: 'C',
+        icon: 'fab fa-python',
+        description: 'Learn C programming from basics to advanced.',
+        subCards: [
+            { name: 'Course', link: 'c-course.html', description: 'Comprehensive C course covering syntax, data structures, and libraries.' },
+            { name: 'Project', link: 'c-project.html', description: 'Build real-world projects like web scrapers, data analyzers, and automation scripts.' }
+        ]
+    },
+    {
         name: 'Python',
         icon: 'fab fa-python',
         description: 'Learn Python programming from basics to advanced.',

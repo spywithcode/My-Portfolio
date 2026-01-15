@@ -103,32 +103,18 @@ const largeProjects = [
 
 const smallProjects = [
   {
-    id: 1,
-    name: "Flying-Birds",
-    github: "https://github.com/spywithcode/Flying-Birds",
-    livePreview: "https://spywithcode.github.io/Flying-Birds/",
-    image: "assets/portfolio/small.1.png"
+    id: 7,
+    name: "HeartBeat_Animation",
+    github: "https://github.com/spywithcode/HeartBeat_Animation.git",
+    livePreview: "https://spywithcode.github.io/HeartBeat_Animation/",
+    video: "assets/portfolio/small.7.mp4"
   },
   {
-    id: 2,
-    name: "Card-Slider",
-    github: "https://github.com/spywithcode/Vertical-Card-Slider",
-    livePreview: "https://spywithcode.github.io/Vertical-Card-Slider/",
-    image: "assets/portfolio/small.2.png"
-  },
-  {
-    id: 3,
-    name: "Analog-Clock",
-    github: "https://github.com/spywithcode/Analog.Clock",
-    livePreview: "https://spywithcode.github.io/Analog.Clock/",
-    image: "assets/portfolio/small.3.png"
-  },
-  {
-    id: 4,
-    name: "Hover-Expend",
-    github: "https://github.com/spywithcode/Button-Hover-Expend",
-    livePreview: "https://spywithcode.github.io/Button-Hover-Expend/",
-    image: "assets/portfolio/small.4.png"
+    id: 6,
+    name: "CubiKill-Game",
+    github: "https://github.com/spywithcode/CubiKill.git",
+    livePreview: "https://spywithcode.github.io/CubiKill/",
+    image: "assets/portfolio/small.6.png"
   },
   {
     id: 5,
@@ -138,11 +124,32 @@ const smallProjects = [
     image: "assets/portfolio/small.5.png"
   },
   {
-    id: 6,
-    name: "CubiKill-Game",
-    github: "https://github.com/spywithcode/CubiKill.git",
-    livePreview: "https://spywithcode.github.io/CubiKill/",
-    image: "assets/portfolio/small.6.png"
+    id: 4,
+    name: "Hover-Expend",
+    github: "https://github.com/spywithcode/Button-Hover-Expend",
+    livePreview: "https://spywithcode.github.io/Button-Hover-Expend/",
+    image: "assets/portfolio/small.4.png"
+  },
+  {
+    id: 3,
+    name: "Analog-Clock",
+    github: "https://github.com/spywithcode/Analog.Clock",
+    livePreview: "https://spywithcode.github.io/Analog.Clock/",
+    image: "assets/portfolio/small.3.png"
+  },
+  {
+    id: 2,
+    name: "Card-Slider",
+    github: "https://github.com/spywithcode/Vertical-Card-Slider",
+    livePreview: "https://spywithcode.github.io/Vertical-Card-Slider/",
+    image: "assets/portfolio/small.2.png"
+  },
+  {
+    id: 1,
+    name: "Flying-Birds",
+    github: "https://github.com/spywithcode/Flying-Birds",
+    livePreview: "https://spywithcode.github.io/Flying-Birds/",
+    image: "assets/portfolio/small.1.png"
   },
 ]
 

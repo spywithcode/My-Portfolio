@@ -1,0 +1,4375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <title>C Course - My Portfolio</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="skins/color-1.css"> <!-- change skin color here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ------ RemixIcon ------- -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- style switcher  -->
+    <link rel="stylesheet" href="skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="CSS/style-switcher.css">
+</head>
+
+<body>
+    <!-- main container start  -->
+    <div class="main-container">
+        <!-- Aside start  -->
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html"><span>C</span>oder</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html#home"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="index.html#about"><i class="fa fa-user"></i>ABOUT</a></li>
+                <li><a href="index.html#services"><i class="fa fa-list"></i>SERVICES</a></li>
+                <li><a href="index.html#classes"><i class="fa fa-graduation-cap"></i>CLASSES</a></li>
+                <li><a href="index.html#portfolio"><i class="fa fa-briefcase"></i>PORTFOLIO</a></li>
+                <li><a href="index.html#contact"><i class="fa fa-comments"></i>CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- Aside End  -->
+
+        <!-- main contact start  -->
+        <div class="main-contact">
+            <!-- Python Course Section -->
+            <section class="course section active" id="python-course">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>C Course</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="course-content padd-15">
+                            <div class="about-text padd-15">
+                                <hr>
+                                <h2>1.1 C kya hai aur kyun important</h2>
+                                <hr>
+
+                                <h3>C kya hai?</h3>
+                                <p>
+                                    <strong>C</strong> ek programming language hai jiska use
+                                    computer ko instructions dene ke liye hota hai.
+                                    Isse hum software, system programs aur hardware-related
+                                    programs bana sakte hain.
+                                </p>
+
+                                <p><strong>Simple words me:</strong></p>
+                                <p>
+                                    👉 <strong>C = Computer ko direct aur fast tareeke se kaam karwane wali
+                                        language</strong>
+                                </p>
+
+                                <hr>
+
+                                <h3>C ek Procedural Language hai</h3>
+                                <p>
+                                    <strong>Procedural language</strong> ka matlab hota hai:
+                                </p>
+
+                                <ul>
+                                    <li>Program ko <strong>steps (procedures / functions)</strong> me likhna</li>
+                                    <li>Execution <strong>line by line</strong> hota hai</li>
+                                </ul>
+
+                                <h4>Real-life example (Chai banana)</h4>
+                                <ul>
+                                    <li>Gas on karo</li>
+                                    <li>Pani daalo</li>
+                                    <li>Chai patti daalo</li>
+                                    <li>Doodh daalo</li>
+                                </ul>
+
+                                <p>
+                                    Isi tarah C program bhi <strong>step-by-step</strong> chalta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>C example (Procedural Style)</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5, b = 3;
+    int sum = a + b;
+    printf("Sum = %d", sum);
+    return 0;
+}
+</pre>
+
+                                <h4>Yahan kya ho raha hai?</h4>
+                                <ul>
+                                    <li>Pehle variables bane</li>
+                                    <li>Phir calculation hui</li>
+                                    <li>Phir output print hua</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>C fast kyun hoti hai?</h3>
+                                <p>
+                                    C fast hoti hai kyunki:
+                                </p>
+
+                                <ul>
+                                    <li>Ye <strong>hardware ke bahut close</strong> hoti hai</li>
+                                    <li>Extra layers (overhead) kam hoti hain</li>
+                                    <li>Memory par <strong>direct control</strong> milta hai</li>
+                                </ul>
+
+                                <h4>Simple comparison</h4>
+                                <ul>
+                                    <li>Python / Java → slow but easy</li>
+                                    <li><strong>C → thodi hard but bahut fast</strong></li>
+                                </ul>
+
+                                <p><strong>Isi liye C ka use hota hai:</strong></p>
+                                <ul>
+                                    <li>Games</li>
+                                    <li>Operating Systems</li>
+                                    <li>Embedded Systems</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>C hardware ke close kaise hai?</h3>
+                                <p>
+                                    C me hum:
+                                </p>
+
+                                <ul>
+                                    <li>Memory address use kar sakte hain</li>
+                                    <li>Pointers ke through RAM control kar sakte hain</li>
+                                </ul>
+
+                                <h4>Example (Pointers)</h4>
+                                <pre>
+int x = 10;
+int *p = &x;
+</pre>
+
+                                <p><strong>Matlab:</strong></p>
+                                <ul>
+                                    <li><code>x</code> memory me kahin store hai</li>
+                                    <li><code>p</code> uska address store kar raha hai</li>
+                                </ul>
+
+                                <p>
+                                    Isi liye C ko <strong>low-level language jaisa feel</strong> aata hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>C kyun important hai?</h3>
+
+                                <h4>1. Operating System ka base</h4>
+                                <ul>
+                                    <li>Linux</li>
+                                    <li>Windows (core parts)</li>
+                                    <li>UNIX</li>
+                                </ul>
+                                <p>👉 Ye sab <strong>C me likhe gaye</strong> hain.</p>
+
+                                <h4>2. Drivers & Embedded Systems</h4>
+                                <ul>
+                                    <li>Printer drivers</li>
+                                    <li>Keyboard drivers</li>
+                                    <li>Microcontroller programs</li>
+                                </ul>
+                                <p>👉 Mostly <strong>C me</strong> hote hain.</p>
+
+                                <h4>3. Baaki languages ka base</h4>
+                                <p>
+                                    Agar C samajh aa gaya, to:
+                                </p>
+                                <ul>
+                                    <li>C++</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>Go</li>
+                                </ul>
+                                <p>
+                                    👉 Inhe samajhna <strong>easy</strong> ho jata hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Simple Real-life Example (C ka use)</h3>
+                                <p>
+                                    Socho:
+                                </p>
+                                <p>
+                                    👉 Tumhe ek machine ko bolna hai:
+                                    <strong>“Button dabate hi LED on karo”</strong>
+                                </p>
+
+                                <p>
+                                    Ye kaam <strong>C + Embedded System</strong> se hota hai,
+                                    Python se nahi.
+                                </p>
+
+                                <hr>
+
+                                <h3>Exam / Interview Ready Lines</h3>
+                                <ul>
+                                    <li>C is a procedural programming language</li>
+                                    <li>C is fast and close to hardware</li>
+                                    <li>C is used in OS, drivers, and embedded systems</li>
+                                    <li>Learning C makes other languages easier</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>One-line Summary (Yaad rakhne ke liye)</h3>
+                                <p>
+                                    <strong>
+                                        C ek fast, procedural, hardware-close language hai
+                                        jo system programming ka base hai.
+                                    </strong>
+                                </p>
+
+                                <hr>
+
+
+                                <hr>
+                                <h2>1.2 First C Program</h2>
+                                <hr>
+
+                                <p>
+                                    Is section me hum <strong>pehla C program</strong> samjhenge aur
+                                    ye bhi dekhenge ki program kaise <strong>run</strong> hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>First C Program</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    Ye C ka <strong>sabse basic aur first program</strong> mana jata hai.
+                                    Ab iske har part ko simple language me samjhte hain.
+                                </p>
+
+                                <hr>
+
+                                <h3>#include &lt;stdio.h&gt;</h3>
+
+                                <p>
+                                    Ye ek <strong>header file</strong> hai.
+                                </p>
+
+                                <p>
+                                    <code>stdio.h</code> ka matlab:
+                                </p>
+
+                                <ul>
+                                    <li><strong>Standard Input Output</strong></li>
+                                    <li>Input lene aur output dikhane ke functions deta hai</li>
+                                </ul>
+
+                                <p>
+                                    👉 <code>printf()</code> function isi header file me defined hota hai.
+                                </p>
+
+                                <p><strong>Simple analogy:</strong></p>
+                                <p>
+                                    Jaise mobile charger lagaye bina phone charge nahi hota,
+                                    waise hi <code>stdio.h</code> include kiye bina
+                                    <code>printf()</code> ka use nahi kar sakte.
+                                </p>
+
+                                <hr>
+
+                                <h3>main() function</h3>
+
+                                <p>
+                                    <strong>main()</strong> C program ka <strong>starting point</strong> hota hai.
+                                </p>
+
+                                <ul>
+                                    <li>Program execution yahin se start hota hai</li>
+                                    <li>Har C program me <strong>main()</strong> hona zaroori hai</li>
+                                </ul>
+
+                                <pre>
+int main() {
+    // code
+}
+</pre>
+
+                                <p>
+                                    👉 <code>int</code> ka matlab:
+                                </p>
+                                <ul>
+                                    <li>main() ek integer value return karega</li>
+                                    <li>Usually <code>return 0;</code> likhte hain</li>
+                                </ul>
+
+                                <p>
+                                    <strong>return 0</strong> ka matlab:
+                                </p>
+                                <p>
+                                    👉 Program successfully run ho gaya.
+                                </p>
+
+                                <hr>
+
+                                <h3>printf()</h3>
+
+                                <p>
+                                    <code>printf()</code> ka use hota hai
+                                    <strong>screen par output dikhane ke liye</strong>.
+                                </p>
+
+                                <pre>
+printf("Hello, World!");
+</pre>
+
+                                <p>
+                                    👉 Jo bhi double quotes ke andar likha hota hai,
+                                    wo screen par print hota hai.
+                                </p>
+
+                                <p><strong>Example:</strong></p>
+                                <pre>
+printf("Welcome to C Programming");
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+                                <pre>
+Welcome to C Programming
+</pre>
+
+                                <hr>
+
+                                <h3>Why semicolon (;) is important?</h3>
+
+                                <p>
+                                    C me har statement ke end me <strong>semicolon ( ; )</strong> lagta hai.
+                                </p>
+
+                                <p>
+                                    👉 Ye compiler ko batata hai ki
+                                    <strong>statement yahin khatam ho gayi</strong>.
+                                </p>
+
+                                <hr>
+
+                                <h3>Compilation Flow</h3>
+
+                                <p>
+                                    C program directly run nahi hota,
+                                    pehle usse <strong>compile</strong> karna padta hai.
+                                </p>
+
+                                <h4>Flow:</h4>
+                                <pre>
+.c file  →  Compiler  →  .exe file
+</pre>
+
+                                <ul>
+                                    <li><strong>.c</strong> → Source code (human readable)</li>
+                                    <li><strong>Compiler</strong> → Code ko machine language me convert karta hai</li>
+                                    <li><strong>.exe</strong> → Executable file (computer run karta hai)</li>
+                                </ul>
+
+                                <p><strong>Example:</strong></p>
+                                <pre>
+hello.c  →  compile  →  hello.exe
+</pre>
+
+                                <p>
+                                    👉 Windows me <code>.exe</code> file run hoti hai
+                                    👉 Linux me executable file run hoti hai
+                                </p>
+
+                                <hr>
+
+                                <h3>Overall Program Flow (Easy Language)</h3>
+
+                                <ul>
+                                    <li>Header file include hoti hai</li>
+                                    <li>main() function start hota hai</li>
+                                    <li>printf() output show karta hai</li>
+                                    <li>return 0 se program end hota hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>#include &lt;stdio.h&gt; → input/output functions</li>
+                                    <li>main() → program execution start point</li>
+                                    <li>printf() → output print karta hai</li>
+                                    <li>.c → source file</li>
+                                    <li>.exe → executable file</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “The main function is the entry point of a C program,
+                                    stdio.h provides input-output functions like printf,
+                                    and a C program is compiled from a .c file into an
+                                    executable file before execution.”
+                                </p>
+
+                                <hr>
+
+
+                                <hr>
+                                <h2>1.4 Variables & Constants (C Programming)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Variables</strong> aur <strong>Constants</strong> C programming ke
+                                    basic building blocks hote hain.
+                                </p>
+
+                                <p>
+                                    Inka kaam hota hai:
+                                </p>
+
+                                <ul>
+                                    <li>Data ko memory me store karna</li>
+                                    <li>Program ke execution ke dauran use karna</li>
+                                    <li>Calculations aur logic apply karna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>1.4.1 Variables kya hote hain?</h3>
+
+                                <p>
+                                    <strong>Variable</strong> ek aisa container hota hai
+                                    jo memory me data store karta hai
+                                    aur jiska value program ke dauran
+                                    <strong>change ho sakta hai</strong>.
+                                </p>
+
+                                <p>
+                                    Simple words me:
+                                </p>
+
+                                <p>
+                                    👉 Variable = value rakhne ka box, jiska content change ho sakta hai
+                                </p>
+
+                                <p><strong>Real-life example:</strong></p>
+                                <p>
+                                    Jaise ek bottle me pani bhara hai.
+                                    Tum pani kam ya zyada kar sakte ho.
+                                </p>
+
+                                <hr>
+
+                                <h3>Variable Declaration</h3>
+
+                                <p>
+                                    Variable declare karte waqt
+                                    compiler ko batate hain:
+                                </p>
+
+                                <ul>
+                                    <li>Variable ka type</li>
+                                    <li>Variable ka naam</li>
+                                </ul>
+
+                                <h4>Syntax</h4>
+                                <pre>
+data_type variable_name;
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int age;
+float salary;
+char grade;
+</pre>
+
+                                <p>
+                                    👉 Yahan sirf variable bana hai,
+                                    value assign nahi hui.
+                                </p>
+
+                                <hr>
+
+                                <h3>Variable Initialization</h3>
+
+                                <p>
+                                    Initialization ka matlab hota hai
+                                    variable ko <strong>value dena</strong>.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+data_type variable_name = value;
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int age = 20;
+float salary = 25000.50;
+char grade = 'A';
+</pre>
+
+                                <p>
+                                    👉 Declaration + Initialization ek saath bhi ho sakta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Declaration vs Initialization</h3>
+
+                                <ul>
+                                    <li><strong>Declaration</strong> → variable banana</li>
+                                    <li><strong>Initialization</strong> → value dena</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Complete Example</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 10;
+    int b = 20;
+    int sum = a + b;
+
+    printf("Sum = %d", sum);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Yahan:
+                                </p>
+
+                                <ul>
+                                    <li>a, b, sum variables hain</li>
+                                    <li>Inki values program ke andar change ho sakti hain</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>1.4.2 Constants kya hote hain?</h3>
+
+                                <p>
+                                    <strong>Constant</strong> wo value hoti hai
+                                    jo program ke dauran
+                                    <strong>change nahi hoti</strong>.
+                                </p>
+
+                                <p>
+                                    Simple words me:
+                                </p>
+
+                                <p>
+                                    👉 Constant = fixed value
+                                </p>
+
+                                <p><strong>Real-life example:</strong></p>
+                                <p>
+                                    Jaise:
+                                </p>
+                                <ul>
+                                    <li>PI = 3.14</li>
+                                    <li>Days in a week = 7</li>
+                                </ul>
+
+                                <p>
+                                    Ye values change nahi hoti.
+                                </p>
+
+                                <hr>
+
+                                <h3>const Keyword</h3>
+
+                                <p>
+                                    C me constant banane ke liye
+                                    <strong>const</strong> keyword use hota hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+const data_type variable_name = value;
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+const int max_marks = 100;
+const float pi = 3.14;
+</pre>
+
+                                <p>
+                                    👉 Ab inki value change karne ki koshish karoge
+                                    to error aayega.
+                                </p>
+
+                                <hr>
+
+                                <h3>Invalid Example (Error)</h3>
+
+                                <pre>
+const int x = 10;
+x = 20;   // Error
+</pre>
+
+                                <p>
+                                    👉 const variable ki value change nahi ho sakti.
+                                </p>
+
+                                <hr>
+
+                                <h3>Why Use Constants?</h3>
+
+                                <ul>
+                                    <li>Accidental change se protection</li>
+                                    <li>Program readable banta hai</li>
+                                    <li>Fixed values clear hoti hain</li>
+                                    <li>Debugging easy hoti hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Variable vs Constant</h3>
+
+                                <ul>
+                                    <li>Variable → value change ho sakti hai</li>
+                                    <li>Constant → value fixed hoti hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>Variable → value can change</li>
+                                    <li>Declaration → variable creation</li>
+                                    <li>Initialization → assigning value</li>
+                                    <li>const → fixed value</li>
+                                    <li>Constant → value cannot change</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “In C, variables are used to store data whose values
+                                    can change during program execution, while constants
+                                    are declared using the const keyword and hold fixed
+                                    values that cannot be modified.”
+                                </p>
+
+                                <hr>
+
+
+                                <hr>
+                                <h2>1.5 Operators (C Programming)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Operators</strong> C programming me wo symbols hote hain
+                                    jo kisi value ya variable par
+                                    <strong>operation perform</strong> karte hain.
+                                </p>
+
+                                <p>
+                                    Simple words me:
+                                </p>
+
+                                <p>
+                                    👉 Operator = kaam karne wala sign
+                                </p>
+
+                                <p><strong>Example (real-life):</strong></p>
+                                <p>
+                                    Jaise:
+                                </p>
+                                <ul>
+                                    <li>+</li>
+                                    <li>-</li>
+                                    <li>*</li>
+                                    <li>/</li>
+                                </ul>
+
+                                <p>
+                                    Ye sab calculation ke operators hain.
+                                </p>
+
+                                <hr>
+
+                                <h3>Types of Operators in C</h3>
+
+                                <ul>
+                                    <li>Arithmetic Operators</li>
+                                    <li>Relational Operators</li>
+                                    <li>Logical Operators</li>
+                                    <li>Assignment Operators</li>
+                                    <li>Increment / Decrement Operators</li>
+                                    <li>Bitwise Operators (basic intro)</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>1.5.1 Arithmetic Operators</h3>
+
+                                <p>
+                                    Arithmetic operators ka use
+                                    <strong>math calculations</strong> ke liye hota hai.
+                                </p>
+
+                                <h4>Operators List</h4>
+                                <ul>
+                                    <li><strong>+</strong> → Addition</li>
+                                    <li><strong>-</strong> → Subtraction</li>
+                                    <li><strong>*</strong> → Multiplication</li>
+                                    <li><strong>/</strong> → Division</li>
+                                    <li><strong>%</strong> → Modulus (remainder)</li>
+                                </ul>
+
+                                <h4>Example</h4>
+                                <pre>
+int a = 10, b = 3;
+
+printf("%d", a + b);  // 13
+printf("%d", a - b);  // 7
+printf("%d", a * b);  // 30
+printf("%d", a / b);  // 3
+printf("%d", a % b);  // 1
+</pre>
+
+                                <p>
+                                    👉 % sirf integer ke saath kaam karta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>1.5.2 Relational Operators</h3>
+
+                                <p>
+                                    Relational operators ka use
+                                    <strong>comparison</strong> ke liye hota hai.
+                                </p>
+
+                                <p>
+                                    Result hamesha:
+                                </p>
+                                <ul>
+                                    <li>1 → true</li>
+                                    <li>0 → false</li>
+                                </ul>
+
+                                <h4>Operators List</h4>
+                                <ul>
+                                    <li><strong>==</strong> → equal to</li>
+                                    <li><strong>!=</strong> → not equal to</li>
+                                    <li><strong>&gt;</strong> → greater than</li>
+                                    <li><strong>&lt;</strong> → less than</li>
+                                    <li><strong>&gt;=</strong> → greater than or equal to</li>
+                                    <li><strong>&lt;=</strong> → less than or equal to</li>
+                                </ul>
+
+                                <h4>Example</h4>
+                                <pre>
+int a = 10, b = 20;
+
+printf("%d", a == b);  // 0
+printf("%d", a < b);   // 1
+printf("%d", a != b);  // 1
+</pre>
+
+                                <hr>
+
+                                <h3>1.5.3 Logical Operators</h3>
+
+                                <p>
+                                    Logical operators ka use
+                                    <strong>multiple conditions</strong> ko combine karne ke liye hota hai.
+                                </p>
+
+                                <h4>Operators List</h4>
+                                <ul>
+                                    <li><strong>&&</strong> → AND</li>
+                                    <li><strong>||</strong> → OR</li>
+                                    <li><strong>!</strong> → NOT</li>
+                                </ul>
+
+                                <h4>Truth Meaning</h4>
+                                <ul>
+                                    <li>AND → dono true hone chahiye</li>
+                                    <li>OR → koi ek true ho</li>
+                                    <li>NOT → result ko ulta kar deta hai</li>
+                                </ul>
+
+                                <h4>Example</h4>
+                                <pre>
+int a = 10, b = 5;
+
+printf("%d", (a > 5 && b > 3));  // 1
+printf("%d", (a > 20 || b > 3)); // 1
+printf("%d", !(a == 10));        // 0
+</pre>
+
+                                <hr>
+
+                                <h3>1.5.4 Assignment Operators</h3>
+
+                                <p>
+                                    Assignment operators ka use
+                                    <strong>value assign</strong> karne ke liye hota hai.
+                                </p>
+
+                                <h4>Operators List</h4>
+                                <ul>
+                                    <li><strong>=</strong> → assign</li>
+                                    <li><strong>+=</strong> → add and assign</li>
+                                    <li><strong>-=</strong> → subtract and assign</li>
+                                    <li><strong>*=</strong> → multiply and assign</li>
+                                    <li><strong>/=</strong> → divide and assign</li>
+                                </ul>
+
+                                <h4>Example</h4>
+                                <pre>
+int a = 10;
+
+a += 5;   // a = 15
+a -= 2;   // a = 13
+a *= 2;   // a = 26
+</pre>
+
+                                <hr>
+
+                                <h3>1.5.5 Increment / Decrement Operators</h3>
+
+                                <p>
+                                    Ye operators value ko
+                                    <strong>1 se increase ya decrease</strong> karte hain.
+                                </p>
+
+                                <h4>Operators</h4>
+                                <ul>
+                                    <li><strong>++</strong> → increment</li>
+                                    <li><strong>--</strong> → decrement</li>
+                                </ul>
+
+                                <h4>Types</h4>
+                                <ul>
+                                    <li>Pre-increment (++a)</li>
+                                    <li>Post-increment (a++)</li>
+                                </ul>
+
+                                <h4>Example</h4>
+                                <pre>
+int a = 5;
+
+printf("%d", ++a); // 6
+printf("%d", a++); // 6
+printf("%d", a);   // 7
+</pre>
+
+                                <p>
+                                    👉 Pre pehle value badhata hai, post baad me.
+                                </p>
+
+                                <hr>
+
+                                <h3>1.5.6 Bitwise Operators (Basic Intro)</h3>
+
+                                <p>
+                                    Bitwise operators ka use
+                                    <strong>binary (0 aur 1)</strong> level par hota hai.
+                                </p>
+
+                                <p>
+                                    Mostly:
+                                </p>
+                                <ul>
+                                    <li>Low-level programming</li>
+                                    <li>Embedded systems</li>
+                                    <li>Performance optimization</li>
+                                </ul>
+
+                                <h4>Basic Operators</h4>
+                                <ul>
+                                    <li><strong>&</strong> → Bitwise AND</li>
+                                    <li><strong>|</strong> → Bitwise OR</li>
+                                    <li><strong>^</strong> → Bitwise XOR</li>
+                                    <li><strong>&lt;&lt;</strong> → Left shift</li>
+                                    <li><strong>&gt;&gt;</strong> → Right shift</li>
+                                </ul>
+
+                                <h4>Simple Example</h4>
+                                <pre>
+int a = 5;   // 0101
+int b = 3;   // 0011
+
+printf("%d", a & b); // 1
+</pre>
+
+                                <p>
+                                    👉 Abhi sirf intro samjho, detail baad me.
+                                </p>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>Arithmetic → calculation</li>
+                                    <li>Relational → comparison</li>
+                                    <li>Logical → conditions</li>
+                                    <li>Assignment → value assign</li>
+                                    <li>++ / -- → increase / decrease</li>
+                                    <li>Bitwise → binary operations</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Operators in C are symbols that perform operations
+                                    on variables and values, including arithmetic,
+                                    relational, logical, assignment, increment-decrement,
+                                    and bitwise operations.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>2. Control Statements (Decision + Flow)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Control Statements</strong> ka kaam hota hai
+                                    program ke <strong>flow ko control</strong> karna.
+                                </p>
+
+                                <p>
+                                    Simple words me:
+                                </p>
+
+                                <p>
+                                    👉 Control statements decide karte hain:
+                                </p>
+
+                                <ul>
+                                    <li>Kaunsa code chalega</li>
+                                    <li>Kab chalega</li>
+                                    <li>Kis condition par chalega</li>
+                                </ul>
+
+                                <p>
+                                    Real-life example:
+                                </p>
+
+                                <p>
+                                    Agar barish ho rahi hai → chhata le jao
+                                    Warna → chhata mat le jao
+                                </p>
+
+                                <p>
+                                    Isi tarah C program me bhi decision lena padta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>2.1 Conditional Statements</h3>
+
+                                <p>
+                                    <strong>Conditional statements</strong> ka use
+                                    <strong>decision making</strong> ke liye hota hai.
+                                </p>
+
+                                <p>
+                                    Matlab:
+                                </p>
+
+                                <p>
+                                    👉 Agar condition true ho → ek kaam
+                                    👉 Agar condition false ho → dusra kaam
+                                </p>
+
+                                <hr>
+
+                                <h3>Types of Conditional Statements in C</h3>
+
+                                <ul>
+                                    <li>if</li>
+                                    <li>if-else</li>
+                                    <li>else-if ladder</li>
+                                    <li>switch</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2.1.1 if Statement</h3>
+
+                                <p>
+                                    <strong>if</strong> statement tab use hota hai
+                                    jab <strong>sirf ek condition</strong> check karni ho.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+if (condition) {
+    // code
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int age = 20;
+
+if (age >= 18) {
+    printf("You are eligible to vote");
+}
+</pre>
+
+                                <p>
+                                    👉 Agar condition true hui to code chalega
+                                    👉 Agar false hui to kuch nahi hoga
+                                </p>
+
+                                <hr>
+
+                                <h3>2.1.2 if-else Statement</h3>
+
+                                <p>
+                                    <strong>if-else</strong> tab use hota hai
+                                    jab <strong>dono cases handle</strong> karne ho.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+if (condition) {
+    // true block
+} else {
+    // false block
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int marks = 35;
+
+if (marks >= 40) {
+    printf("Pass");
+} else {
+    printf("Fail");
+}
+</pre>
+
+                                <p>
+                                    👉 Condition true → if block
+                                    👉 Condition false → else block
+                                </p>
+
+                                <hr>
+
+                                <h3>2.1.3 else-if Ladder</h3>
+
+                                <p>
+                                    <strong>else-if</strong> ladder tab use hoti hai
+                                    jab <strong>multiple conditions</strong> check karni ho.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+if (condition1) {
+    // code
+}
+else if (condition2) {
+    // code
+}
+else if (condition3) {
+    // code
+}
+else {
+    // default
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int marks = 85;
+
+if (marks >= 90) {
+    printf("Grade A");
+}
+else if (marks >= 75) {
+    printf("Grade B");
+}
+else if (marks >= 50) {
+    printf("Grade C");
+}
+else {
+    printf("Fail");
+}
+</pre>
+
+                                <p>
+                                    👉 Pehli true condition ka block execute hota hai
+                                    👉 Baaki conditions skip ho jaati hain
+                                </p>
+
+                                <hr>
+
+                                <h3>2.1.4 switch Statement</h3>
+
+                                <p>
+                                    <strong>switch</strong> statement tab use hota hai
+                                    jab ek hi variable ke liye
+                                    <strong>multiple fixed options</strong> ho.
+                                </p>
+
+                                <p>
+                                    Mostly menu-driven programs me use hota hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+switch (expression) {
+    case value1:
+        // code
+        break;
+    case value2:
+        // code
+        break;
+    default:
+        // code
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int choice = 2;
+
+switch (choice) {
+    case 1:
+        printf("Addition");
+        break;
+    case 2:
+        printf("Subtraction");
+        break;
+    case 3:
+        printf("Multiplication");
+        break;
+    default:
+        printf("Invalid choice");
+}
+</pre>
+
+                                <h4>Important Points</h4>
+                                <ul>
+                                    <li>switch me <strong>break</strong> zaroori hota hai</li>
+                                    <li>break na ho to fall-through hota hai</li>
+                                    <li>default optional hota hai but recommended</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>if-else vs switch (Basic Difference)</h3>
+
+                                <ul>
+                                    <li>if-else → range aur conditions ke liye</li>
+                                    <li>switch → fixed values ke liye</li>
+                                </ul>
+
+                                <p>
+                                    Example:
+                                </p>
+
+                                <p>
+                                    marks &gt; 40 → if-else better
+                                    menu choice (1,2,3) → switch better
+                                </p>
+
+                                <hr>
+
+                                <h3>Common Mistakes (Avoid Karo)</h3>
+
+                                <ul>
+                                    <li>❌ if ke baad semicolon lagana</li>
+                                    <li>❌ condition me = use karna (== ki jagah)</li>
+                                    <li>❌ switch me break bhoolna</li>
+                                    <li>❌ else-if ladder me order galat rakhna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>if → single condition</li>
+                                    <li>if-else → true / false handling</li>
+                                    <li>else-if → multiple conditions</li>
+                                    <li>switch → fixed choices</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Conditional statements in C such as if, if-else,
+                                    else-if ladder, and switch are used to make decisions
+                                    and control the flow of execution based on conditions.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>2.2 Looping Statements (C Language)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Looping</strong> ka matlab hota hai
+                                    <strong>ek hi kaam ko baar-baar repeat karna</strong>
+                                    jab tak koi condition true ho.
+                                </p>
+
+                                <p>
+                                    Simple words me:
+                                </p>
+
+                                <p>
+                                    👉 Loop = repetition
+                                    👉 Jab tak condition true → code repeat
+                                    👉 Condition false → loop stop
+                                </p>
+
+                                <p>
+                                    Real-life example:
+                                </p>
+
+                                <p>
+                                    Class me attendance lena
+                                    Har student ka naam bolna
+                                    Jab tak students khatam na ho jaaye
+                                </p>
+
+                                <hr>
+
+                                <h3>Why Looping is Needed?</h3>
+
+                                <ul>
+                                    <li>Code repeat likhne se bachata hai</li>
+                                    <li>Program short aur clean hota hai</li>
+                                    <li>Large data easily handle hota hai</li>
+                                </ul>
+
+                                <p>
+                                    Without loop:
+                                </p>
+
+                                <pre>
+printf("Hello");
+printf("Hello");
+printf("Hello");
+printf("Hello");
+</pre>
+
+                                <p>
+                                    With loop:
+                                </p>
+
+                                <pre>
+for(int i=1; i<=4; i++) {
+    printf("Hello");
+}
+</pre>
+
+                                <hr>
+
+                                <h3>Types of Loops in C</h3>
+
+                                <ul>
+                                    <li>for loop</li>
+                                    <li>while loop</li>
+                                    <li>do-while loop</li>
+                                    <li>Infinite loop</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2.2.1 for Loop</h3>
+
+                                <p>
+                                    <strong>for loop</strong> tab use hota hai
+                                    jab number of iterations <strong>pehle se pata ho</strong>.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+for(initialization; condition; increment/decrement) {
+    // code
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int i;
+
+for(i = 1; i <= 5; i++) {
+    printf("%d ", i);
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+                                <pre>
+1 2 3 4 5
+</pre>
+
+                                <h4>Working</h4>
+                                <ul>
+                                    <li>Initialization → ek baar</li>
+                                    <li>Condition → har iteration se pehle</li>
+                                    <li>Increment/Decrement → har iteration ke baad</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2.2.2 while Loop</h3>
+
+                                <p>
+                                    <strong>while loop</strong> tab use hota hai
+                                    jab condition pehle check karni ho.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+while(condition) {
+    // code
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int i = 1;
+
+while(i <= 5) {
+    printf("%d ", i);
+    i++;
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+                                <pre>
+1 2 3 4 5
+</pre>
+
+                                <h4>Important Point</h4>
+                                <ul>
+                                    <li>Pehle condition check hoti hai</li>
+                                    <li>Agar condition false hui → loop ek baar bhi nahi chalega</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2.2.3 do-while Loop</h3>
+
+                                <p>
+                                    <strong>do-while</strong> loop tab use hota hai
+                                    jab loop ko <strong>kam se kam ek baar chalana zaroori ho</strong>.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+do {
+    // code
+} while(condition);
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int i = 1;
+
+do {
+    printf("%d ", i);
+    i++;
+} while(i <= 5);
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+                                <pre>
+1 2 3 4 5
+</pre>
+
+                                <h4>Important Point</h4>
+                                <ul>
+                                    <li>Pehle code execute hota hai</li>
+                                    <li>Condition baad me check hoti hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>for vs while vs do-while</h3>
+
+                                <ul>
+                                    <li>for → fixed iterations</li>
+                                    <li>while → condition based</li>
+                                    <li>do-while → at least once execution</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2.2.4 Infinite Loop</h3>
+
+                                <p>
+                                    <strong>Infinite loop</strong> wo loop hota hai
+                                    jo <strong>kabhi terminate nahi hota</strong>.
+                                </p>
+
+                                <p>
+                                    Matlab:
+                                </p>
+
+                                <p>
+                                    👉 Condition hamesha true
+                                    👉 Program continuously chalta rehta hai
+                                </p>
+
+                                <h4>Example (for loop)</h4>
+                                <pre>
+for(;;) {
+    printf("Hello");
+}
+</pre>
+
+                                <h4>Example (while loop)</h4>
+                                <pre>
+while(1) {
+    printf("Running");
+}
+</pre>
+
+                                <h4>Real-life Use</h4>
+                                <ul>
+                                    <li>Operating systems</li>
+                                    <li>Servers</li>
+                                    <li>Embedded systems</li>
+                                </ul>
+
+                                <h4>Danger</h4>
+                                <ul>
+                                    <li>Program hang ho sakta hai</li>
+                                    <li>CPU usage high ho jaata hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Common Loop Mistakes (Avoid Karo)</h3>
+
+                                <ul>
+                                    <li>❌ Increment / decrement bhoolna</li>
+                                    <li>❌ Infinite loop accidentally banana</li>
+                                    <li>❌ Semicolon lagana: while(condition);</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>for → known iterations</li>
+                                    <li>while → condition first</li>
+                                    <li>do-while → at least once</li>
+                                    <li>Infinite loop → never ends</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Looping statements in C such as for, while, and
+                                    do-while are used to repeatedly execute a block of
+                                    code based on conditions, and infinite loops run
+                                    continuously until externally stopped.”
+                                </p>
+
+                                <hr>
+                                <hr>
+                                <h2>2.3 Jump Statements (C Language)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Jump statements</strong> ka kaam hota hai
+                                    program ke normal flow ko <strong>achanak change karna</strong>.
+                                </p>
+
+                                <p>
+                                    Simple words me:
+                                </p>
+
+                                <p>
+                                    👉 Jump statement = control ko ek jagah se dusri jagah le jana
+                                    👉 Loop ya block ko todna ya skip karna
+                                </p>
+
+                                <p>
+                                    C me main jump statements hote hain:
+                                </p>
+
+                                <ul>
+                                    <li>break</li>
+                                    <li>continue</li>
+                                    <li>goto (avoid karna chahiye)</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2.3.1 break Statement</h3>
+
+                                <p>
+                                    <strong>break</strong> ka use hota hai
+                                    <strong>loop ya switch ko turant terminate</strong> karne ke liye.
+                                </p>
+
+                                <p>
+                                    Matlab:
+                                </p>
+
+                                <p>
+                                    👉 Condition mili
+                                    👉 break execute hua
+                                    👉 Loop wahi par band
+                                </p>
+
+                                <h4>Example (with loop)</h4>
+                                <pre>
+int i;
+
+for(i = 1; i <= 10; i++) {
+    if(i == 5) {
+        break;
+    }
+    printf("%d ", i);
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+                                <pre>
+1 2 3 4
+</pre>
+
+                                <p>
+                                    Explanation:
+                                </p>
+
+                                <ul>
+                                    <li>i = 5 hone par break chala</li>
+                                    <li>Loop turant stop ho gaya</li>
+                                </ul>
+
+                                <h4>Example (with switch)</h4>
+                                <pre>
+int choice = 2;
+
+switch(choice) {
+    case 1:
+        printf("One");
+        break;
+    case 2:
+        printf("Two");
+        break;
+    default:
+        printf("Invalid");
+}
+</pre>
+
+                                <p>
+                                    👉 switch me break na lagao to
+                                    <strong>fall-through</strong> ho jata hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>2.3.2 continue Statement</h3>
+
+                                <p>
+                                    <strong>continue</strong> ka use hota hai
+                                    <strong>current iteration skip</strong> karne ke liye.
+                                </p>
+
+                                <p>
+                                    Matlab:
+                                </p>
+
+                                <p>
+                                    👉 continue mila
+                                    👉 Neeche ka code skip
+                                    👉 Next iteration start
+                                </p>
+
+                                <h4>Example</h4>
+                                <pre>
+int i;
+
+for(i = 1; i <= 5; i++) {
+    if(i == 3) {
+        continue;
+    }
+    printf("%d ", i);
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+                                <pre>
+1 2 4 5
+</pre>
+
+                                <p>
+                                    Explanation:
+                                </p>
+
+                                <ul>
+                                    <li>i = 3 par continue chala</li>
+                                    <li>3 print nahi hua</li>
+                                    <li>Loop aage badh gaya</li>
+                                </ul>
+
+                                <h4>Difference: break vs continue</h4>
+                                <ul>
+                                    <li>break → loop end</li>
+                                    <li>continue → iteration skip</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2.3.3 goto Statement</h3>
+
+                                <p>
+                                    <strong>goto</strong> statement program control ko
+                                    <strong>direct kisi label par le jaata hai</strong>.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+goto label;
+
+label:
+    // code
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+
+start:
+    printf("%d ", i);
+    i++;
+
+    if(i <= 5)
+        goto start;
+
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+                                <pre>
+1 2 3 4 5
+</pre>
+
+                                <hr>
+
+                                <h3>goto kyun avoid karna chahiye?</h3>
+
+                                <p>
+                                    goto technically kaam karta hai,
+                                    lekin <strong>use karna strongly avoid</strong> kiya jaata hai.
+                                </p>
+
+                                <h4>Reasons</h4>
+                                <ul>
+                                    <li>Code confusing ho jata hai</li>
+                                    <li>Program flow samajhna mushkil</li>
+                                    <li>Debugging hard ho jaati hai</li>
+                                    <li>Spaghetti code ban jaata hai</li>
+                                </ul>
+
+                                <p>
+                                    Industry rule:
+                                </p>
+
+                                <p>
+                                    👉 <strong>"Never use goto unless absolutely necessary"</strong>
+                                </p>
+
+                                <p>
+                                    Modern programming me:
+                                </p>
+
+                                <ul>
+                                    <li>Loops</li>
+                                    <li>Functions</li>
+                                    <li>break / continue</li>
+                                </ul>
+
+                                <p>
+                                    goto ka kaam safely kar dete hain.
+                                </p>
+
+                                <hr>
+
+                                <h3>Real-Life Analogy</h3>
+
+                                <ul>
+                                    <li>break → meeting turant khatam</li>
+                                    <li>continue → is topic ko skip karo, next pe jao</li>
+                                    <li>goto → bina order ke kisi bhi point pe chale jaana (confusing)</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Common Mistakes (Avoid Karo)</h3>
+
+                                <ul>
+                                    <li>❌ break ko if ke bahar samajhna</li>
+                                    <li>❌ continue se loop end samajhna</li>
+                                    <li>❌ goto ka overuse</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>break → loop / switch end</li>
+                                    <li>continue → current iteration skip</li>
+                                    <li>goto → direct jump (avoid)</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Jump statements in C like break and continue are
+                                    used to control loop execution, while goto allows
+                                    unconditional jumps but is avoided due to poor
+                                    readability and maintenance issues.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>👉 Practice Tips (C Programming – Beginner Level)</h2>
+                                <hr>
+
+                                <p>
+                                    C programming me strong hone ka sabse best tareeka hai:
+                                    <strong>basic logic wale programs khud likhna</strong>.
+                                </p>
+
+                                <p>
+                                    Neeche diye gaye questions har beginner ko
+                                    <strong>mandatory practice</strong> karne chahiye.
+                                </p>
+
+                                <hr>
+
+                                <h3>1) Number Check Programs</h3>
+
+                                <p>
+                                    Ye programs aapki <strong>if / else</strong> aur
+                                    <strong>operators</strong> ki understanding clear karte hain.
+                                </p>
+
+                                <h4>Practice Questions</h4>
+                                <ul>
+                                    <li>Even ya Odd number check karo</li>
+                                    <li>Positive, Negative ya Zero check karo</li>
+                                    <li>Number divisible by 5 ya 11 hai ya nahi</li>
+                                </ul>
+
+                                <h4>Example: Even / Odd</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+
+    if(n % 2 == 0)
+        printf("Even number");
+    else
+        printf("Odd number");
+
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Isme use hua:
+                                </p>
+                                <ul>
+                                    <li>if-else</li>
+                                    <li>modulus operator (%)</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2) Table Print Program</h3>
+
+                                <p>
+                                    Table print karna loops samajhne ke liye
+                                    <strong>best exercise</strong> hai.
+                                </p>
+
+                                <h4>Practice Questions</h4>
+                                <ul>
+                                    <li>Any number ka table print karo</li>
+                                    <li>Table reverse order me print karo</li>
+                                </ul>
+
+                                <h4>Example: Table of a Number</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i, n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", n, i, n*i);
+    }
+
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Isme use hua:
+                                </p>
+                                <ul>
+                                    <li>for loop</li>
+                                    <li>multiplication</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>3) Prime Number Program</h3>
+
+                                <p>
+                                    Prime number program se aapka
+                                    <strong>loop + condition logic</strong> strong hota hai.
+                                </p>
+
+                                <h4>Prime Number Definition</h4>
+                                <p>
+                                    👉 Jo number sirf <strong>1 aur khud se</strong> divisible ho
+                                </p>
+
+                                <h4>Example: Prime Check</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int n, i, flag = 0;
+    printf("Enter number: ");
+    scanf("%d", &n);
+
+    for(i = 2; i <= n/2; i++) {
+        if(n % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+
+    if(flag == 0 && n > 1)
+        printf("Prime number");
+    else
+        printf("Not a prime number");
+
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Isme use hua:
+                                </p>
+                                <ul>
+                                    <li>for loop</li>
+                                    <li>break</li>
+                                    <li>flag variable</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>4) Fibonacci Series</h3>
+
+                                <p>
+                                    Fibonacci series se aapko
+                                    <strong>number sequence logic</strong> samajh aata hai.
+                                </p>
+
+                                <h4>Fibonacci Definition</h4>
+                                <p>
+                                    👉 Next number = previous two numbers ka sum
+                                </p>
+
+                                <p>
+                                    Example:
+                                </p>
+                                <pre>
+0 1 1 2 3 5 8 13 ...
+</pre>
+
+                                <h4>Example: Fibonacci Series</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int n, a = 0, b = 1, c, i;
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Isme use hua:
+                                </p>
+                                <ul>
+                                    <li>for loop</li>
+                                    <li>multiple variables</li>
+                                    <li>sequence logic</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Practice Strategy (Very Important)</h3>
+
+                                <ul>
+                                    <li>Pehle khud logic socho</li>
+                                    <li>Paper par steps likho</li>
+                                    <li>Phir code likho</li>
+                                    <li>Different inputs try karo</li>
+                                </ul>
+
+                                <p>
+                                    👉 Copy-paste se seekhne ki speed slow hoti hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION</h3>
+
+                                <ul>
+                                    <li>Number check → if / else</li>
+                                    <li>Table → loops</li>
+                                    <li>Prime → loop + break</li>
+                                    <li>Fibonacci → sequence logic</li>
+                                </ul>
+
+                                <hr>
+
+                                <hr>
+                                <h2>3. Functions (Real Programming yahan se start hoti hai)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Functions</strong> C programming ka sabse important concept hai.
+                                    Yahin se <strong>real, structured aur professional programming</strong>
+                                    start hoti hai.
+                                </p>
+
+                                <p>
+                                    Function ka kaam hota hai:
+                                </p>
+
+                                <ul>
+                                    <li>Code ko reusable banana</li>
+                                    <li>Program ko readable banana</li>
+                                    <li>Large problems ko small parts me todna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Function kya hota hai?</h3>
+
+                                <p>
+                                    Function ek <strong>block of code</strong> hota hai
+                                    jo ek specific kaam karta hai.
+                                </p>
+
+                                <p>
+                                    Simple words me:
+                                </p>
+
+                                <p>
+                                    👉 Function = kaam karne wali machine
+                                    <br>
+                                    Button dabao → kaam ho jaaye
+                                </p>
+
+                                <p>
+                                    Example (real life):
+                                </p>
+
+                                <ul>
+                                    <li>Calculator me <strong>Add</strong> button → addition</li>
+                                    <li>Fan ka switch → fan on/off</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>3.1 Function Basics</h3>
+
+                                <p>
+                                    C me function ke <strong>3 main parts</strong> hote hain:
+                                </p>
+
+                                <ol>
+                                    <li>Declaration</li>
+                                    <li>Definition</li>
+                                    <li>Calling</li>
+                                </ol>
+
+                                <hr>
+
+                                <h3>1) Function Declaration</h3>
+
+                                <p>
+                                    Function declaration compiler ko batata hai:
+                                </p>
+
+                                <ul>
+                                    <li>Function ka naam kya hai</li>
+                                    <li>Return type kya hai</li>
+                                    <li>Kitne arguments lega</li>
+                                </ul>
+
+                                <p>
+                                    Isse kehte hain: <strong>function prototype</strong>
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+return_type function_name(parameters);
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int add(int, int);
+</pre>
+
+                                <p>
+                                    👉 Matlab:
+                                </p>
+
+                                <ul>
+                                    <li>Function int value return karega</li>
+                                    <li>Do integer arguments lega</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>2) Function Definition</h3>
+
+                                <p>
+                                    Function definition me <strong>actual logic</strong> likhi jaati hai.
+                                </p>
+
+                                <h4>Syntax</h4>
+                                <pre>
+return_type function_name(parameters) {
+    // function body
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int add(int a, int b) {
+    int sum = a + b;
+    return sum;
+}
+</pre>
+
+                                <p>
+                                    👉 Yahan:
+                                </p>
+
+                                <ul>
+                                    <li>a aur b = input values</li>
+                                    <li>sum = calculation</li>
+                                    <li>return = result wapas bhejna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>3) Function Calling</h3>
+
+                                <p>
+                                    Function calling ka matlab hai:
+                                    <strong>function ko use karna</strong>.
+                                </p>
+
+                                <p>
+                                    Jab function call hota hai,
+                                    control main() se function ke paas jata hai.
+                                </p>
+
+                                <h4>Example</h4>
+                                <pre>
+int main() {
+    int result;
+    result = add(5, 3);
+    printf("Sum = %d", result);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Flow:
+                                </p>
+
+                                <ol>
+                                    <li>main() start hota hai</li>
+                                    <li>add(5, 3) call hota hai</li>
+                                    <li>add function execute hota hai</li>
+                                    <li>Result wapas main() ko milta hai</li>
+                                </ol>
+
+                                <hr>
+
+                                <h3>Complete Program Example</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int add(int, int);   // declaration
+
+int main() {
+    int result;
+    result = add(10, 20);   // calling
+    printf("Sum = %d", result);
+    return 0;
+}
+
+int add(int a, int b) {    // definition
+    return a + b;
+}
+</pre>
+
+                                <hr>
+
+                                <h3>Functions kyun important hain?</h3>
+
+                                <ul>
+                                    <li>Code repeat nahi hota</li>
+                                    <li>Debugging easy hoti hai</li>
+                                    <li>Large programs manageable hote hain</li>
+                                    <li>Team programming possible hoti hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Common Beginner Mistakes</h3>
+
+                                <ul>
+                                    <li>❌ Function declare nahi karna</li>
+                                    <li>❌ Return type galat likhna</li>
+                                    <li>❌ Function call bhool jana</li>
+                                    <li>❌ Semicolon declaration me bhool jana</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>Function = reusable block of code</li>
+                                    <li>Declaration = function ka prototype</li>
+                                    <li>Definition = function ka logic</li>
+                                    <li>Calling = function ka use</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “In C, a function is a reusable block of code.
+                                    Function declaration tells the compiler about the function,
+                                    definition contains the logic, and calling executes the function.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>3.2 Types of Functions (C Programming)</h2>
+                                <hr>
+
+                                <p>
+                                    C language me functions ko mainly <strong>arguments</strong> aur
+                                    <strong>return value</strong> ke basis par classify kiya jaata hai.
+                                </p>
+
+                                <p>
+                                    Is classification ko samajh lena bahut zaroori hai,
+                                    kyunki <strong>exam + real programming</strong> dono me direct use hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Function ko classify karne ke 2 base</h3>
+
+                                <ul>
+                                    <li>Arguments (input)</li>
+                                    <li>Return value (output)</li>
+                                </ul>
+
+                                <p>
+                                    In dono ke combination se <strong>4 types of functions</strong> bante hain.
+                                </p>
+
+                                <hr>
+
+                                <h3>Type 1: Without Arguments & Without Return Value</h3>
+
+                                <p>
+                                    👉 Is type ke function:
+                                </p>
+
+                                <ul>
+                                    <li>Koi input nahi lete</li>
+                                    <li>Koi value return nahi karte</li>
+                                    <li>Sirf kaam karte hain (mostly print)</li>
+                                </ul>
+
+                                <h4>Syntax</h4>
+                                <pre>
+void function_name() {
+    // code
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+void greet() {
+    printf("Hello, Welcome to C Programming");
+}
+
+int main() {
+    greet();   // function call
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Use case:
+                                </p>
+
+                                <ul>
+                                    <li>Welcome message</li>
+                                    <li>Menu display</li>
+                                    <li>Simple print tasks</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Type 2: With Arguments & Without Return Value</h3>
+
+                                <p>
+                                    👉 Is type ke function:
+                                </p>
+
+                                <ul>
+                                    <li>Input lete hain</li>
+                                    <li>Result return nahi karte</li>
+                                    <li>Direct output show karte hain</li>
+                                </ul>
+
+                                <h4>Syntax</h4>
+                                <pre>
+void function_name(type a, type b) {
+    // code
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+void add(int a, int b) {
+    printf("Sum = %d", a + b);
+}
+
+int main() {
+    add(5, 3);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Yahan:
+                                </p>
+
+                                <ul>
+                                    <li>a aur b = arguments</li>
+                                    <li>Result print ho raha hai</li>
+                                    <li>Return nahi ho raha</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Type 3: Without Arguments & With Return Value</h3>
+
+                                <p>
+                                    👉 Is type ke function:
+                                </p>
+
+                                <ul>
+                                    <li>Koi input nahi lete</li>
+                                    <li>Output return karte hain</li>
+                                </ul>
+
+                                <h4>Syntax</h4>
+                                <pre>
+return_type function_name() {
+    return value;
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int getNumber() {
+    return 10;
+}
+
+int main() {
+    int x;
+    x = getNumber();
+    printf("Value = %d", x);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Use case:
+                                </p>
+
+                                <ul>
+                                    <li>Fixed value generate karna</li>
+                                    <li>Random number function</li>
+                                    <li>System value return karna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Type 4: With Arguments & With Return Value (Most Important)</h3>
+
+                                <p>
+                                    👉 Ye <strong>sabse zyada used</strong> aur
+                                    <strong>real programming</strong> me common type hai.
+                                </p>
+
+                                <ul>
+                                    <li>Input bhi leta hai</li>
+                                    <li>Output bhi return karta hai</li>
+                                </ul>
+
+                                <h4>Syntax</h4>
+                                <pre>
+return_type function_name(type a, type b) {
+    return value;
+}
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result;
+    result = add(10, 20);
+    printf("Sum = %d", result);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Use case:
+                                </p>
+
+                                <ul>
+                                    <li>Calculator</li>
+                                    <li>Mathematical operations</li>
+                                    <li>Business logic</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>All Types at a Glance (Table Summary)</h3>
+
+                                <table border="1" cellpadding="8">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Arguments</th>
+                                        <th>Return</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Type 1</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type 2</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type 3</td>
+                                        <td>No</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type 4</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                </table>
+
+                                <hr>
+
+                                <h3>Common Beginner Confusion (Clear Karo)</h3>
+
+                                <ul>
+                                    <li>❌ void function return nahi karta</li>
+                                    <li>❌ return ke baad code execute nahi hota</li>
+                                    <li>❌ return type aur value match honi chahiye</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>No argument, no return → simple tasks</li>
+                                    <li>Argument, no return → input + print</li>
+                                    <li>No argument, return → fixed output</li>
+                                    <li>Argument + return → real programming</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “C functions are classified based on arguments and return values
+                                    into four types: with or without arguments and with or without
+                                    return values. The most commonly used type is with arguments and
+                                    with return value.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>3.3 Call by Value vs Call by Reference (C Programming)</h2>
+                                <hr>
+
+                                <p>
+                                    Function calling ke do tareeke hote hain:
+                                    <strong>Call by Value</strong> aur <strong>Call by Reference</strong>.
+                                </p>
+
+                                <p>
+                                    Ye topic <strong>exam + interview + real coding</strong> ke liye bahut important
+                                    hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Call by Value</h3>
+
+                                <p>
+                                    👉 Call by Value me:
+                                </p>
+
+                                <ul>
+                                    <li>Function ko <strong>variable ki copy</strong> pass hoti hai</li>
+                                    <li>Original variable <strong>change nahi hota</strong></li>
+                                </ul>
+
+                                <h4>Simple Example</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+void change(int x) {
+    x = 100;
+}
+
+int main() {
+    int a = 10;
+    change(a);
+    printf("a = %d", a);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    <strong>Output:</strong>
+                                </p>
+                                <pre>
+a = 10
+</pre>
+
+                                <p>
+                                    👉 Explanation:
+                                </p>
+
+                                <ul>
+                                    <li>a ki value = 10</li>
+                                    <li>x ko a ki copy mili</li>
+                                    <li>x change hua, a nahi</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Call by Reference</h3>
+
+                                <p>
+                                    👉 Call by Reference me:
+                                </p>
+
+                                <ul>
+                                    <li>Function ko <strong>variable ka address</strong> pass hota hai</li>
+                                    <li>Original variable <strong>change ho jata hai</strong></li>
+                                </ul>
+
+                                <p>
+                                    👉 C me call by reference <strong>pointers</strong> se hota hai.
+                                </p>
+
+                                <h4>Example</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+void change(int *x) {
+    *x = 100;
+}
+
+int main() {
+    int a = 10;
+    change(&a);
+    printf("a = %d", a);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    <strong>Output:</strong>
+                                </p>
+                                <pre>
+a = 100
+</pre>
+
+                                <p>
+                                    👉 Explanation:
+                                </p>
+
+                                <ul>
+                                    <li>a ka address pass hua</li>
+                                    <li>*x se direct memory change hui</li>
+                                    <li>a ki value change ho gayi</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Call by Value vs Call by Reference (Comparison)</h3>
+
+                                <table border="1" cellpadding="8">
+                                    <tr>
+                                        <th>Point</th>
+                                        <th>Call by Value</th>
+                                        <th>Call by Reference</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Data passed</td>
+                                        <td>Value copy</td>
+                                        <td>Address</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Original variable</td>
+                                        <td>Not changed</td>
+                                        <td>Changed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pointers</td>
+                                        <td>Not used</td>
+                                        <td>Used</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Safety</td>
+                                        <td>Safe</td>
+                                        <td>Risky if misused</td>
+                                    </tr>
+                                </table>
+
+                                <hr>
+
+                                <h3>Exam Ready Line</h3>
+                                <p>
+                                    Call by value passes a copy of variable, while call by reference passes
+                                    the address allowing modification of original data.
+                                </p>
+
+                                <hr>
+                                <hr>
+
+                                <h2>3.4 Recursion (C Programming)</h2>
+                                <hr>
+
+                                <p>
+                                    👉 <strong>Recursion</strong> ka matlab hota hai:
+                                </p>
+
+                                <p>
+                                    <strong>Function ka khud ko call karna</strong>.
+                                </p>
+
+                                <hr>
+
+                                <h3>Why Recursion?</h3>
+
+                                <ul>
+                                    <li>Problems ko chhote parts me todta hai</li>
+                                    <li>Code short aur clean hota hai</li>
+                                    <li>Mathematical problems ke liye best</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Two Important Parts of Recursion</h3>
+
+                                <h4>1. Base Condition</h4>
+                                <p>
+                                    👉 Wo condition jahan recursion rukta hai.
+                                </p>
+
+                                <p>
+                                    ❌ Base condition nahi hogi → <strong>infinite recursion</strong>
+                                </p>
+
+                                <h4>2. Recursive Call</h4>
+                                <p>
+                                    👉 Function ka khud ko call karna.
+                                </p>
+
+                                <hr>
+
+                                <h3>Simple Recursion Example (Factorial)</h3>
+
+                                <p>
+                                    Factorial:
+                                </p>
+
+                                <p>
+                                    5! = 5 × 4 × 3 × 2 × 1
+                                </p>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int fact(int n) {
+    if (n == 1)      // base condition
+        return 1;
+    else
+        return n * fact(n - 1);
+}
+
+int main() {
+    int result;
+    result = fact(5);
+    printf("Factorial = %d", result);
+    return 0;
+}
+</pre>
+
+                                <hr>
+
+                                <h3>How Recursion Works (Stack Working)</h3>
+
+                                <p>
+                                    Recursion me function calls <strong>stack</strong> me store hoti hain.
+                                </p>
+
+                                <p>
+                                    fact(5) call flow:
+                                </p>
+
+                                <pre>
+fact(5)
+ → 5 * fact(4)
+ → 5 * 4 * fact(3)
+ → 5 * 4 * 3 * fact(2)
+ → 5 * 4 * 3 * 2 * fact(1)
+ → return 1
+</pre>
+
+                                <p>
+                                    👉 Ab stack reverse order me empty hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Common Recursion Mistakes</h3>
+
+                                <ul>
+                                    <li>❌ Base condition bhool jana</li>
+                                    <li>❌ Infinite recursion</li>
+                                    <li>❌ Zyada recursion → stack overflow</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Recursion vs Loop</h3>
+
+                                <table border="1" cellpadding="8">
+                                    <tr>
+                                        <th>Recursion</th>
+                                        <th>Loop</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Function calls itself</td>
+                                        <td>Repeats using loop</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uses stack memory</td>
+                                        <td>No stack usage</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Code short</td>
+                                        <td>Code faster</td>
+                                    </tr>
+                                </table>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>Call by value → copy passed</li>
+                                    <li>Call by reference → address passed</li>
+                                    <li>Recursion → function calls itself</li>
+                                    <li>Base condition → recursion stop</li>
+                                    <li>Stack → function call storage</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “Call by value passes a copy of data, while call by reference passes
+                                    the address allowing modification of original variables. Recursion is
+                                    a technique where a function calls itself and relies on a base
+                                    condition and stack mechanism for execution.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>4. Arrays & Strings (Memory ka Game)</h2>
+                                <hr>
+
+                                <p>
+                                    Is section me hum seekhenge ki C me
+                                    <strong>multiple data ko ek saath memory me kaise store</strong> kiya jata hai.
+                                </p>
+
+                                <p>
+                                    👉 Arrays aur Strings C programming ka core part hain,
+                                    aur yahin se <strong>memory understanding strong</strong> hoti hai.
+                                </p>
+
+                                <hr>
+
+                                <h2>4.1 Arrays</h2>
+
+                                <p>
+                                    <strong>Array</strong> ek data structure hota hai jisme:
+                                </p>
+
+                                <ul>
+                                    <li>Same data type ke multiple values store hoti hain</li>
+                                    <li>Memory me continuous (lagatar) store hoti hain</li>
+                                    <li>Index se access hota hai (0 se start)</li>
+                                </ul>
+
+                                <p>
+                                    Simple words me:
+                                </p>
+
+                                <p>
+                                    <strong>Array = ek hi naam ke under multiple values</strong>
+                                </p>
+
+                                <hr>
+
+                                <h3>Why Array Needed?</h3>
+
+                                <p>
+                                    Socho agar 100 students ke marks store karne ho:
+                                </p>
+
+                                <ul>
+                                    <li>❌ int m1, m2, m3, m4, ... (bahut messy)</li>
+                                    <li>✅ int marks[100]; (clean & easy)</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>1D Array (One Dimensional)</h3>
+
+                                <p>
+                                    👉 1D array ek <strong>list</strong> jaisa hota hai.
+                                </p>
+
+                                <h4>Declaration</h4>
+                                <pre>
+int marks[5];
+</pre>
+
+                                <h4>Initialization</h4>
+                                <pre>
+int marks[5] = {10, 20, 30, 40, 50};
+</pre>
+
+                                <h4>Access Elements</h4>
+                                <pre>
+marks[0]   // 10
+marks[2]   // 30
+</pre>
+
+                                <p>
+                                    👉 Index hamesha <strong>0 se start</strong> hota hai.
+                                </p>
+
+                                <h4>Example Program</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int arr[3] = {5, 10, 15};
+
+    printf("%d\n", arr[0]);
+    printf("%d\n", arr[1]);
+    printf("%d\n", arr[2]);
+
+    return 0;
+}
+</pre>
+
+                                <hr>
+
+                                <h3>Memory Representation (1D Array)</h3>
+
+                                <pre>
+Index:   0    1    2
+Value:   5   10   15
+Memory: [ ][ ][ ]  (continuous)
+</pre>
+
+                                <hr>
+
+                                <h3>2D Array (Two Dimensional)</h3>
+
+                                <p>
+                                    👉 2D array ek <strong>table / matrix</strong> jaisa hota hai
+                                    (rows × columns).
+                                </p>
+
+                                <h4>Declaration</h4>
+                                <pre>
+int a[2][3];
+</pre>
+
+                                <h4>Initialization</h4>
+                                <pre>
+int a[2][3] = {
+    {1, 2, 3},
+    {4, 5, 6}
+};
+</pre>
+
+                                <h4>Access Element</h4>
+                                <pre>
+a[0][0]  // 1
+a[1][2]  // 6
+</pre>
+
+                                <h4>Example Program</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a[2][2] = {
+        {10, 20},
+        {30, 40}
+    };
+
+    printf("%d\n", a[0][1]);  // 20
+    printf("%d\n", a[1][0]);  // 30
+
+    return 0;
+}
+</pre>
+
+                                <hr>
+
+                                <h3>2D Array as Table</h3>
+
+                                <pre>
+Row\Col   0    1
+       ---------
+0      | 10   20
+1      | 30   40
+</pre>
+
+                                <hr>
+
+                                <h3>Multidimensional Array</h3>
+
+                                <p>
+                                    👉 2 se zyada dimensions wala array
+                                    <strong>multidimensional array</strong> kehlata hai.
+                                </p>
+
+                                <h4>Example: 3D Array</h4>
+                                <pre>
+int a[2][2][2];
+</pre>
+
+                                <p>
+                                    Use cases:
+                                </p>
+
+                                <ul>
+                                    <li>3D graphics</li>
+                                    <li>Game boards</li>
+                                    <li>Scientific data</li>
+                                </ul>
+
+                                <p>
+                                    👉 Beginners ke liye:
+                                </p>
+
+                                <ul>
+                                    <li>1D & 2D array most important</li>
+                                    <li>Multidimensional basic idea kaafi hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Common Array Mistakes (Exam Favorite)</h3>
+
+                                <ul>
+                                    <li>❌ Index out of bound (arr[10] when size is 5)</li>
+                                    <li>❌ Wrong size declaration</li>
+                                    <li>❌ Forgetting array index starts from 0</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>Array → same data type, multiple values</li>
+                                    <li>1D array → list</li>
+                                    <li>2D array → table</li>
+                                    <li>Index → starts from 0</li>
+                                    <li>Memory → continuous</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “An array in C is a collection of elements of the same data type stored
+                                    in contiguous memory locations, accessed using index values. One-
+                                    dimensional arrays represent lists, while two-dimensional arrays
+                                    represent tables or matrices.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>4.2 Strings (Character Arrays)</h2>
+                                <hr>
+
+                                <p>
+                                    C me <strong>String</strong> koi alag data type nahi hota.
+                                </p>
+
+                                <p>
+                                    👉 C me string ka matlab hota hai:
+                                </p>
+
+                                <p>
+                                    <strong>Character array jo '\0' (null character) se end hota hai</strong>
+                                </p>
+
+                                <hr>
+
+                                <h3>String kya hoti hai?</h3>
+
+                                <p>
+                                    String = characters ka group
+                                </p>
+
+                                <p>
+                                    Example:
+                                </p>
+
+                                <pre>
+"H e l l o \0"
+</pre>
+
+                                <p>
+                                    👉 <code>\0</code> batata hai ki string yahin khatam ho gayi.
+                                </p>
+
+                                <hr>
+
+                                <h3>Character Array as String</h3>
+
+                                <h4>Declaration</h4>
+                                <pre>
+char name[10];
+</pre>
+
+                                <h4>Initialization</h4>
+                                <pre>
+char name[] = "Amit";
+</pre>
+
+                                <p>
+                                    Memory me actual data:
+                                </p>
+
+                                <pre>
+A  m  i  t  \0
+</pre>
+
+                                <hr>
+
+                                <h3>String Print Example</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    char name[] = "Rahul";
+    printf("%s", name);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 <code>%s</code> string print karne ke liye use hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h2>Common String Functions (string.h)</h2>
+
+                                <p>
+                                    In functions ke liye header file:
+                                </p>
+
+                                <pre>
+#include &lt;string.h&gt;
+</pre>
+
+                                <hr>
+
+                                <h3>1. strlen() – String Length</h3>
+
+                                <p>
+                                    String ki length batata hai (without '\0').
+                                </p>
+
+                                <pre>
+strlen(string_name)
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+char s[] = "Hello";
+printf("%d", strlen(s));
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+
+                                <pre>
+5
+</pre>
+
+                                <hr>
+
+                                <h3>2. strcpy() – String Copy</h3>
+
+                                <p>
+                                    Ek string ko doosri string me copy karta hai.
+                                </p>
+
+                                <pre>
+strcpy(destination, source);
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+char a[20];
+char b[] = "C Language";
+
+strcpy(a, b);
+printf("%s", a);
+</pre>
+
+                                <hr>
+
+                                <h3>3. strcmp() – String Compare</h3>
+
+                                <p>
+                                    Do strings compare karta hai.
+                                </p>
+
+                                <ul>
+                                    <li>0 → equal</li>
+                                    <li>&lt; 0 → string1 &lt; string2</li>
+                                    <li>&gt; 0 → string1 &gt; string2</li>
+                                </ul>
+
+                                <h4>Example</h4>
+                                <pre>
+char a[] = "cat";
+char b[] = "cat";
+
+printf("%d", strcmp(a, b));
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+
+                                <pre>
+0
+</pre>
+
+                                <hr>
+
+                                <h3>4. strcat() – String Concatenation</h3>
+
+                                <p>
+                                    Do strings ko jodta hai.
+                                </p>
+
+                                <pre>
+strcat(string1, string2);
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+char a[20] = "Hello ";
+char b[] = "World";
+
+strcat(a, b);
+printf("%s", a);
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+
+                                <pre>
+Hello World
+</pre>
+
+                                <p>
+                                    👉 Destination string me enough space hona chahiye.
+                                </p>
+
+                                <hr>
+
+                                <h2>String Input in C</h2>
+
+                                <hr>
+
+                                <h3>gets() – Why Unsafe ❌</h3>
+
+                                <p>
+                                    <code>gets()</code> string input lene ke liye use hota tha,
+                                    lekin ab <strong>unsafe</strong> mana jata hai.
+                                </p>
+
+                                <h4>Problem</h4>
+                                <ul>
+                                    <li>Input length check nahi karta</li>
+                                    <li>Buffer overflow ho sakta hai</li>
+                                    <li>Program crash / security issue</li>
+                                </ul>
+
+                                <h4>Example (Avoid)</h4>
+                                <pre>
+char name[10];
+gets(name);   // ❌ unsafe
+</pre>
+
+                                <p>
+                                    👉 Isi wajah se <code>gets()</code> modern C me remove kar diya gaya hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Safe Alternative – fgets() ✅</h3>
+
+                                <p>
+                                    <code>fgets()</code> safe hai kyunki:
+                                </p>
+
+                                <ul>
+                                    <li>Maximum length specify karte ho</li>
+                                    <li>Buffer overflow nahi hota</li>
+                                </ul>
+
+                                <h4>Syntax</h4>
+                                <pre>
+fgets(string, size, stdin);
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    char name[20];
+    fgets(name, 20, stdin);
+    printf("%s", name);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 Ye newline character bhi read karta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Common String Mistakes (Exam Favorite)</h3>
+
+                                <ul>
+                                    <li>❌ String ke liye char array na banana</li>
+                                    <li>❌ Null character bhool jana</li>
+                                    <li>❌ gets() use karna</li>
+                                    <li>❌ strcpy / strcat me size ignore karna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>ONE-LINE REVISION (Exam Ready)</h3>
+
+                                <ul>
+                                    <li>String → character array + '\0'</li>
+                                    <li>strlen → length</li>
+                                    <li>strcpy → copy</li>
+                                    <li>strcmp → compare</li>
+                                    <li>strcat → join</li>
+                                    <li>gets → unsafe</li>
+                                    <li>fgets → safe</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>INTERVIEW ONE-LINER</h3>
+
+                                <p>
+                                    “In C, strings are represented as character arrays
+                                    terminated by a null character. String handling is
+                                    done using functions like strlen, strcpy, strcmp,
+                                    and strcat, and fgets is preferred over gets for
+                                    safe string input.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>5. Pointers (C ka Heart)</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Pointers</strong> C language ka sabse important aur powerful concept hai.
+                                </p>
+
+                                <p>
+                                    👉 Agar pointers samajh aa gaye, to:
+                                </p>
+
+                                <ul>
+                                    <li>Memory clear ho jaati hai</li>
+                                    <li>Arrays, strings easy lagte hain</li>
+                                    <li>Functions powerful ban jaate hain</li>
+                                    <li>Real system programming possible hoti hai</li>
+                                </ul>
+
+                                <p>
+                                    Isi liye bola jata hai:
+                                </p>
+
+                                <p><strong>“Pointers are the heart of C programming.”</strong></p>
+
+                                <hr>
+
+                                <h3>5.1 Pointer Basics</h3>
+
+                                <p>
+                                    Pointer ek aisa variable hota hai jo:
+                                </p>
+
+                                <p>
+                                    <strong>Kisi dusre variable ka memory address store karta hai</strong>
+                                </p>
+
+                                <hr>
+
+                                <h3>Simple Definition</h3>
+
+                                <p>
+                                    Normal variable → value store karta hai
+                                </p>
+                                <p>
+                                    Pointer variable → address store karta hai
+                                </p>
+
+                                <hr>
+
+                                <h3>Memory Concept (Real-life Example)</h3>
+
+                                <p>
+                                    Socho:
+                                </p>
+
+                                <ul>
+                                    <li>House = Variable</li>
+                                    <li>House number = Address</li>
+                                </ul>
+
+                                <p>
+                                    👉 Pointer = house number store karne wala variable
+                                </p>
+
+                                <hr>
+
+                                <h2>Address Operator (&)</h2>
+
+                                <p>
+                                    <strong>& (ampersand)</strong> operator ka use:
+                                </p>
+
+                                <p>
+                                    <strong>Variable ka memory address nikalne ke liye hota hai</strong>
+                                </p>
+
+                                <hr>
+
+                                <h3>Example: Address Operator</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 10;
+    printf("%d", &x);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    👉 <code>&x</code> = x ka memory address
+                                </p>
+
+                                <p>
+                                    (Note: Address system-dependent hota hai)
+                                </p>
+
+                                <hr>
+
+                                <h2>Pointer Declaration</h2>
+
+                                <p>
+                                    Pointer declare karne ka format:
+                                </p>
+
+                                <pre>
+data_type *pointer_name;
+</pre>
+
+                                <h4>Example</h4>
+                                <pre>
+int *p;
+</pre>
+
+                                <p>
+                                    👉 <code>p</code> ek pointer hai jo <strong>int type</strong> ke variable ka address
+                                    store karega
+                                </p>
+
+                                <hr>
+
+                                <h2>Pointer Initialization</h2>
+
+                                <p>
+                                    Pointer ko kisi variable ka address dena:
+                                </p>
+
+                                <pre>
+int x = 10;
+int *p = &x;
+</pre>
+
+                                <p>
+                                    👉 Ab:
+                                </p>
+
+                                <ul>
+                                    <li><code>x</code> → value = 10</li>
+                                    <li><code>p</code> → address of x</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>Dereference Operator (*)</h2>
+
+                                <p>
+                                    <strong>* (asterisk)</strong> operator ka use:
+                                </p>
+
+                                <p>
+                                    <strong>Address par rakhi hui actual value nikalne ke liye hota hai</strong>
+                                </p>
+
+                                <hr>
+
+                                <h3>Example: Dereferencing</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 10;
+    int *p = &x;
+
+    printf("%d", *p);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+
+                                <pre>
+10
+</pre>
+
+                                <p>
+                                    👉 <code>*p</code> ka matlab:
+                                </p>
+
+                                <p>
+                                    “Us address par jao jo p me store hai, aur value lao”
+                                </p>
+
+                                <hr>
+
+                                <h2>Important Relationship (Exam Gold)</h2>
+
+                                <pre>
+p  = &x   → p stores address
+*p = x    → *p gives value
+</pre>
+
+                                <hr>
+
+                                <h2>Change Value Using Pointer</h2>
+
+                                <p>
+                                    Pointer se hum original variable ki value change kar sakte hain.
+                                </p>
+
+                                <h4>Example</h4>
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 10;
+    int *p = &x;
+
+    *p = 50;
+
+    printf("%d", x);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+
+                                <pre>
+50
+</pre>
+
+                                <p>
+                                    👉 Pointer ke through x ki value change ho gayi
+                                </p>
+
+                                <hr>
+
+                                <h2>Why Pointers are Powerful?</h2>
+
+                                <ul>
+                                    <li>Memory direct control</li>
+                                    <li>Call by reference possible</li>
+                                    <li>Dynamic memory allocation</li>
+                                    <li>Fast execution</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Common Pointer Mistakes (Very Important)</h3>
+
+                                <ul>
+                                    <li>❌ Uninitialized pointer use karna</li>
+                                    <li>❌ Galat type ka pointer use karna</li>
+                                    <li>❌ Dereference bina address ke</li>
+                                </ul>
+
+                                <h4>Wrong Example ❌</h4>
+                                <pre>
+int *p;
+*p = 10;   // danger
+</pre>
+
+                                <hr>
+
+                                <h2>ONE-LINE REVISION (Exam Ready)</h2>
+
+                                <ul>
+                                    <li>Pointer → address store karta hai</li>
+                                    <li>& → address operator</li>
+                                    <li>* → dereference operator</li>
+                                    <li>p = &x → address</li>
+                                    <li>*p → value</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>INTERVIEW ONE-LINER</h2>
+
+                                <p>
+                                    “A pointer in C is a variable that stores the memory
+                                    address of another variable. The & operator is used
+                                    to get an address, and the * operator is used to
+                                    access the value stored at that address.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>5. Pointers (Advanced Concepts)</h2>
+                                <hr>
+
+                                <!-- ================================================== -->
+                                <h2>5.2 Pointer & Array Relation</h2>
+                                <hr>
+
+                                <p>
+                                    C language me <strong>array aur pointer deeply connected</strong> hote hain.
+                                </p>
+
+                                <p>
+                                    👉 Array ka naam khud ek pointer jaisa behave karta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Key Rule (Exam Gold)</h3>
+
+                                <p>
+                                    Array ka naam = first element ka address
+                                </p>
+
+                                <pre>
+arr == &arr[0]
+</pre>
+
+                                <hr>
+
+                                <h3>Example: Array & Pointer</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int arr[3] = {10, 20, 30};
+    int *p = arr;
+
+    printf("%d\n", *p);
+    printf("%d\n", *(p + 1));
+    printf("%d\n", *(p + 2));
+
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+
+                                <pre>
+10
+20
+30
+</pre>
+
+                                <p>
+                                    👉 Explanation:
+                                </p>
+
+                                <ul>
+                                    <li><code>p</code> → arr[0] ka address</li>
+                                    <li><code>p + 1</code> → next element</li>
+                                    <li><code>*(p + i)</code> = arr[i]</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Important Note</h3>
+
+                                <ul>
+                                    <li>Array name ka address change nahi hota</li>
+                                    <li>Pointer increment ho sakta hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>5.3 Pointer to Pointer</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Pointer to Pointer</strong> ka matlab:
+                                </p>
+
+                                <p>
+                                    👉 Ek pointer jo kisi <strong>dusre pointer ka address</strong> store kare
+                                </p>
+
+                                <hr>
+
+                                <h3>Declaration</h3>
+
+                                <pre>
+int **pp;
+</pre>
+
+                                <hr>
+
+                                <h3>Example</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 10;
+    int *p = &x;
+    int **pp = &p;
+
+    printf("%d\n", x);
+    printf("%d\n", *p);
+    printf("%d\n", **pp);
+
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+
+                                <pre>
+10
+10
+10
+</pre>
+
+                                <hr>
+
+                                <h3>Memory Flow</h3>
+
+                                <pre>
+pp → p → x → value
+</pre>
+
+                                <hr>
+
+                                <h3>Use Cases</h3>
+
+                                <ul>
+                                    <li>Dynamic memory allocation</li>
+                                    <li>2D arrays</li>
+                                    <li>Functions returning pointers</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>5.4 Pointer with Functions (Call by Reference)</h2>
+                                <hr>
+
+                                <p>
+                                    Normally C me <strong>Call by Value</strong> hota hai.
+                                </p>
+
+                                <p>
+                                    Pointer use karke hum <strong>Call by Reference</strong> kar sakte hain.
+                                </p>
+
+                                <hr>
+
+                                <h3>Without Pointer (Call by Value)</h3>
+
+                                <pre>
+void change(int x) {
+    x = 50;
+}
+</pre>
+
+                                <p>
+                                    Original value change nahi hoti ❌
+                                </p>
+
+                                <hr>
+
+                                <h3>With Pointer (Call by Reference)</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+void change(int *p) {
+    *p = 50;
+}
+
+int main() {
+    int x = 10;
+    change(&x);
+    printf("%d", x);
+    return 0;
+}
+</pre>
+
+                                <p>
+                                    Output:
+                                </p>
+
+                                <pre>
+50
+</pre>
+
+                                <p>
+                                    👉 Pointer se original variable change ho gaya
+                                </p>
+
+                                <hr>
+
+                                <h3>Why Pointer with Functions?</h3>
+
+                                <ul>
+                                    <li>Original data modify kar sakte hain</li>
+                                    <li>Memory efficient</li>
+                                    <li>Arrays pass karne me useful</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>5.5 Dynamic Memory Allocation (DMA)</h2>
+                                <hr>
+
+                                <p>
+                                    C me normally memory <strong>compile time</strong> par allocate hoti hai.
+                                </p>
+
+                                <p>
+                                    Dynamic Memory Allocation ka matlab:
+                                </p>
+
+                                <p>
+                                    👉 <strong>Runtime par memory lena aur chhodna</strong>
+                                </p>
+
+                                <hr>
+
+                                <h3>Why DMA?</h3>
+
+                                <ul>
+                                    <li>Exact memory use</li>
+                                    <li>Memory waste kam</li>
+                                    <li>Large data handle</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>malloc()</h2>
+
+                                <p>
+                                    <strong>malloc</strong> = memory allocation
+                                </p>
+
+                                <pre>
+ptr = (type*) malloc(size_in_bytes);
+</pre>
+
+                                <h4>Example</h4>
+
+                                <pre>
+int *p = (int*) malloc(5 * sizeof(int));
+</pre>
+
+                                <ul>
+                                    <li>Garbage value hoti hai</li>
+                                    <li>Continuous memory</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>calloc()</h2>
+
+                                <p>
+                                    <strong>calloc</strong> = continuous allocation
+                                </p>
+
+                                <pre>
+ptr = (type*) calloc(n, size);
+</pre>
+
+                                <h4>Example</h4>
+
+                                <pre>
+int *p = (int*) calloc(5, sizeof(int));
+</pre>
+
+                                <ul>
+                                    <li>Memory initialize = 0</li>
+                                    <li>Safer than malloc</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>realloc()</h2>
+
+                                <p>
+                                    Already allocated memory ka size change karta hai
+                                </p>
+
+                                <pre>
+ptr = realloc(ptr, new_size);
+</pre>
+
+                                <h4>Example</h4>
+
+                                <pre>
+p = realloc(p, 10 * sizeof(int));
+</pre>
+
+                                <hr>
+
+                                <h2>free()</h2>
+
+                                <p>
+                                    Allocated memory ko release karta hai
+                                </p>
+
+                                <pre>
+free(p);
+</pre>
+
+                                <p>
+                                    👉 Memory leak avoid hota hai
+                                </p>
+
+                                <hr>
+
+                                <h2>DMA Comparison (Exam Gold)</h2>
+
+                                <ul>
+                                    <li>malloc → garbage value</li>
+                                    <li>calloc → zero initialized</li>
+                                    <li>realloc → resize memory</li>
+                                    <li>free → memory release</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>ONE-LINE REVISION (Final)</h2>
+
+                                <ul>
+                                    <li>Array name = pointer</li>
+                                    <li>Pointer to pointer = double *</li>
+                                    <li>Pointer + function = call by reference</li>
+                                    <li>malloc/calloc = memory allocate</li>
+                                    <li>free = memory release</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>INTERVIEW ONE-LINER</h2>
+
+                                <p>
+                                    “Pointers in C allow direct memory access.
+                                    Arrays are closely related to pointers, pointer-to-pointer
+                                    helps in multi-level memory handling, pointers enable
+                                    call by reference, and dynamic memory allocation using
+                                    malloc, calloc, realloc, and free allows efficient
+                                    runtime memory management.”
+                                </p>
+
+                                <hr>
+
+                                <hr>
+                                <h2>6. Structures, Unions, Enums</h2>
+                                <hr>
+
+                                <!-- ================================================== -->
+                                <h2>6.1 Structure</h2>
+                                <hr>
+
+                                <p>
+                                    <strong>Structure</strong> C language ka ek
+                                    <strong>user-defined data type</strong> hota hai
+                                    jo different data types ko ek saath group karta hai.
+                                </p>
+
+                                <p>
+                                    👉 Jab hume real-world entity represent karni ho
+                                    (jaise Student, Employee, Book),
+                                    tab structure use hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Why Structure?</h3>
+
+                                <ul>
+                                    <li>Multiple data ko ek unit me store karna</li>
+                                    <li>Real-world data modeling</li>
+                                    <li>Code ko readable aur organized banana</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>Structure Declaration</h3>
+
+                                <pre>
+struct Student {
+    int roll;
+    char name[20];
+    float marks;
+};
+</pre>
+
+                                <p>
+                                    👉 Yahan <code>Student</code> ek custom data type ban gaya
+                                </p>
+
+                                <hr>
+
+                                <h3>Structure Variable</h3>
+
+                                <pre>
+struct Student s1;
+</pre>
+
+                                <hr>
+
+                                <h3>Access Structure Members</h3>
+
+                                <p>
+                                    Dot (.) operator use hota hai
+                                </p>
+
+                                <pre>
+s1.roll = 1;
+s1.marks = 85.5;
+</pre>
+
+                                <hr>
+
+                                <h3>Complete Example</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+struct Student {
+    int roll;
+    float marks;
+};
+
+int main() {
+    struct Student s1;
+
+    s1.roll = 1;
+    s1.marks = 90.5;
+
+    printf("Roll = %d\n", s1.roll);
+    printf("Marks = %.2f", s1.marks);
+
+    return 0;
+}
+</pre>
+
+                                <hr>
+
+                                <!-- ================================================== -->
+                                <h2>Structure Array</h2>
+                                <hr>
+
+                                <p>
+                                    Jab multiple same-type structures store karne ho,
+                                    tab <strong>array of structure</strong> use hota hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Declaration</h3>
+
+                                <pre>
+struct Student s[3];
+</pre>
+
+                                <hr>
+
+                                <h3>Example</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+struct Student {
+    int roll;
+    int marks;
+};
+
+int main() {
+    struct Student s[2];
+
+    s[0].roll = 1;
+    s[0].marks = 80;
+
+    s[1].roll = 2;
+    s[1].marks = 90;
+
+    printf("%d %d\n", s[0].roll, s[0].marks);
+    printf("%d %d\n", s[1].roll, s[1].marks);
+
+    return 0;
+}
+</pre>
+
+                                <hr>
+
+                                <h3>Use Case</h3>
+
+                                <ul>
+                                    <li>Student records</li>
+                                    <li>Employee database</li>
+                                    <li>Product list</li>
+                                </ul>
+
+                                <hr>
+
+                                <!-- ================================================== -->
+                                <h2>Structure Pointer</h2>
+                                <hr>
+
+                                <p>
+                                    Structure ka pointer banaya ja sakta hai
+                                    jo structure ka address store karta hai.
+                                </p>
+
+                                <hr>
+
+                                <h3>Declaration</h3>
+
+                                <pre>
+struct Student *p;
+</pre>
+
+                                <hr>
+
+                                <h3>Access Operator (->)</h3>
+
+                                <p>
+                                    Pointer ke saath <strong>arrow operator (->)</strong> use hota hai
+                                </p>
+
+                                <pre>
+p->roll
+p->marks
+</pre>
+
+                                <hr>
+
+                                <h3>Example</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+struct Student {
+    int roll;
+    float marks;
+};
+
+int main() {
+    struct Student s1;
+    struct Student *p = &s1;
+
+    p->roll = 10;
+    p->marks = 88.5;
+
+    printf("%d %.2f", p->roll, p->marks);
+
+    return 0;
+}
+</pre>
+
+                                <hr>
+
+                                <h3>Why Structure Pointer?</h3>
+
+                                <ul>
+                                    <li>Functions me structure efficiently pass hota hai</li>
+                                    <li>Memory efficient</li>
+                                    <li>Dynamic allocation ke saath useful</li>
+                                </ul>
+
+                                <hr>
+
+                                <!-- ================================================== -->
+                                <h2>Nested Structure</h2>
+                                <hr>
+
+                                <p>
+                                    Jab ek structure ke andar
+                                    <strong>dusra structure</strong> ho,
+                                    to use <strong>Nested Structure</strong> kehte hain.
+                                </p>
+
+                                <hr>
+
+                                <h3>Example</h3>
+
+                                <pre>
+#include &lt;stdio.h&gt;
+
+struct Address {
+    char city[20];
+    int pin;
+};
+
+struct Student {
+    int roll;
+    struct Address add;
+};
+
+int main() {
+    struct Student s;
+
+    s.roll = 1;
+    s.add.pin = 486001;
+
+    printf("Roll = %d\n", s.roll);
+    printf("PIN = %d", s.add.pin);
+
+    return 0;
+}
+</pre>
+
+                                <hr>
+
+                                <h3>Real-life Example</h3>
+
+                                <ul>
+                                    <li>Student → Address</li>
+                                    <li>Employee → Company → Address</li>
+                                </ul>
+
+                                <hr>
+
+                                <!-- ================================================== -->
+                                <h2>Exam & Interview Points (Very Important)</h2>
+                                <hr>
+
+                                <ul>
+                                    <li>Structure is a user-defined data type</li>
+                                    <li>Structure allows grouping of different data types</li>
+                                    <li>Array of structure stores multiple records</li>
+                                    <li>Structure pointer uses arrow (->) operator</li>
+                                    <li>Nested structure represents hierarchical data</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>ONE-LINE REVISION</h2>
+
+                                <ul>
+                                    <li>Structure → custom data type</li>
+                                    <li>Structure array → multiple records</li>
+                                    <li>Structure pointer → efficient access</li>
+                                    <li>Nested structure → structure inside structure</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>INTERVIEW ONE-LINER</h2>
+
+                                <p>
+                                    “A structure in C is a user-defined data type
+                                    that allows grouping different data types together.
+                                    Arrays and pointers of structures help manage multiple
+                                    records efficiently, and nested structures are used
+                                    to represent complex real-world data.”
+                                </p>
+
+                                <hr>
+
+
+
+
+
+
+                            </div>
+                            <div class="row">
+                                <div class="buttons padd-15">
+                                    <a href="index.html#contact" class="btn hire-me">Enroll Now</a>
+                                    <a href="index.html#classes" class="btn">Back to Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course Section End  -->
+        </div>
+        <!-- Main contact End  -->
+    </div>
+    <!-- Main container End  -->
+
+    <!-- Style Switcher Start  -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End  -->
+
+    <!-- JS file  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <!-- main java script section  -->
+    <script src="JS/main.js"></script>
+    <script src="JS/style-switcher.js"></script>
+
+</body>
+
+</html>
