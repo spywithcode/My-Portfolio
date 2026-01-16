@@ -18,6 +18,7 @@ for (let i = 0; i < totalNavList; i++) {
         }
         this.classList.add('active');
         showSection(this);
+        updateScrollListener();
         if (window.innerWidth <= 1200) {
             asideSectionTogglerBtn();
         }
@@ -98,3 +99,51 @@ if (contactForm) {
         sendEmail();
     });
 }
+
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+let scrollElement = null;
+
+function handleScroll() {
+    if (!scrollElement) return;
+
+    const scrollTop = scrollElement.scrollTop;
+    const scrollHeight = scrollElement.scrollHeight;
+    const clientHeight = scrollElement.clientHeight;
+
+    const totalScrollable = scrollHeight - clientHeight;
+    const progress = totalScrollable > 0 ? scrollTop / totalScrollable : 0;
+
+    // show / hide
+    if (scrollTop > 300) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+
+    // progress ring update
+    scrollToTopBtn.style.setProperty('--progress', progress);
+}
+
+function updateScrollListener() {
+    if (scrollElement) {
+        scrollElement.removeEventListener('scroll', handleScroll);
+    }
+
+    scrollElement = document.querySelector('.section.active');
+
+    if (scrollElement) {
+        scrollElement.addEventListener('scroll', handleScroll);
+        handleScroll(); // 👈 IMPORTANT: initial call
+    }
+}
+
+scrollToTopBtn.addEventListener('click', () => {
+    if (scrollElement) {
+        scrollElement.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+});
+
+updateScrollListener();
