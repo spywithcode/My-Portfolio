@@ -2,6 +2,13 @@
 
 const largeProjects = [
   {
+    id: 15,
+    name: "Thali-Website",
+    github: "https://github.com/spywithcode/Institute-Website.git",
+    livePreview: "https://shree-academy.vercel.app/",
+    image: "assets/portfolio/project.14.png"
+  },
+  {
     id: 14,
     name: "Shree-Academy-Website",
     github: "https://github.com/spywithcode/Institute-Website.git",
@@ -193,7 +200,7 @@ smallProjects.map((project) => {
   div.innerHTML = `
     <div class="portfolio-item-inner shadow-dark">
       <div>
-        ${project.video ? `<video src="${project.video}" alt="video" class="project-img" controls muted loop></video>` : `<img src="${project.image}" alt="image" class="project-img">`}
+        ${project.video ? `<video src="${project.video}" alt="video" class="project-img" muted loop></video>` : `<img src="${project.image}" alt="image" class="project-img">`}
       </div>
       <h2 class="experience-sun-title project-title">${project.name}</h2>
       <div class="btn-container">
@@ -211,4 +218,15 @@ smallProjects.map((project) => {
 
   smallprojectContainer.appendChild(div);
 
+});
+
+// Add hover play/pause for videos
+document.querySelectorAll('.portfolio-item-inner video').forEach(video => {
+  const container = video.closest('.portfolio-item-inner');
+  container.addEventListener('mouseenter', () => {
+    video.play();
+  });
+  container.addEventListener('mouseleave', () => {
+    video.pause();
+  });
 });

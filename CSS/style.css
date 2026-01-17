@@ -916,6 +916,10 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
+.project-img[controls] {
+    display: none;
+}
+
 .project-img:hover {
     transform: scale(1.02);
 }
