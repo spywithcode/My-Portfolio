@@ -2,7 +2,7 @@
 const aboutData = {
     aboutText: `
         <div class="about-text padd-15">
-            <h3>I'm KissU, A <span>Coder</span></h3>
+            <h3>I'm Sandeep, <span>turning Ideas into Code.</span></h3>
             <p>
                 I am a driven and passionate individual with a strong interest in web design,
                 frontend development, and the broader digital ecosystem. My journey began with 
@@ -27,6 +27,7 @@ const aboutData = {
         { label: "Birthday", value: "10 nov 2003" },
         { label: "City", value: "Indore" },
         { label: "Freelancer", value: "Available" },
+        { label: "Ex-Tranning", value: "NTPC Singrauli" },
         { label: "Working Now", value: "Disha Coaching center" }
     ],
     skills: [
@@ -37,6 +38,9 @@ const aboutData = {
         { name: "Power-BI", percent: 75 },
         { name: "React", percent: 70 },
         { name: "Node.js", percent: 60 },
+        { name: "Excel Advance", percent: 80 },
+        { name: "MS-Word", percent: 90 },
+        { name: "Canva", percent: 90 },
         { name: "Python", percent: 50 }
     ],
     education: [

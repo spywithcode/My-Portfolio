@@ -6,6 +6,7 @@ const homeData = {
         focused on performance, usability, and visual appeal. My goal is to create impactful
         digital experiences that exceed expectations.`,
     cvLink: "assets/My-Resume.pdf",
+    dgLink: "",
     profilePic: "assets/@Profile.pic.jpg"
 };
 
@@ -15,6 +16,7 @@ document.getElementById("home-content").innerHTML = `
         <h3 class="my-profession">${homeData.profession}</h3>
         <p>${homeData.description}</p>
         <a href="${homeData.cvLink}" class="btn">Download CV</a>
+        <a href="${homeData.dgLink}" class="btn">DG-Card</a>
     </div>
     <div class="home-img padd-15">
         <img src="${homeData.profilePic}" alt="profile picture" />
