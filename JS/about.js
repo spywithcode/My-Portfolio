@@ -26,9 +26,7 @@ const aboutData = {
         { label: "Degree", value: "Integrated MCA" },
         { label: "Birthday", value: "10 nov 2003" },
         { label: "City", value: "Indore" },
-        { label: "Freelancer", value: "Available" },
-        { label: "Ex-Tranning", value: "NTPC Singrauli" },
-        { label: "Working Now", value: "Disha Coaching center" }
+        { label: "Freelancer", value: "Available" }
     ],
     skills: [
         { name: "HTML", percent: 90 },
@@ -36,11 +34,11 @@ const aboutData = {
         { name: "JavaScript", percent: 80 },
         { name: "My-SQL", percent: 75 },
         { name: "Power-BI", percent: 75 },
-        { name: "React", percent: 70 },
-        { name: "Node.js", percent: 60 },
+        { name: "React", percent: 30 },
+        { name: "Node.js", percent: 20 },
+        { name: "Canva", percent: 90 },
         { name: "Excel Advance", percent: 80 },
         { name: "MS-Word", percent: 90 },
-        { name: "Canva", percent: 90 },
         { name: "Python", percent: 50 }
     ],
     education: [
@@ -64,6 +62,16 @@ const aboutData = {
         }
     ],
     experience: [
+        {
+            date: "Dec-2025/Present",
+            title: "Disha Computer Institute",
+            details: "“I am a Computer Faculty at Disha Computer Institute, focused on teaching practical programming skills, modern web technologies, and building strong problem-solving foundations in students.”"
+        },
+        {
+            date: "Aug-2025/Sep-2025",
+            title: "NTPC-Singrauli",
+            details: "Combining design principles with technical precision, I build engaging interfaces using modern frontend technologies and developer tools."
+        },
         {
             date: "2022-2024",
             title: "Frontend Design",

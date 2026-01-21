@@ -810,11 +810,18 @@ printf("%d", a % b);  // 1
 
                                 <h4>Example</h4>
                                 <pre>
-int a = 10, b = 20;
+#include <stdio.h>
 
-printf("%d", a == b);  // 0
-printf("%d", a < b);   // 1
-printf("%d", a != b);  // 1
+int main() {
+    int a = 10, b = 5;
+
+    printf("%d\n", (a > 5 && b > 3));    // 1
+    printf("%d\n", (a > 20 || b > 3));   // 1
+    printf("%d\n", !(a == 10));          // 0
+
+    return 0;
+}
+
 </pre>
 
                                 <hr>
@@ -4014,39 +4021,28 @@ free(p);
                                 <hr>
 
                                 <hr>
-                                <h2>6. Structures, Unions, Enums</h2>
+                                <h2>6. Structures, Unions, Enums (C Programming)</h2>
                                 <hr>
 
-                                <!-- ================================================== -->
-                                <h2>6.1 Structure</h2>
-                                <hr>
+                                <h3>What is a Structure?</h3>
+                                <p>Structure ek <b>user-defined data type</b> hoti hai jiska use different data types ko
+                                    ek single unit me store karne ke liye kiya jata hai.</p>
 
-                                <p>
-                                    <strong>Structure</strong> C language ka ek
-                                    <strong>user-defined data type</strong> hota hai
-                                    jo different data types ko ek saath group karta hai.
-                                </p>
+                                <p>Simple words:</p>
+                                <p>Structure = multiple variables ko ek naam ke andar rakhna</p>
 
+                                <p>Example:</p>
                                 <p>
-                                    👉 Jab hume real-world entity represent karni ho
-                                    (jaise Student, Employee, Book),
-                                    tab structure use hota hai.
+                                    Student ka record:<br>
+                                    name (string), roll no (int), marks (float)
                                 </p>
 
                                 <hr>
 
-                                <h3>Why Structure?</h3>
+                                <h3>6.1 Structure</h3>
 
-                                <ul>
-                                    <li>Multiple data ko ek unit me store karna</li>
-                                    <li>Real-world data modeling</li>
-                                    <li>Code ko readable aur organized banana</li>
-                                </ul>
-
-                                <hr>
-
-                                <h3>Structure Declaration</h3>
-
+                                <h4>Structure Definition</h4>
+                                <p>
                                 <pre>
 struct Student {
     int roll;
@@ -4054,273 +4050,1030 @@ struct Student {
     float marks;
 };
 </pre>
-
-                                <p>
-                                    👉 Yahan <code>Student</code> ek custom data type ban gaya
                                 </p>
+
+                                <p>Yahan <b>struct Student</b> ek new data type ban gaya.</p>
 
                                 <hr>
 
-                                <h3>Structure Variable</h3>
-
+                                <h4>Structure Variable Declaration</h4>
+                                <p>
                                 <pre>
 struct Student s1;
 </pre>
-
-                                <hr>
-
-                                <h3>Access Structure Members</h3>
-
-                                <p>
-                                    Dot (.) operator use hota hai
                                 </p>
 
+                                <p>Ya declaration ke sath:</p>
+                                <p>
                                 <pre>
-s1.roll = 1;
-s1.marks = 85.5;
-</pre>
-
-                                <hr>
-
-                                <h3>Complete Example</h3>
-
-                                <pre>
-#include &lt;stdio.h&gt;
-
 struct Student {
     int roll;
+    char name[20];
     float marks;
-};
-
-int main() {
-    struct Student s1;
-
-    s1.roll = 1;
-    s1.marks = 90.5;
-
-    printf("Roll = %d\n", s1.roll);
-    printf("Marks = %.2f", s1.marks);
-
-    return 0;
-}
+} s1, s2;
 </pre>
-
-                                <hr>
-
-                                <!-- ================================================== -->
-                                <h2>Structure Array</h2>
-                                <hr>
-
-                                <p>
-                                    Jab multiple same-type structures store karne ho,
-                                    tab <strong>array of structure</strong> use hota hai.
                                 </p>
 
                                 <hr>
 
-                                <h3>Declaration</h3>
+                                <h4>Access Structure Members</h4>
+                                <p>Structure ke members ko access karne ke liye <b>dot (.) operator</b> ka use hota hai.
+                                </p>
 
+                                <p>
+                                <pre>
+s1.roll = 101;
+s1.marks = 85.5;
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h4>User-defined Data Type</h4>
+                                <p>Structure ko user-defined data type isliye kaha jata hai kyunki programmer khud apna
+                                    data type create karta hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+struct Book {
+    int pages;
+    float price;
+};
+</pre>
+                                </p>
+
+                                <p>Ab <b>struct Book</b> ek new data type hai.</p>
+
+                                <hr>
+
+                                <h4>Structure Array</h4>
+                                <p>Jab multiple structure variables chahiye hote hain, tab structure ka array use karte
+                                    hain.</p>
+
+                                <p>Example:</p>
+                                <p>
                                 <pre>
 struct Student s[3];
 </pre>
-
-                                <hr>
-
-                                <h3>Example</h3>
-
-                                <pre>
-#include &lt;stdio.h&gt;
-
-struct Student {
-    int roll;
-    int marks;
-};
-
-int main() {
-    struct Student s[2];
-
-    s[0].roll = 1;
-    s[0].marks = 80;
-
-    s[1].roll = 2;
-    s[1].marks = 90;
-
-    printf("%d %d\n", s[0].roll, s[0].marks);
-    printf("%d %d\n", s[1].roll, s[1].marks);
-
-    return 0;
-}
-</pre>
-
-                                <hr>
-
-                                <h3>Use Case</h3>
-
-                                <ul>
-                                    <li>Student records</li>
-                                    <li>Employee database</li>
-                                    <li>Product list</li>
-                                </ul>
-
-                                <hr>
-
-                                <!-- ================================================== -->
-                                <h2>Structure Pointer</h2>
-                                <hr>
-
-                                <p>
-                                    Structure ka pointer banaya ja sakta hai
-                                    jo structure ka address store karta hai.
                                 </p>
 
-                                <hr>
-
-                                <h3>Declaration</h3>
-
-                                <pre>
-struct Student *p;
-</pre>
-
-                                <hr>
-
-                                <h3>Access Operator (->)</h3>
-
+                                <p>Access:</p>
                                 <p>
-                                    Pointer ke saath <strong>arrow operator (->)</strong> use hota hai
+                                <pre>
+s[0].roll = 1;
+s[1].marks = 90.5;
+</pre>
                                 </p>
 
-                                <pre>
-p->roll
-p->marks
-</pre>
+                                <p>Use case:</p>
+                                <p>Multiple students ka data store karna.</p>
 
                                 <hr>
 
-                                <h3>Example</h3>
+                                <h4>Structure Pointer</h4>
+                                <p>Structure pointer ka use structure ke address ko store karne ke liye hota hai.</p>
 
-                                <pre>
-#include &lt;stdio.h&gt;
-
-struct Student {
-    int roll;
-    float marks;
-};
-
-int main() {
-    struct Student s1;
-    struct Student *p = &s1;
-
-    p->roll = 10;
-    p->marks = 88.5;
-
-    printf("%d %.2f", p->roll, p->marks);
-
-    return 0;
-}
-</pre>
-
-                                <hr>
-
-                                <h3>Why Structure Pointer?</h3>
-
-                                <ul>
-                                    <li>Functions me structure efficiently pass hota hai</li>
-                                    <li>Memory efficient</li>
-                                    <li>Dynamic allocation ke saath useful</li>
-                                </ul>
-
-                                <hr>
-
-                                <!-- ================================================== -->
-                                <h2>Nested Structure</h2>
-                                <hr>
-
+                                <p>Example:</p>
                                 <p>
-                                    Jab ek structure ke andar
-                                    <strong>dusra structure</strong> ho,
-                                    to use <strong>Nested Structure</strong> kehte hain.
+                                <pre>
+struct Student s1;
+struct Student *ptr;
+
+ptr = &s1;
+</pre>
                                 </p>
 
+                                <p>Access members using pointer:</p>
+                                <p>
+                                <pre>
+ptr->roll = 10;
+ptr->marks = 88.5;
+</pre>
+                                </p>
+
+                                <p>Note:</p>
+                                <p><b>-> operator</b> structure pointer ke sath use hota hai.</p>
+
                                 <hr>
 
-                                <h3>Example</h3>
+                                <h4>Nested Structure</h4>
+                                <p>Jab ek structure ke andar doosra structure hota hai, use <b>nested structure</b>
+                                    kehte hain.</p>
 
+                                <p>Example:</p>
+                                <p>
                                 <pre>
-#include &lt;stdio.h&gt;
-
 struct Address {
     char city[20];
-    int pin;
+    int pincode;
 };
 
 struct Student {
     int roll;
     struct Address add;
 };
-
-int main() {
-    struct Student s;
-
-    s.roll = 1;
-    s.add.pin = 486001;
-
-    printf("Roll = %d\n", s.roll);
-    printf("PIN = %d", s.add.pin);
-
-    return 0;
-}
 </pre>
+                                </p>
 
-                                <hr>
-
-                                <h3>Real-life Example</h3>
-
-                                <ul>
-                                    <li>Student → Address</li>
-                                    <li>Employee → Company → Address</li>
-                                </ul>
-
-                                <hr>
-
-                                <!-- ================================================== -->
-                                <h2>Exam & Interview Points (Very Important)</h2>
-                                <hr>
-
-                                <ul>
-                                    <li>Structure is a user-defined data type</li>
-                                    <li>Structure allows grouping of different data types</li>
-                                    <li>Array of structure stores multiple records</li>
-                                    <li>Structure pointer uses arrow (->) operator</li>
-                                    <li>Nested structure represents hierarchical data</li>
-                                </ul>
-
-                                <hr>
-
-                                <h2>ONE-LINE REVISION</h2>
-
-                                <ul>
-                                    <li>Structure → custom data type</li>
-                                    <li>Structure array → multiple records</li>
-                                    <li>Structure pointer → efficient access</li>
-                                    <li>Nested structure → structure inside structure</li>
-                                </ul>
-
-                                <hr>
-
-                                <h2>INTERVIEW ONE-LINER</h2>
-
+                                <p>Access:</p>
                                 <p>
-                                    “A structure in C is a user-defined data type
-                                    that allows grouping different data types together.
-                                    Arrays and pointers of structures help manage multiple
-                                    records efficiently, and nested structures are used
-                                    to represent complex real-world data.”
+                                <pre>
+s1.add.city;
+s1.add.pincode;
+</pre>
                                 </p>
 
                                 <hr>
 
+                                <h3>6.2 Union</h3>
+                                <p>Union bhi structure jaisa hota hai, lekin sab members <b>same memory location</b>
+                                    share karte hain.</p>
 
+                                <p>Difference:</p>
+                                <ul>
+                                    <li>Structure → sab members ke liye alag memory</li>
+                                    <li>Union → sab members ke liye same memory</li>
+                                </ul>
 
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+union Data {
+    int i;
+    float f;
+};
+</pre>
+                                </p>
+
+                                <p>Note:</p>
+                                <p>Union me ek time par sirf ek member hi value hold karta hai.</p>
+
+                                <hr>
+
+                                <h3>6.3 Enum (Enumeration)</h3>
+                                <p>Enum ek user-defined data type hota hai jisme fixed named constants hote hain.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+enum Day {Mon, Tue, Wed, Thu, Fri};
+</pre>
+                                </p>
+
+                                <p>Use:</p>
+                                <p>
+                                <pre>
+enum Day d;
+d = Mon;
+</pre>
+                                </p>
+
+                                <p>Default values:</p>
+                                <p>Mon = 0, Tue = 1, Wed = 2 ...</p>
+
+                                <hr>
+
+                                <h3>6.4 Structure vs Union vs Enum</h3>
+                                <ul>
+                                    <li>Structure → different data types, more memory</li>
+                                    <li>Union → memory efficient</li>
+                                    <li>Enum → named constant values</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>6.5 Common Mistakes</h3>
+                                <ul>
+                                    <li>Union ko structure jaisa samajhna ❌</li>
+                                    <li>Structure pointer me dot (.) use karna ❌</li>
+                                    <li>Enum ko string value dena ❌</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>6.6 One-Line Revision (Exam Ready)</h3>
+                                <ul>
+                                    <li>Structure = collection of variables</li>
+                                    <li>Union = shared memory data type</li>
+                                    <li>Enum = named constant values</li>
+                                </ul>
+
+                                <hr>
+
+                                <hr>
+                                <h2>7. File Handling (Real-world Usage)</h2>
+                                <hr>
+
+                                <h3>What is File Handling?</h3>
+                                <p>File handling ka use program ke data ko <b>permanently store</b> karne ke liye hota
+                                    hai.</p>
+
+                                <p>Simple words:</p>
+                                <p>File Handling = data ko file me read aur write karna</p>
+
+                                <p>Real-world examples:</p>
+                                <ul>
+                                    <li>Student record save karna</li>
+                                    <li>Employee salary report</li>
+                                    <li>Login system me user data</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.1 File Basics</h3>
+                                <p>C language me file handling <b>&lt;stdio.h&gt;</b> header file ke through hoti hai.
+                                </p>
+
+                                <p>File ke saath kaam karne ke liye <b>FILE pointer</b> use hota hai.</p>
+
+                                <hr>
+
+                                <h4>File Pointer</h4>
+                                <p>
+                                <pre>
+FILE *fp;
+</pre>
+                                </p>
+
+                                <p>Explanation:</p>
+                                <ul>
+                                    <li>FILE → predefined structure hai</li>
+                                    <li>fp → file ka address store karta hai</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.2 File Modes</h3>
+                                <p>File mode batata hai file kis purpose ke liye open ho rahi hai.</p>
+
+                                <ul>
+                                    <li><b>r</b> → read (file exist honi chahiye)</li>
+                                    <li><b>w</b> → write (new file create / old delete)</li>
+                                    <li><b>a</b> → append (data end me add)</li>
+                                    <li><b>r+</b> → read + write</li>
+                                    <li><b>w+</b> → write + read</li>
+                                </ul>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+fp = fopen("data.txt", "r");
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h3>7.3 File Functions</h3>
+
+                                <h4>fopen()</h4>
+                                <p>File ko open karne ke liye use hota hai.</p>
+
+                                <p>
+                                <pre>
+fp = fopen("data.txt", "w");
+</pre>
+                                </p>
+
+                                <p>Note:</p>
+                                <p>Agar file open nahi hoti to fopen() NULL return karta hai.</p>
+
+                                <hr>
+
+                                <h4>fclose()</h4>
+                                <p>Open file ko close karne ke liye use hota hai.</p>
+
+                                <p>
+                                <pre>
+fclose(fp);
+</pre>
+                                </p>
+
+                                <p>File close karna important hota hai memory free karne ke liye.</p>
+
+                                <hr>
+
+                                <h4>fprintf()</h4>
+                                <p>File me formatted data write karne ke liye use hota hai.</p>
+
+                                <p>
+                                <pre>
+fprintf(fp, "Marks = %d", marks);
+</pre>
+                                </p>
+
+                                <p>Kaam karta hai jaise printf(), bas output file me jata hai.</p>
+
+                                <hr>
+
+                                <h4>fscanf()</h4>
+                                <p>File se formatted data read karne ke liye use hota hai.</p>
+
+                                <p>
+                                <pre>
+fscanf(fp, "%d", &marks);
+</pre>
+                                </p>
+
+                                <p>Kaam karta hai jaise scanf(), bas input file se aata hai.</p>
+
+                                <hr>
+
+                                <h4>fgets()</h4>
+                                <p>File se ek line read karne ke liye use hota hai.</p>
+
+                                <p>
+                                <pre>
+fgets(str, 50, fp);
+</pre>
+                                </p>
+
+                                <p>Safe function hai, buffer overflow ka risk kam hota hai.</p>
+
+                                <hr>
+
+                                <h4>fputs()</h4>
+                                <p>File me string write karne ke liye use hota hai.</p>
+
+                                <p>
+                                <pre>
+fputs("Hello C File", fp);
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h4>fread() & fwrite()</h4>
+                                <p>Binary files ke liye use hote hain.</p>
+
+                                <p>
+                                <pre>
+fwrite(&obj, sizeof(obj), 1, fp);
+fread(&obj, sizeof(obj), 1, fp);
+</pre>
+                                </p>
+
+                                <p>Use case:</p>
+                                <ul>
+                                    <li>Image file</li>
+                                    <li>Database file</li>
+                                    <li>Binary data storage</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.4 File Handling Flow</h3>
+                                <ul>
+                                    <li>File open → fopen()</li>
+                                    <li>Read / Write → file functions</li>
+                                    <li>File close → fclose()</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.5 Common Mistakes</h3>
+                                <ul>
+                                    <li>File open check na karna ❌</li>
+                                    <li>fclose() bhool jana ❌</li>
+                                    <li>Wrong file mode use karna ❌</li>
+                                    <li>Binary file me fprintf use karna ❌</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>7.6 One-Line Revision (Exam Ready)</h3>
+                                <ul>
+                                    <li>File pointer = FILE *fp</li>
+                                    <li>fopen() → open file</li>
+                                    <li>fclose() → close file</li>
+                                    <li>fprintf / fscanf → formatted I/O</li>
+                                    <li>fread / fwrite → binary data</li>
+                                </ul>
+
+                                <hr>
+
+                                <hr>
+                                <h2>8. Preprocessor & Macros (C Programming)</h2>
+                                <hr>
+
+                                <h3>What is Preprocessor?</h3>
+                                <p>Preprocessor C program ka wo part hota hai jo <b>compilation se pehle</b> execute
+                                    hota hai.</p>
+
+                                <p>Simple words:</p>
+                                <p>Preprocessor = compiler se pehle kaam karne wala program</p>
+
+                                <p>Preprocessor ka kaam:</p>
+                                <ul>
+                                    <li>Header files include karna</li>
+                                    <li>Macros define karna</li>
+                                    <li>Conditional compilation control karna</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>8.1 Preprocessor Directives</h3>
+                                <p>Preprocessor directives hamesha <b>#</b> symbol se start hote hain.</p>
+
+                                <hr>
+
+                                <h4>#define</h4>
+                                <p><b>#define</b> ka use constant ya macro define karne ke liye hota hai.</p>
+
+                                <p>Example (Constant):</p>
+                                <p>
+                                <pre>
+#define PI 3.14
+</pre>
+                                </p>
+
+                                <p>Use:</p>
+                                <p>
+                                <pre>
+area = PI * r * r;
+</pre>
+                                </p>
+
+                                <p>Example (Macro):</p>
+                                <p>
+                                <pre>
+#define SQUARE(x) x*x
+</pre>
+                                </p>
+
+                                <p>Use:</p>
+                                <p>
+                                <pre>
+SQUARE(5)  → 25
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h4>#include</h4>
+                                <p><b>#include</b> ka use header files add karne ke liye hota hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+#include &lt;stdio.h&gt;
+#include "myfile.h"
+</pre>
+                                </p>
+
+                                <p>Difference:</p>
+                                <ul>
+                                    <li>&lt; &gt; → system header files</li>
+                                    <li>" " → user-defined header files</li>
+                                </ul>
+
+                                <hr>
+
+                                <h4>#undef</h4>
+                                <p><b>#undef</b> ka use defined macro ko remove karne ke liye hota hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+#define MAX 100
+#undef MAX
+</pre>
+                                </p>
+
+                                <p>Ab MAX ka use nahi kar sakte.</p>
+
+                                <hr>
+
+                                <h3>8.2 Macros vs Functions</h3>
+                                <p>Macro aur function ka kaam similar lagta hai, lekin internally dono different hote
+                                    hain.</p>
+
+                                <ul>
+                                    <li>Macro → preprocessor ke time expand hota hai</li>
+                                    <li>Function → runtime par call hota hai</li>
+                                </ul>
+
+                                <p>Comparison:</p>
+                                <ul>
+                                    <li>Macro → faster execution</li>
+                                    <li>Function → memory efficient</li>
+                                    <li>Macro → no type checking</li>
+                                    <li>Function → type checking supported</li>
+                                </ul>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+#define ADD(a,b) a+b
+</pre>
+                                </p>
+
+                                <p>Vs</p>
+                                <p>
+                                <pre>
+int add(int a, int b) {
+    return a + b;
+}
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h3>8.3 Conditional Compilation</h3>
+                                <p>Conditional compilation ka use specific condition ke basis par code compile karne ke
+                                    liye hota hai.</p>
+
+                                <hr>
+
+                                <h4>#ifdef</h4>
+                                <p>Check karta hai ki macro defined hai ya nahi.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+#define DEBUG
+
+#ifdef DEBUG
+printf("Debug mode ON");
+#endif
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h4>#ifndef</h4>
+                                <p>Check karta hai ki macro defined nahi hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+#ifndef LIMIT
+#define LIMIT 10
+#endif
+</pre>
+                                </p>
+
+                                <p>Use case:</p>
+                                <p>Header files ko multiple inclusion se bachane ke liye.</p>
+
+                                <hr>
+
+                                <h3>8.4 Common Mistakes</h3>
+                                <ul>
+                                    <li>Macro me brackets na lagana ❌</li>
+                                    <li>Macro ko function samajhna ❌</li>
+                                    <li>#include syntax galat likhna ❌</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>8.5 One-Line Revision (Exam Ready)</h3>
+                                <ul>
+                                    <li>Preprocessor → compiler se pehle kaam karta hai</li>
+                                    <li>#define → macro define</li>
+                                    <li>#include → header file add</li>
+                                    <li>#ifdef / #ifndef → conditional compilation</li>
+                                </ul>
+
+                                <hr>
+
+                                <hr>
+                                <h2>9. Advanced C Concepts</h2>
+                                <hr>
+
+                                <h3>Overview</h3>
+                                <p>Advanced C concepts ka use program ko <b>efficient, flexible aur powerful</b> banane
+                                    ke liye hota hai.</p>
+
+                                <p>Is chapter me hum seekhenge:</p>
+                                <ul>
+                                    <li>Memory behavior</li>
+                                    <li>Program execution control</li>
+                                    <li>Low-level operations</li>
+                                    <li>Error handling</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>9.1 Storage Classes</h3>
+                                <p>Storage class batata hai:</p>
+                                <ul>
+                                    <li>Variable ki scope</li>
+                                    <li>Lifetime</li>
+                                    <li>Visibility</li>
+                                    <li>Memory location</li>
+                                </ul>
+
+                                <hr>
+
+                                <h4>auto</h4>
+                                <p><b>auto</b> default storage class hoti hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+auto int x = 10;
+</pre>
+                                </p>
+
+                                <p>Note:</p>
+                                <p>auto keyword usually likhne ki zarurat nahi hoti.</p>
+
+                                <hr>
+
+                                <h4>static</h4>
+                                <p><b>static</b> variable apni value program ke end tak retain karta hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+void fun() {
+    static int count = 0;
+    count++;
+    printf("%d", count);
+}
+</pre>
+                                </p>
+
+                                <p>Use case:</p>
+                                <p>Function calls ke beech value preserve karna.</p>
+
+                                <hr>
+
+                                <h4>extern</h4>
+                                <p><b>extern</b> ka use global variable ko dusri file me access karne ke liye hota hai.
+                                </p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+extern int total;
+</pre>
+                                </p>
+
+                                <p>Note:</p>
+                                <p>Memory allocation nahi hota, sirf reference hota hai.</p>
+
+                                <hr>
+
+                                <h4>register</h4>
+                                <p><b>register</b> variable CPU register me store karne ka request karta hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+register int i;
+</pre>
+                                </p>
+
+                                <p>Note:</p>
+                                <p>Register variable ka address (&) nahi le sakte.</p>
+
+                                <hr>
+
+                                <h3>9.2 Command Line Arguments</h3>
+                                <p>Command line arguments ka use program ko <b>runtime par input</b> dene ke liye hota
+                                    hai.</p>
+
+                                <p>Main function:</p>
+                                <p>
+                                <pre>
+int main(int argc, char *argv[])
+</pre>
+                                </p>
+
+                                <ul>
+                                    <li><b>argc</b> → arguments count</li>
+                                    <li><b>argv</b> → arguments values</li>
+                                </ul>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+./program 10 20
+</pre>
+                                </p>
+
+                                <p>Note:</p>
+                                <p>argv[0] hamesha program ka naam hota hai.</p>
+
+                                <hr>
+
+                                <h3>9.3 typedef</h3>
+                                <p><b>typedef</b> ka use existing data type ko naya naam dene ke liye hota hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+typedef unsigned int uint;
+uint a = 10;
+</pre>
+                                </p>
+
+                                <p>Use case:</p>
+                                <p>Code readability improve karna.</p>
+
+                                <hr>
+
+                                <h3>9.4 Bit Manipulation</h3>
+                                <p>Bit manipulation ka use <b>low-level programming</b> aur performance optimization ke
+                                    liye hota hai.</p>
+
+                                <hr>
+
+                                <h4>Bitwise Operators</h4>
+                                <ul>
+                                    <li>&amp; → AND</li>
+                                    <li>| → OR</li>
+                                    <li>^ → XOR</li>
+                                    <li>&lt;&lt; → Left shift</li>
+                                    <li>&gt;&gt; → Right shift</li>
+                                    <li>~ → NOT</li>
+                                </ul>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+int a = 5;   // 0101
+int b = 3;   // 0011
+a & b = 1;   // 0001
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h4>Flags</h4>
+                                <p>Flags ka use multiple ON/OFF states ko ek single variable me manage karne ke liye
+                                    hota hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+#define READ  1
+#define WRITE 2
+#define EXEC  4
+</pre>
+                                </p>
+
+                                <p>Use:</p>
+                                <p>
+                                <pre>
+int permission = READ | WRITE;
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h3>9.5 Error Handling</h3>
+                                <p>C me built-in exception handling nahi hoti, isliye error handling manually hoti hai.
+                                </p>
+
+                                <hr>
+
+                                <h4>errno</h4>
+                                <p><b>errno</b> ek global variable hai jo error code store karta hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+if (fp == NULL) {
+    printf("%d", errno);
+}
+</pre>
+                                </p>
+
+                                <hr>
+
+                                <h4>perror()</h4>
+                                <p><b>perror()</b> readable error message print karta hai.</p>
+
+                                <p>Example:</p>
+                                <p>
+                                <pre>
+perror("File error");
+</pre>
+                                </p>
+
+                                <p>Output system-defined message deta hai.</p>
+
+                                <hr>
+
+                                <h3>9.6 Common Mistakes</h3>
+                                <ul>
+                                    <li>static aur global variable confuse karna ❌</li>
+                                    <li>argv[0] ko input samajhna ❌</li>
+                                    <li>Bitwise aur logical operator confuse karna ❌</li>
+                                    <li>errno ko manually change karna ❌</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>9.7 One-Line Revision (Exam Ready)</h3>
+                                <ul>
+                                    <li>Storage class → scope & lifetime</li>
+                                    <li>argc/argv → runtime input</li>
+                                    <li>typedef → alias for data type</li>
+                                    <li>Bit manipulation → low-level control</li>
+                                    <li>errno/perror → error handling</li>
+                                </ul>
+
+                                <hr>
+
+                                <hr>
+                                <h2>10. Data Structures in C (Career Turning Point)</h2>
+                                <hr>
+
+                                <h3>What is Data Structure?</h3>
+                                <p>Data structure ka use data ko <b>efficient way</b> me store, manage aur access karne
+                                    ke liye hota hai.</p>
+
+                                <p>Simple words:</p>
+                                <p>Data Structure = data ko sahi tareeke se organize karna</p>
+
+                                <p>Career point:</p>
+                                <ul>
+                                    <li>DSA interviews ka base</li>
+                                    <li>Performance optimization</li>
+                                    <li>Problem solving skills</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.1 Linked List</h3>
+                                <p>Linked list ek linear data structure hoti hai jisme elements <b>nodes</b> ke form me
+                                    hote hain.</p>
+
+                                <p>Har node me hota hai:</p>
+                                <ul>
+                                    <li>Data</li>
+                                    <li>Next node ka address</li>
+                                </ul>
+
+                                <p>Properties:</p>
+                                <ul>
+                                    <li>Dynamic size</li>
+                                    <li>Non-contiguous memory</li>
+                                    <li>Insertion easy</li>
+                                </ul>
+
+                                <p>Types:</p>
+                                <ul>
+                                    <li>Singly Linked List</li>
+                                    <li>Doubly Linked List</li>
+                                    <li>Circular Linked List</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.2 Stack</h3>
+                                <p>Stack ek linear data structure hoti hai jo <b>LIFO</b> principle follow karti hai.
+                                </p>
+
+                                <p>LIFO:</p>
+                                <p>Last In First Out</p>
+
+                                <p>Operations:</p>
+                                <ul>
+                                    <li>Push → element add</li>
+                                    <li>Pop → element remove</li>
+                                    <li>Peek → top element</li>
+                                </ul>
+
+                                <p>Real-world example:</p>
+                                <ul>
+                                    <li>Plate stack</li>
+                                    <li>Undo/Redo</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.3 Queue</h3>
+                                <p>Queue ek linear data structure hoti hai jo <b>FIFO</b> principle follow karti hai.
+                                </p>
+
+                                <p>FIFO:</p>
+                                <p>First In First Out</p>
+
+                                <p>Operations:</p>
+                                <ul>
+                                    <li>Enqueue → insert</li>
+                                    <li>Dequeue → delete</li>
+                                </ul>
+
+                                <p>Real-world example:</p>
+                                <ul>
+                                    <li>Bank line</li>
+                                    <li>Ticket counter</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.4 Circular Queue</h3>
+                                <p>Circular queue normal queue ka advanced version hota hai.</p>
+
+                                <p>Difference:</p>
+                                <ul>
+                                    <li>Last position first se connected hoti hai</li>
+                                    <li>Memory wastage kam hota hai</li>
+                                </ul>
+
+                                <p>Use case:</p>
+                                <ul>
+                                    <li>CPU scheduling</li>
+                                    <li>Buffer management</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.5 Trees (Basic)</h3>
+                                <p>Tree ek <b>non-linear</b> data structure hota hai.</p>
+
+                                <p>Basic terms:</p>
+                                <ul>
+                                    <li>Root</li>
+                                    <li>Parent</li>
+                                    <li>Child</li>
+                                    <li>Leaf</li>
+                                </ul>
+
+                                <p>Binary Tree:</p>
+                                <ul>
+                                    <li>Max 2 children</li>
+                                </ul>
+
+                                <p>Use case:</p>
+                                <ul>
+                                    <li>File system</li>
+                                    <li>Hierarchy data</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.6 Searching</h3>
+                                <p>Searching ka use data structure me element find karne ke liye hota hai.</p>
+
+                                <p>Types:</p>
+                                <ul>
+                                    <li>Linear Search</li>
+                                    <li>Binary Search</li>
+                                </ul>
+
+                                <p>Difference:</p>
+                                <ul>
+                                    <li>Linear → slow, simple</li>
+                                    <li>Binary → fast, sorted data required</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.7 Sorting</h3>
+                                <p>Sorting ka use data ko order me arrange karne ke liye hota hai.</p>
+
+                                <p>Types:</p>
+                                <ul>
+                                    <li>Bubble Sort</li>
+                                    <li>Selection Sort</li>
+                                    <li>Insertion Sort</li>
+                                </ul>
+
+                                <p>Basic idea:</p>
+                                <ul>
+                                    <li>Bubble → adjacent swap</li>
+                                    <li>Selection → minimum select</li>
+                                    <li>Insertion → correct position insert</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.8 Comparison Table (Exam Ready)</h3>
+                                <ul>
+                                    <li>Stack → LIFO</li>
+                                    <li>Queue → FIFO</li>
+                                    <li>Circular Queue → memory efficient</li>
+                                    <li>Tree → hierarchical structure</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.9 Common Mistakes</h3>
+                                <ul>
+                                    <li>Stack aur queue confuse karna ❌</li>
+                                    <li>Binary search unsorted array me lagana ❌</li>
+                                    <li>Linked list ko array samajhna ❌</li>
+                                </ul>
+
+                                <hr>
+
+                                <h3>10.10 One-Line Revision (Exam Ready)</h3>
+                                <ul>
+                                    <li>Linked list = dynamic structure</li>
+                                    <li>Stack = LIFO</li>
+                                    <li>Queue = FIFO</li>
+                                    <li>Tree = non-linear</li>
+                                    <li>Sorting = arrange data</li>
+                                </ul>
+
+                                <hr>
 
 
 

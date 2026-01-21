@@ -4,9 +4,9 @@ const largeProjects = [
   {
     id: 15,
     name: "Thali-Website",
-    github: "https://github.com/spywithcode/Institute-Website.git",
-    livePreview: "https://shree-academy.vercel.app/",
-    image: "assets/portfolio/project.14.png"
+    github: "https://github.com/spywithcode/Demo-thali.git",
+    livePreview: "https://spywithcode.github.io/Demo-thali/",
+    image: "assets/portfolio/project.15.png"
   },
   {
     id: 14,
