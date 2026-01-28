@@ -343,7 +343,7 @@ ul {
     border-top: 1px solid var(--bg-black-50);
 }
 
-.aside .social-media a {
+.aside .social-media a{
     color: var(--text-black-900);
     font-size: 20px;
     transition: all 0.3s ease;
@@ -351,13 +351,11 @@ ul {
     padding: 8px;
     border-radius: 50%;
     background: transparent;
-    /* border: 2px solid transparent; */
 }
 
 .aside .social-media a:hover {
     color: var(--skin-color);
     transform: translateY(-3px);
-    background: var(--bg-black-50);
     border-color: var(--skin-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -500,7 +498,7 @@ h3.my-profession {
     border: 3px solid var(--skin-color);
 }
 
-/* ======= Social Media ======== */
+/* =================== Social Media ==================== */
 /* ======================= About ======================= */
 
 .about .about-content {

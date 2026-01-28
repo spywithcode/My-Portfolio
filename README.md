@@ -132,7 +132,7 @@ The website is fully responsive with breakpoints for:
 
 ## 📧 Contact
 
-**Kissu (CodeWithSpy)**
+**Sandeep Shukla (CodeWithSpy)**
 - Email: spywithcode@gmail.com
 - Website: [https://spywithcode.github.io/My-Portfolio/](https://spywithcode.github.io/My-Portfolio/)
 - Location: Indore, India
@@ -151,4 +151,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Built with ❤️ by Kissu**
+**Built with ❤️ by Shukla Jii**
