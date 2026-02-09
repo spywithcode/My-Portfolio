@@ -343,7 +343,7 @@ ul {
     border-top: 1px solid var(--bg-black-50);
 }
 
-.aside .social-media a{
+.aside .social-media a {
     color: var(--text-black-900);
     font-size: 20px;
     transition: all 0.3s ease;
@@ -1644,10 +1644,8 @@ body.dark code {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: conic-gradient(
-        var(--skin-color) calc(var(--progress) * 360deg),
-        transparent 0deg
-    );
+    background: conic-gradient(var(--skin-color) calc(var(--progress) * 360deg),
+            transparent 0deg);
     mask: radial-gradient(circle at center, transparent 26px, black 27px);
     -webkit-mask: radial-gradient(circle at center, transparent 26px, black 27px);
     z-index: -1;

@@ -6,7 +6,7 @@ const homeData = {
         focused on performance, usability, and visual appeal. My goal is to create impactful
         digital experiences that exceed expectations.`,
     cvLink: "assets/My-Resume.pdf",
-    dgLink: "",
+    dgLink: "https://sandeep-digital-card.vercel.app/",
     profilePic: "assets/@Profile.pic.jpg"
 };
 
@@ -29,5 +29,4 @@ var typed = new Typed(".typing", {
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
-
 });

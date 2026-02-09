@@ -50,7 +50,7 @@ const largeProjects = [
     livePreview: "https://spywithcode.github.io/Watch.1/",
     image: "assets/portfolio/project.5.png"
   },
-   {
+  {
     id: 8,
     name: "Halloween.2-Theme",
     github: "https://github.com/spywithcode/Halloween.2",

@@ -408,7 +408,7 @@ for i in range(90):
 done()
 
         `,
-        images: ["assets/project/python.9.1.png","assets/project/python.9.2.png"]
+        images: ["assets/project/python.9.1.png", "assets/project/python.9.2.png"]
     },
     {
         id: 10,
@@ -449,7 +449,7 @@ t.hideturtle()
 screen.exitonclick()
 
         `,
-        images: ["assets/project/python.10.1.png","assets/project/python.10.2.png"]
+        images: ["assets/project/python.10.1.png", "assets/project/python.10.2.png"]
     },
     {
         id: 11,
@@ -517,7 +517,7 @@ t.hideturtle()
 screen.exitonclick()
 
         `,
-        images: ["assets/project/python.12.1.png","assets/project/python.12.2.png"]
+        images: ["assets/project/python.12.1.png", "assets/project/python.12.2.png"]
     },
     {
         id: 13,
@@ -658,7 +658,7 @@ def colorful_calendar(year):
 colorful_calendar(2025)    
 
         `,
-        images: ["assets/project/python.16.1.png","assets/project/python.16.2.png"]
+        images: ["assets/project/python.16.1.png", "assets/project/python.16.2.png"]
     },
     {
         id: 17,
