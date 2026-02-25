@@ -63,7 +63,7 @@ const aboutData = {
     ],
     experience: [
         {
-            date: "Dec-2025/Present",
+            date: "Aug-2025/Present",
             title: "Disha Computer Institute",
             details: "“I am a Computer Faculty at Disha Computer Institute, focused on teaching practical programming skills, modern web technologies, and building strong problem-solving foundations in students.”"
         },
@@ -73,12 +73,12 @@ const aboutData = {
             details: "Combining design principles with technical precision, I build engaging interfaces using modern frontend technologies and developer tools."
         },
         {
-            date: "2022-2024",
+            date: "Sep-2022/Dec-2024",
             title: "Frontend Design",
             details: "Combining design principles with technical precision, I build engaging interfaces using modern frontend technologies and developer tools."
         },
         {
-            date: "2024-2025",
+            date: "Dec-2024/Present",
             title: "Backend Solver",
             details: "I develop and maintain server-side logic, manage databases, and ensure seamless integration between frontend and backend systems for web applications."
         }

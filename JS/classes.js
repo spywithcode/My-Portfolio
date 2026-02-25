@@ -3,7 +3,7 @@ const classesContainer = document.getElementById('classes-container');
 const classesData = [
     {
         name: 'C',
-        icon: 'fab fa-python',
+        icon: 'fab fa-c',
         description: 'Learn C programming from basics to advanced.',
         subCards: [
             { name: 'Course', link: 'c-course.html', description: 'Comprehensive C course covering syntax, data structures, and libraries.' },
