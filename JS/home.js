@@ -5,7 +5,7 @@ const homeData = {
     description: `With a strong foundation in web development and design, I deliver high-quality projects
         focused on performance, usability, and visual appeal. My goal is to create impactful
         digital experiences that exceed expectations.`,
-    cvLink: "assets/My-Resume.pdf",
+    cvLink: "assets/Sandeep Resume.pdf",
     dgLink: "https://sandeep-digital-card.vercel.app/",
     profilePic: "assets/@Profile.pic.jpg"
 };
